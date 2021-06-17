@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element clk
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element memory_master_subsystem
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element pattern_checker_subsystem
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element pattern_generator_subsystem
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element pipeline_bridge
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="deviceFamily" value="CYCLONEIVE" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="true" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="1" />
+ <parameter name="timeStamp" value="1312964923906" />
+ <interface name="reset_0" internal="clk.clk_in_reset" type="reset" dir="end" />
+ <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
+ <interface name="slave" internal="pipeline_bridge.s0" type="avalon" dir="end" />
+ <interface
+   name="write_master"
+   internal="memory_master_subsystem.write_master"
+   type="avalon"
+   dir="start" />
+ <interface
+   name="read_master"
+   internal="memory_master_subsystem.read_master"
+   type="avalon"
+   dir="start" />
+ <module kind="clock_source" version="10.1" enabled="1" name="clk">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   kind="altera_avalon_mm_bridge"
+   version="10.1"
+   enabled="1"
+   name="pipeline_bridge">
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="ADDRESS_WIDTH" value="13" />
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="BURSTCOUNT_WIDTH" value="3" />
+  <parameter name="BURSTCOUNT_UNITS" value="SYMBOLS" />
+  <parameter name="MAX_PENDING_RESPONSES" value="4" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+ </module>
+ <module
+   kind="pattern_generator_system"
+   version="1.0"
+   enabled="1"
+   name="pattern_generator_subsystem">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+ </module>
+ <module
+   kind="memory_master_system"
+   version="1.0"
+   enabled="1"
+   name="memory_master_subsystem">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+ </module>
+ <module
+   kind="pattern_checker_system"
+   version="1.0"
+   enabled="1"
+   name="pattern_checker_subsystem">
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="1" />
+ </module>
+ <connection kind="clock" version="10.1" start="clk.clk" end="pipeline_bridge.clk" />
+ <connection
+   kind="clock"
+   version="10.1"
+   start="clk.clk"
+   end="pattern_generator_subsystem.clk" />
+ <connection
+   kind="avalon"
+   version="10.1"
+   start="pipeline_bridge.m0"
+   end="pattern_generator_subsystem.slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="clock"
+   version="10.1"
+   start="clk.clk"
+   end="memory_master_subsystem.clk" />
+ <connection
+   kind="avalon"
+   version="10.1"
+   start="pipeline_bridge.m0"
+   end="memory_master_subsystem.slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0800" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="10.1"
+   start="pattern_generator_subsystem.pattern_data_out"
+   end="memory_master_subsystem.st_data_in" />
+ <connection
+   kind="clock"
+   version="10.1"
+   start="clk.clk"
+   end="pattern_checker_subsystem.clk" />
+ <connection
+   kind="avalon"
+   version="10.1"
+   start="pipeline_bridge.m0"
+   end="pattern_checker_subsystem.slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1000" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="10.1"
+   start="memory_master_subsystem.st_data_out"
+   end="pattern_checker_subsystem.pattern_data_in" />
+</system>

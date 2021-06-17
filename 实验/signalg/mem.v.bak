@@ -1,0 +1,63 @@
+module mem(clk,rstn,en,addr,dout_en,dout);
+input clk;//clock
+input rstn;//reset,low
+input en;//start to generatring waves
+input [7:0]addr;//mem address
+
+output dout_en;//start to output wave
+output[9:0]dout;//dataout,10bit width
+
+//data out from Roms
+wire[9:0]wave;
+//rom addr
+reg[1:0] en_r;
+always@(posedge clk or negedge rstn)
+begin
+ if(!rstn) 
+ begin
+  en_r<=2'b0;//00b
+ end 
+ else 
+ begin
+  en_r<={en_r[0],en};
+ end
+end
+assign dout=en_r[1]?wave:10'b0;
+assign dout_en=en_r[1];
+
+//rom instiation
+wave_rom uut(
+.clk(clk),
+.en(en),
+.addr(addr),
+.wave(wave)
+);
+
+endmodule
+//
+
+//rom module
+module wave_rom(clk,en,addr,wave);
+input clk,en;
+input [7:0]addr;
+output reg[9:0]wave;
+
+//sqare
+
+always@(posedge clk)
+begin
+ if(en)
+ begin
+  wave<={10{(addr<128)}};
+ end
+ else
+ begin 
+  wave<=10'b0;
+ end
+end
+
+//tri
+
+
+//cos
+endmodule

@@ -1,0 +1,51 @@
+# Reading C:/altera/90/modelsim_ase/tcl/vsim/pref.tcl 
+# do I2C_write_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying C:\altera\90\modelsim_ase\win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {I2C_write.vo}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module I2C_write
+# 
+# Top level modules:
+# 	I2C_write
+# 
+# vlog -vlog01compat -work work +incdir+D:/DE2_115/lyp/I2C_write {D:/DE2_115/lyp/I2C_write/I2C_write_test.v}
+# Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+# -- Compiling module I2C_write_test
+# 
+# Top level modules:
+# 	I2C_write_test
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L stratixii_ver -L gate_work -L work -voptargs="+acc" I2C_write_test
+# vsim +transport_int_delays +transport_path_delays -L stratixii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps I2C_write_test 
+# Loading work.I2C_write_test
+# Loading work.I2C_write
+# Loading stratixii_ver.stratixii_lcell_comb
+# Loading stratixii_ver.stratixii_io
+# Loading stratixii_ver.stratixii_io_register
+# Loading stratixii_ver.stratixii_io_latch
+# Loading stratixii_ver.stratixii_and1
+# Loading stratixii_ver.stratixii_mux21
+# Loading stratixii_ver.stratixii_asynch_io
+# Loading stratixii_ver.stratixii_clkctrl
+# Loading stratixii_ver.stratixii_mux41
+# Loading stratixii_ver.stratixii_ena_reg
+# Loading stratixii_ver.stratixii_lcell_ff
+# SDF 6.4a Compiler 2008.08 Oct 22 2008
+# 
+# Loading instances from I2C_write_v.sdo
+# Loading timing data from I2C_write_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /I2C_write_test  File: D:/DE2_115/lyp/I2C_write/I2C_write_test.v
+# 
+# add wave *
+# view structure
+# .main_pane.workspace.interior.cs.nb.canvas.notebook.cs.page2.cs
+# view signals
+# .main_pane.signals.interior.cs
+# run 3 us

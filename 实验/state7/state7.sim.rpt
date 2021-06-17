@@ -1,0 +1,429 @@
+Simulator report for state7
+Wed Nov 18 15:14:53 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 152 nodes    ;
+; Simulation Coverage         ;      21.33 % ;
+; Total Number of Transitions ; 1048         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; state7.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      21.33 % ;
+; Total nodes checked                                 ; 152          ;
+; Total output ports checked                          ; 150          ;
+; Total output ports with complete 1/0-value coverage ; 32           ;
+; Total output ports with no 1/0-value coverage       ; 116          ;
+; Total output ports with no 1-value coverage         ; 116          ;
+; Total output ports with no 0-value coverage         ; 118          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                    ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |state7|clk                          ; |state7|clk                          ; out              ;
+; |state7|en[5]                        ; |state7|en[5]                        ; out              ;
+; |state7|en[4]                        ; |state7|en[4]                        ; out              ;
+; |state7|en[3]                        ; |state7|en[3]                        ; out              ;
+; |state7|en[2]                        ; |state7|en[2]                        ; out              ;
+; |state7|en[1]                        ; |state7|en[1]                        ; out              ;
+; |state7|en[0]                        ; |state7|en[0]                        ; out              ;
+; |state7|ds[7]                        ; |state7|ds[7]                        ; pin_out          ;
+; |state7|divi_50hz:inst|count_reg1[4] ; |state7|divi_50hz:inst|count_reg1[4] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[3] ; |state7|divi_50hz:inst|count_reg1[3] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[2] ; |state7|divi_50hz:inst|count_reg1[2] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[1] ; |state7|divi_50hz:inst|count_reg1[1] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[0] ; |state7|divi_50hz:inst|count_reg1[0] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1~18 ; |state7|divi_50hz:inst|count_reg1~18 ; out              ;
+; |state7|divi_50hz:inst|count_reg1~19 ; |state7|divi_50hz:inst|count_reg1~19 ; out              ;
+; |state7|divi_50hz:inst|count_reg1~20 ; |state7|divi_50hz:inst|count_reg1~20 ; out              ;
+; |state7|divi_50hz:inst|count_reg1~21 ; |state7|divi_50hz:inst|count_reg1~21 ; out              ;
+; |state7|divi_50hz:inst|count_reg1~22 ; |state7|divi_50hz:inst|count_reg1~22 ; out              ;
+; |state7|divi_50hz:inst|count_reg1~23 ; |state7|divi_50hz:inst|count_reg1~23 ; out              ;
+; |state7|divi_50hz:inst|count_reg1~24 ; |state7|divi_50hz:inst|count_reg1~24 ; out              ;
+; |state7|seg7:inst1|ds[7]             ; |state7|seg7:inst1|ds[7]             ; out              ;
+; |state7|divi_50hz:inst|Add0~0        ; |state7|divi_50hz:inst|Add0~0        ; out0             ;
+; |state7|divi_50hz:inst|Add0~1        ; |state7|divi_50hz:inst|Add0~1        ; out0             ;
+; |state7|divi_50hz:inst|Add0~2        ; |state7|divi_50hz:inst|Add0~2        ; out0             ;
+; |state7|divi_50hz:inst|Add0~3        ; |state7|divi_50hz:inst|Add0~3        ; out0             ;
+; |state7|divi_50hz:inst|Add0~4        ; |state7|divi_50hz:inst|Add0~4        ; out0             ;
+; |state7|divi_50hz:inst|Add0~5        ; |state7|divi_50hz:inst|Add0~5        ; out0             ;
+; |state7|divi_50hz:inst|Add0~6        ; |state7|divi_50hz:inst|Add0~6        ; out0             ;
+; |state7|divi_50hz:inst|Add0~7        ; |state7|divi_50hz:inst|Add0~7        ; out0             ;
+; |state7|divi_50hz:inst|Add0~8        ; |state7|divi_50hz:inst|Add0~8        ; out0             ;
+; |state7|divi_50hz:inst|Add0~9        ; |state7|divi_50hz:inst|Add0~9        ; out0             ;
+; |state7|divi_50hz:inst|Add0~10       ; |state7|divi_50hz:inst|Add0~10       ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |state7|a                             ; |state7|a                             ; pin_out          ;
+; |state7|en[7]                         ; |state7|en[7]                         ; out              ;
+; |state7|b                             ; |state7|b                             ; pin_out          ;
+; |state7|c                             ; |state7|c                             ; pin_out          ;
+; |state7|d                             ; |state7|d                             ; pin_out          ;
+; |state7|e                             ; |state7|e                             ; pin_out          ;
+; |state7|f                             ; |state7|f                             ; pin_out          ;
+; |state7|g                             ; |state7|g                             ; pin_out          ;
+; |state7|dp                            ; |state7|dp                            ; pin_out          ;
+; |state7|ds[6]                         ; |state7|ds[6]                         ; pin_out          ;
+; |state7|ds[5]                         ; |state7|ds[5]                         ; pin_out          ;
+; |state7|ds[4]                         ; |state7|ds[4]                         ; pin_out          ;
+; |state7|ds[3]                         ; |state7|ds[3]                         ; pin_out          ;
+; |state7|ds[2]                         ; |state7|ds[2]                         ; pin_out          ;
+; |state7|ds[1]                         ; |state7|ds[1]                         ; pin_out          ;
+; |state7|ds[0]                         ; |state7|ds[0]                         ; pin_out          ;
+; |state7|divi_50hz:inst|count_reg1[10] ; |state7|divi_50hz:inst|count_reg1[10] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[9]  ; |state7|divi_50hz:inst|count_reg1[9]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[8]  ; |state7|divi_50hz:inst|count_reg1[8]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[7]  ; |state7|divi_50hz:inst|count_reg1[7]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[6]  ; |state7|divi_50hz:inst|count_reg1[6]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1~0   ; |state7|divi_50hz:inst|count_reg1~0   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~1   ; |state7|divi_50hz:inst|count_reg1~1   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~2   ; |state7|divi_50hz:inst|count_reg1~2   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~3   ; |state7|divi_50hz:inst|count_reg1~3   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~4   ; |state7|divi_50hz:inst|count_reg1~4   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~5   ; |state7|divi_50hz:inst|count_reg1~5   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~6   ; |state7|divi_50hz:inst|count_reg1~6   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~7   ; |state7|divi_50hz:inst|count_reg1~7   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~8   ; |state7|divi_50hz:inst|count_reg1~8   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~9   ; |state7|divi_50hz:inst|count_reg1~9   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~10  ; |state7|divi_50hz:inst|count_reg1~10  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~11  ; |state7|divi_50hz:inst|count_reg1~11  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~12  ; |state7|divi_50hz:inst|count_reg1~12  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~13  ; |state7|divi_50hz:inst|count_reg1~13  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~14  ; |state7|divi_50hz:inst|count_reg1~14  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~15  ; |state7|divi_50hz:inst|count_reg1~15  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~16  ; |state7|divi_50hz:inst|count_reg1~16  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~17  ; |state7|divi_50hz:inst|count_reg1~17  ; out              ;
+; |state7|divi_50hz:inst|count_reg1[11] ; |state7|divi_50hz:inst|count_reg1[11] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[12] ; |state7|divi_50hz:inst|count_reg1[12] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[13] ; |state7|divi_50hz:inst|count_reg1[13] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[14] ; |state7|divi_50hz:inst|count_reg1[14] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[15] ; |state7|divi_50hz:inst|count_reg1[15] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[16] ; |state7|divi_50hz:inst|count_reg1[16] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[17] ; |state7|divi_50hz:inst|count_reg1[17] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[18] ; |state7|divi_50hz:inst|count_reg1[18] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[19] ; |state7|divi_50hz:inst|count_reg1[19] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[20] ; |state7|divi_50hz:inst|count_reg1[20] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[21] ; |state7|divi_50hz:inst|count_reg1[21] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[22] ; |state7|divi_50hz:inst|count_reg1[22] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[23] ; |state7|divi_50hz:inst|count_reg1[23] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[24] ; |state7|divi_50hz:inst|count_reg1[24] ; regout           ;
+; |state7|seg7:inst1|WideOr0            ; |state7|seg7:inst1|WideOr0            ; out0             ;
+; |state7|seg7:inst1|WideOr1            ; |state7|seg7:inst1|WideOr1            ; out0             ;
+; |state7|seg7:inst1|WideOr2            ; |state7|seg7:inst1|WideOr2            ; out0             ;
+; |state7|seg7:inst1|WideOr3            ; |state7|seg7:inst1|WideOr3            ; out0             ;
+; |state7|seg7:inst1|seg~0              ; |state7|seg7:inst1|seg~0              ; out0             ;
+; |state7|seg7:inst1|seg~1              ; |state7|seg7:inst1|seg~1              ; out0             ;
+; |state7|seg7:inst1|ds[6]              ; |state7|seg7:inst1|ds[6]              ; out              ;
+; |state7|seg7:inst1|ds[5]              ; |state7|seg7:inst1|ds[5]              ; out              ;
+; |state7|seg7:inst1|choice[2]          ; |state7|seg7:inst1|choice[2]          ; regout           ;
+; |state7|seg7:inst1|ds[4]              ; |state7|seg7:inst1|ds[4]              ; out              ;
+; |state7|seg7:inst1|choice[1]          ; |state7|seg7:inst1|choice[1]          ; regout           ;
+; |state7|seg7:inst1|ds[3]              ; |state7|seg7:inst1|ds[3]              ; out              ;
+; |state7|seg7:inst1|ds[2]              ; |state7|seg7:inst1|ds[2]              ; out              ;
+; |state7|seg7:inst1|ds[1]              ; |state7|seg7:inst1|ds[1]              ; out              ;
+; |state7|seg7:inst1|ds[0]              ; |state7|seg7:inst1|ds[0]              ; out              ;
+; |state7|seg7:inst1|Decoder0~0         ; |state7|seg7:inst1|Decoder0~0         ; out0             ;
+; |state7|seg7:inst1|Decoder0~1         ; |state7|seg7:inst1|Decoder0~1         ; out0             ;
+; |state7|seg7:inst1|Decoder0~2         ; |state7|seg7:inst1|Decoder0~2         ; out0             ;
+; |state7|seg7:inst1|Decoder0~3         ; |state7|seg7:inst1|Decoder0~3         ; out0             ;
+; |state7|seg7:inst1|Decoder0~4         ; |state7|seg7:inst1|Decoder0~4         ; out0             ;
+; |state7|seg7:inst1|Decoder0~5         ; |state7|seg7:inst1|Decoder0~5         ; out0             ;
+; |state7|seg7:inst1|Decoder0~6         ; |state7|seg7:inst1|Decoder0~6         ; out0             ;
+; |state7|seg7:inst1|Decoder0~7         ; |state7|seg7:inst1|Decoder0~7         ; out0             ;
+; |state7|divi_50hz:inst|Add0~11        ; |state7|divi_50hz:inst|Add0~11        ; out0             ;
+; |state7|divi_50hz:inst|Add0~12        ; |state7|divi_50hz:inst|Add0~12        ; out0             ;
+; |state7|divi_50hz:inst|Add0~13        ; |state7|divi_50hz:inst|Add0~13        ; out0             ;
+; |state7|divi_50hz:inst|Add0~14        ; |state7|divi_50hz:inst|Add0~14        ; out0             ;
+; |state7|divi_50hz:inst|Add0~15        ; |state7|divi_50hz:inst|Add0~15        ; out0             ;
+; |state7|divi_50hz:inst|Add0~16        ; |state7|divi_50hz:inst|Add0~16        ; out0             ;
+; |state7|divi_50hz:inst|Add0~17        ; |state7|divi_50hz:inst|Add0~17        ; out0             ;
+; |state7|divi_50hz:inst|Add0~18        ; |state7|divi_50hz:inst|Add0~18        ; out0             ;
+; |state7|divi_50hz:inst|Add0~19        ; |state7|divi_50hz:inst|Add0~19        ; out0             ;
+; |state7|divi_50hz:inst|Add0~20        ; |state7|divi_50hz:inst|Add0~20        ; out0             ;
+; |state7|divi_50hz:inst|Add0~21        ; |state7|divi_50hz:inst|Add0~21        ; out0             ;
+; |state7|divi_50hz:inst|Add0~22        ; |state7|divi_50hz:inst|Add0~22        ; out0             ;
+; |state7|divi_50hz:inst|Add0~23        ; |state7|divi_50hz:inst|Add0~23        ; out0             ;
+; |state7|divi_50hz:inst|Add0~24        ; |state7|divi_50hz:inst|Add0~24        ; out0             ;
+; |state7|divi_50hz:inst|Add0~25        ; |state7|divi_50hz:inst|Add0~25        ; out0             ;
+; |state7|divi_50hz:inst|Add0~26        ; |state7|divi_50hz:inst|Add0~26        ; out0             ;
+; |state7|divi_50hz:inst|Add0~27        ; |state7|divi_50hz:inst|Add0~27        ; out0             ;
+; |state7|divi_50hz:inst|Add0~28        ; |state7|divi_50hz:inst|Add0~28        ; out0             ;
+; |state7|divi_50hz:inst|Add0~29        ; |state7|divi_50hz:inst|Add0~29        ; out0             ;
+; |state7|divi_50hz:inst|Add0~30        ; |state7|divi_50hz:inst|Add0~30        ; out0             ;
+; |state7|divi_50hz:inst|Add0~31        ; |state7|divi_50hz:inst|Add0~31        ; out0             ;
+; |state7|divi_50hz:inst|Add0~32        ; |state7|divi_50hz:inst|Add0~32        ; out0             ;
+; |state7|divi_50hz:inst|Add0~33        ; |state7|divi_50hz:inst|Add0~33        ; out0             ;
+; |state7|divi_50hz:inst|Add0~34        ; |state7|divi_50hz:inst|Add0~34        ; out0             ;
+; |state7|divi_50hz:inst|Add0~35        ; |state7|divi_50hz:inst|Add0~35        ; out0             ;
+; |state7|divi_50hz:inst|Add0~36        ; |state7|divi_50hz:inst|Add0~36        ; out0             ;
+; |state7|divi_50hz:inst|Add0~37        ; |state7|divi_50hz:inst|Add0~37        ; out0             ;
+; |state7|divi_50hz:inst|Add0~38        ; |state7|divi_50hz:inst|Add0~38        ; out0             ;
+; |state7|divi_50hz:inst|Add0~39        ; |state7|divi_50hz:inst|Add0~39        ; out0             ;
+; |state7|divi_50hz:inst|Add0~40        ; |state7|divi_50hz:inst|Add0~40        ; out0             ;
+; |state7|divi_50hz:inst|Add0~41        ; |state7|divi_50hz:inst|Add0~41        ; out0             ;
+; |state7|divi_50hz:inst|Add0~42        ; |state7|divi_50hz:inst|Add0~42        ; out0             ;
+; |state7|divi_50hz:inst|Add0~43        ; |state7|divi_50hz:inst|Add0~43        ; out0             ;
+; |state7|divi_50hz:inst|Add0~44        ; |state7|divi_50hz:inst|Add0~44        ; out0             ;
+; |state7|divi_50hz:inst|Add0~45        ; |state7|divi_50hz:inst|Add0~45        ; out0             ;
+; |state7|divi_50hz:inst|Add0~46        ; |state7|divi_50hz:inst|Add0~46        ; out0             ;
+; |state7|seg7:inst1|Add0~0             ; |state7|seg7:inst1|Add0~0             ; out0             ;
+; |state7|seg7:inst1|Add0~1             ; |state7|seg7:inst1|Add0~1             ; out0             ;
+; |state7|seg7:inst1|Add0~2             ; |state7|seg7:inst1|Add0~2             ; out0             ;
+; |state7|divi_50hz:inst|Equal0~0       ; |state7|divi_50hz:inst|Equal0~0       ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |state7|a                             ; |state7|a                             ; pin_out          ;
+; |state7|en[7]                         ; |state7|en[7]                         ; out              ;
+; |state7|en[6]                         ; |state7|en[6]                         ; out              ;
+; |state7|b                             ; |state7|b                             ; pin_out          ;
+; |state7|c                             ; |state7|c                             ; pin_out          ;
+; |state7|d                             ; |state7|d                             ; pin_out          ;
+; |state7|e                             ; |state7|e                             ; pin_out          ;
+; |state7|f                             ; |state7|f                             ; pin_out          ;
+; |state7|g                             ; |state7|g                             ; pin_out          ;
+; |state7|dp                            ; |state7|dp                            ; pin_out          ;
+; |state7|ds[6]                         ; |state7|ds[6]                         ; pin_out          ;
+; |state7|ds[5]                         ; |state7|ds[5]                         ; pin_out          ;
+; |state7|ds[4]                         ; |state7|ds[4]                         ; pin_out          ;
+; |state7|ds[3]                         ; |state7|ds[3]                         ; pin_out          ;
+; |state7|ds[2]                         ; |state7|ds[2]                         ; pin_out          ;
+; |state7|ds[1]                         ; |state7|ds[1]                         ; pin_out          ;
+; |state7|ds[0]                         ; |state7|ds[0]                         ; pin_out          ;
+; |state7|divi_50hz:inst|count_reg1[10] ; |state7|divi_50hz:inst|count_reg1[10] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[9]  ; |state7|divi_50hz:inst|count_reg1[9]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[8]  ; |state7|divi_50hz:inst|count_reg1[8]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[7]  ; |state7|divi_50hz:inst|count_reg1[7]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[6]  ; |state7|divi_50hz:inst|count_reg1[6]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[5]  ; |state7|divi_50hz:inst|count_reg1[5]  ; regout           ;
+; |state7|divi_50hz:inst|count_reg1~0   ; |state7|divi_50hz:inst|count_reg1~0   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~1   ; |state7|divi_50hz:inst|count_reg1~1   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~2   ; |state7|divi_50hz:inst|count_reg1~2   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~3   ; |state7|divi_50hz:inst|count_reg1~3   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~4   ; |state7|divi_50hz:inst|count_reg1~4   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~5   ; |state7|divi_50hz:inst|count_reg1~5   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~6   ; |state7|divi_50hz:inst|count_reg1~6   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~7   ; |state7|divi_50hz:inst|count_reg1~7   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~8   ; |state7|divi_50hz:inst|count_reg1~8   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~9   ; |state7|divi_50hz:inst|count_reg1~9   ; out              ;
+; |state7|divi_50hz:inst|count_reg1~10  ; |state7|divi_50hz:inst|count_reg1~10  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~11  ; |state7|divi_50hz:inst|count_reg1~11  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~12  ; |state7|divi_50hz:inst|count_reg1~12  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~13  ; |state7|divi_50hz:inst|count_reg1~13  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~14  ; |state7|divi_50hz:inst|count_reg1~14  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~15  ; |state7|divi_50hz:inst|count_reg1~15  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~16  ; |state7|divi_50hz:inst|count_reg1~16  ; out              ;
+; |state7|divi_50hz:inst|count_reg1~17  ; |state7|divi_50hz:inst|count_reg1~17  ; out              ;
+; |state7|divi_50hz:inst|count_reg1[11] ; |state7|divi_50hz:inst|count_reg1[11] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[12] ; |state7|divi_50hz:inst|count_reg1[12] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[13] ; |state7|divi_50hz:inst|count_reg1[13] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[14] ; |state7|divi_50hz:inst|count_reg1[14] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[15] ; |state7|divi_50hz:inst|count_reg1[15] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[16] ; |state7|divi_50hz:inst|count_reg1[16] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[17] ; |state7|divi_50hz:inst|count_reg1[17] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[18] ; |state7|divi_50hz:inst|count_reg1[18] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[19] ; |state7|divi_50hz:inst|count_reg1[19] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[20] ; |state7|divi_50hz:inst|count_reg1[20] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[21] ; |state7|divi_50hz:inst|count_reg1[21] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[22] ; |state7|divi_50hz:inst|count_reg1[22] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[23] ; |state7|divi_50hz:inst|count_reg1[23] ; regout           ;
+; |state7|divi_50hz:inst|count_reg1[24] ; |state7|divi_50hz:inst|count_reg1[24] ; regout           ;
+; |state7|seg7:inst1|WideOr0            ; |state7|seg7:inst1|WideOr0            ; out0             ;
+; |state7|seg7:inst1|WideOr1            ; |state7|seg7:inst1|WideOr1            ; out0             ;
+; |state7|seg7:inst1|WideOr2            ; |state7|seg7:inst1|WideOr2            ; out0             ;
+; |state7|seg7:inst1|WideOr3            ; |state7|seg7:inst1|WideOr3            ; out0             ;
+; |state7|seg7:inst1|seg~0              ; |state7|seg7:inst1|seg~0              ; out0             ;
+; |state7|seg7:inst1|seg~1              ; |state7|seg7:inst1|seg~1              ; out0             ;
+; |state7|seg7:inst1|ds[6]              ; |state7|seg7:inst1|ds[6]              ; out              ;
+; |state7|seg7:inst1|ds[5]              ; |state7|seg7:inst1|ds[5]              ; out              ;
+; |state7|seg7:inst1|choice[2]          ; |state7|seg7:inst1|choice[2]          ; regout           ;
+; |state7|seg7:inst1|ds[4]              ; |state7|seg7:inst1|ds[4]              ; out              ;
+; |state7|seg7:inst1|choice[1]          ; |state7|seg7:inst1|choice[1]          ; regout           ;
+; |state7|seg7:inst1|ds[3]              ; |state7|seg7:inst1|ds[3]              ; out              ;
+; |state7|seg7:inst1|ds[2]              ; |state7|seg7:inst1|ds[2]              ; out              ;
+; |state7|seg7:inst1|ds[1]              ; |state7|seg7:inst1|ds[1]              ; out              ;
+; |state7|seg7:inst1|ds[0]              ; |state7|seg7:inst1|ds[0]              ; out              ;
+; |state7|seg7:inst1|Decoder0~0         ; |state7|seg7:inst1|Decoder0~0         ; out0             ;
+; |state7|seg7:inst1|Decoder0~1         ; |state7|seg7:inst1|Decoder0~1         ; out0             ;
+; |state7|seg7:inst1|Decoder0~2         ; |state7|seg7:inst1|Decoder0~2         ; out0             ;
+; |state7|seg7:inst1|Decoder0~3         ; |state7|seg7:inst1|Decoder0~3         ; out0             ;
+; |state7|seg7:inst1|Decoder0~4         ; |state7|seg7:inst1|Decoder0~4         ; out0             ;
+; |state7|seg7:inst1|Decoder0~5         ; |state7|seg7:inst1|Decoder0~5         ; out0             ;
+; |state7|seg7:inst1|Decoder0~6         ; |state7|seg7:inst1|Decoder0~6         ; out0             ;
+; |state7|seg7:inst1|Decoder0~7         ; |state7|seg7:inst1|Decoder0~7         ; out0             ;
+; |state7|divi_50hz:inst|Add0~11        ; |state7|divi_50hz:inst|Add0~11        ; out0             ;
+; |state7|divi_50hz:inst|Add0~12        ; |state7|divi_50hz:inst|Add0~12        ; out0             ;
+; |state7|divi_50hz:inst|Add0~13        ; |state7|divi_50hz:inst|Add0~13        ; out0             ;
+; |state7|divi_50hz:inst|Add0~14        ; |state7|divi_50hz:inst|Add0~14        ; out0             ;
+; |state7|divi_50hz:inst|Add0~15        ; |state7|divi_50hz:inst|Add0~15        ; out0             ;
+; |state7|divi_50hz:inst|Add0~16        ; |state7|divi_50hz:inst|Add0~16        ; out0             ;
+; |state7|divi_50hz:inst|Add0~17        ; |state7|divi_50hz:inst|Add0~17        ; out0             ;
+; |state7|divi_50hz:inst|Add0~18        ; |state7|divi_50hz:inst|Add0~18        ; out0             ;
+; |state7|divi_50hz:inst|Add0~19        ; |state7|divi_50hz:inst|Add0~19        ; out0             ;
+; |state7|divi_50hz:inst|Add0~20        ; |state7|divi_50hz:inst|Add0~20        ; out0             ;
+; |state7|divi_50hz:inst|Add0~21        ; |state7|divi_50hz:inst|Add0~21        ; out0             ;
+; |state7|divi_50hz:inst|Add0~22        ; |state7|divi_50hz:inst|Add0~22        ; out0             ;
+; |state7|divi_50hz:inst|Add0~23        ; |state7|divi_50hz:inst|Add0~23        ; out0             ;
+; |state7|divi_50hz:inst|Add0~24        ; |state7|divi_50hz:inst|Add0~24        ; out0             ;
+; |state7|divi_50hz:inst|Add0~25        ; |state7|divi_50hz:inst|Add0~25        ; out0             ;
+; |state7|divi_50hz:inst|Add0~26        ; |state7|divi_50hz:inst|Add0~26        ; out0             ;
+; |state7|divi_50hz:inst|Add0~27        ; |state7|divi_50hz:inst|Add0~27        ; out0             ;
+; |state7|divi_50hz:inst|Add0~28        ; |state7|divi_50hz:inst|Add0~28        ; out0             ;
+; |state7|divi_50hz:inst|Add0~29        ; |state7|divi_50hz:inst|Add0~29        ; out0             ;
+; |state7|divi_50hz:inst|Add0~30        ; |state7|divi_50hz:inst|Add0~30        ; out0             ;
+; |state7|divi_50hz:inst|Add0~31        ; |state7|divi_50hz:inst|Add0~31        ; out0             ;
+; |state7|divi_50hz:inst|Add0~32        ; |state7|divi_50hz:inst|Add0~32        ; out0             ;
+; |state7|divi_50hz:inst|Add0~33        ; |state7|divi_50hz:inst|Add0~33        ; out0             ;
+; |state7|divi_50hz:inst|Add0~34        ; |state7|divi_50hz:inst|Add0~34        ; out0             ;
+; |state7|divi_50hz:inst|Add0~35        ; |state7|divi_50hz:inst|Add0~35        ; out0             ;
+; |state7|divi_50hz:inst|Add0~36        ; |state7|divi_50hz:inst|Add0~36        ; out0             ;
+; |state7|divi_50hz:inst|Add0~37        ; |state7|divi_50hz:inst|Add0~37        ; out0             ;
+; |state7|divi_50hz:inst|Add0~38        ; |state7|divi_50hz:inst|Add0~38        ; out0             ;
+; |state7|divi_50hz:inst|Add0~39        ; |state7|divi_50hz:inst|Add0~39        ; out0             ;
+; |state7|divi_50hz:inst|Add0~40        ; |state7|divi_50hz:inst|Add0~40        ; out0             ;
+; |state7|divi_50hz:inst|Add0~41        ; |state7|divi_50hz:inst|Add0~41        ; out0             ;
+; |state7|divi_50hz:inst|Add0~42        ; |state7|divi_50hz:inst|Add0~42        ; out0             ;
+; |state7|divi_50hz:inst|Add0~43        ; |state7|divi_50hz:inst|Add0~43        ; out0             ;
+; |state7|divi_50hz:inst|Add0~44        ; |state7|divi_50hz:inst|Add0~44        ; out0             ;
+; |state7|divi_50hz:inst|Add0~45        ; |state7|divi_50hz:inst|Add0~45        ; out0             ;
+; |state7|divi_50hz:inst|Add0~46        ; |state7|divi_50hz:inst|Add0~46        ; out0             ;
+; |state7|seg7:inst1|Add0~0             ; |state7|seg7:inst1|Add0~0             ; out0             ;
+; |state7|seg7:inst1|Add0~1             ; |state7|seg7:inst1|Add0~1             ; out0             ;
+; |state7|seg7:inst1|Add0~2             ; |state7|seg7:inst1|Add0~2             ; out0             ;
+; |state7|divi_50hz:inst|Equal0~0       ; |state7|divi_50hz:inst|Equal0~0       ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Nov 18 15:14:53 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off state7 -c state7
+Info: Using vector source file "C:/Users/wang/Desktop/学习/大三上全部/EDA实验/state7/state7.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      21.33 %
+Info: Number of transitions in simulation is 1048
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Wed Nov 18 15:14:53 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,35 @@
+|base1
+en => data[0]~reg0.ALOAD
+en => data[1]~reg0.ALOAD
+en => data[2]~reg0.ALOAD
+en => data[3]~reg0.ALOAD
+en => addr[0]~reg0.ALOAD
+en => addr[1]~reg0.ALOAD
+en => addr[2]~reg0.ALOAD
+en => addr[3]~reg0.ALOAD
+clk => data[0]~reg0.CLK
+clk => data[0]~en.CLK
+clk => data[1]~reg0.CLK
+clk => data[1]~en.CLK
+clk => data[2]~reg0.CLK
+clk => data[2]~en.CLK
+clk => data[3]~reg0.CLK
+clk => data[3]~en.CLK
+clk => addr[0]~reg0.CLK
+clk => addr[0]~en.CLK
+clk => addr[1]~reg0.CLK
+clk => addr[1]~en.CLK
+clk => addr[2]~reg0.CLK
+clk => addr[2]~en.CLK
+clk => addr[3]~reg0.CLK
+clk => addr[3]~en.CLK
+addr[0] <= addr[0].DB_MAX_OUTPUT_PORT_TYPE
+addr[1] <= addr[1].DB_MAX_OUTPUT_PORT_TYPE
+addr[2] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+addr[3] <= addr[3].DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

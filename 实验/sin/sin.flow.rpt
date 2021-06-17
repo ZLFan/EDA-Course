@@ -1,0 +1,153 @@
+Flow report for sin
+Wed Nov 18 17:43:58 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++------------------------------------+------------------------------------------+
+; Flow Status                        ; Successful - Wed Nov 18 17:43:54 2020    ;
+; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name                      ; sin                                      ;
+; Top-level Entity Name              ; sin                                      ;
+; Family                             ; Cyclone III                              ;
+; Device                             ; EP3C55F484I7                             ;
+; Timing Models                      ; Final                                    ;
+; Met timing requirements            ; N/A                                      ;
+; Total logic elements               ; 724 / 55,856 ( 1 % )                     ;
+;     Total combinational functions  ; 486 / 55,856 ( < 1 % )                   ;
+;     Dedicated logic registers      ; 570 / 55,856 ( 1 % )                     ;
+; Total registers                    ; 570                                      ;
+; Total pins                         ; 9 / 328 ( 3 % )                          ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 14,848 / 2,396,160 ( < 1 % )             ;
+; Embedded Multiplier 9-bit elements ; 0 / 312 ( 0 % )                          ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                            ;
++------------------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/18/2020 17:43:35 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; sin                 ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                           ;
++-------------------------------------+---------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 163720059593914.160569261511328                                                       ; --            ; --          ; --             ;
+; ENABLE_SIGNALTAP                    ; On                                                                                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                                                                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 9.0                                                                                   ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 100                                                                                   ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                                                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; data_rom.bsf                                                                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; data_rom_bb.v                                                                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; data_rom.cmp                                                                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; E:/EDA/sin/sin.dpf                                                                    ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT                                                                             ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                ; --            ; --          ; Top            ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                   ; --            ; --          ; --             ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                         ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                               ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                         ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=1024                                                                 ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                            ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                        ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                     ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                          ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                   ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=1024                                                                 ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=1                                                              ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                  ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                          ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                         ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=14                                                                      ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=14                                                                   ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=66                                                          ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_LOWORD=3536                                                              ; --            ; --          ; --             ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_HIWORD=19702                                                             ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                                                                   ; --            ; --          ; eda_blast_fpga ;
+; USE_SIGNALTAP_FILE                  ; sin.stp                                                                               ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------------------------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 262 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 390 MB              ; 00:00:07                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 324 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 302 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:16                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                            ;
++---------------------------+------------------+---------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++---------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-UFVQBU5E  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-UFVQBU5E  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-UFVQBU5E  ; Windows Vista ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-UFVQBU5E  ; Windows Vista ; 6.2        ; x86_64         ;
++---------------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off sin -c sin
+quartus_fit --read_settings_files=off --write_settings_files=off sin -c sin
+quartus_asm --read_settings_files=off --write_settings_files=off sin -c sin
+quartus_sta sin -c sin
+
+
+

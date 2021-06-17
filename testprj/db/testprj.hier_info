@@ -1,0 +1,38 @@
+|divclk
+clk => divi.CLK
+clk => count_reg1[31].CLK
+clk => count_reg1[30].CLK
+clk => count_reg1[29].CLK
+clk => count_reg1[28].CLK
+clk => count_reg1[27].CLK
+clk => count_reg1[26].CLK
+clk => count_reg1[25].CLK
+clk => count_reg1[24].CLK
+clk => count_reg1[23].CLK
+clk => count_reg1[22].CLK
+clk => count_reg1[21].CLK
+clk => count_reg1[20].CLK
+clk => count_reg1[19].CLK
+clk => count_reg1[18].CLK
+clk => count_reg1[17].CLK
+clk => count_reg1[16].CLK
+clk => count_reg1[15].CLK
+clk => count_reg1[14].CLK
+clk => count_reg1[13].CLK
+clk => count_reg1[12].CLK
+clk => count_reg1[11].CLK
+clk => count_reg1[10].CLK
+clk => count_reg1[9].CLK
+clk => count_reg1[8].CLK
+clk => count_reg1[7].CLK
+clk => count_reg1[6].CLK
+clk => count_reg1[5].CLK
+clk => count_reg1[4].CLK
+clk => count_reg1[3].CLK
+clk => count_reg1[2].CLK
+clk => count_reg1[1].CLK
+clk => count_reg1[0].CLK
+rst => ~NO_FANOUT~
+divi_1hz <= divi.DB_MAX_OUTPUT_PORT_TYPE
+
+

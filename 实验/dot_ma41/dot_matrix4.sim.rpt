@@ -1,0 +1,798 @@
+Simulator report for dot_matrix4
+Thu Dec 10 23:16:34 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 297 nodes    ;
+; Simulation Coverage         ;      13.20 % ;
+; Total Number of Transitions ; 997          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C55F484I7 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      13.20 % ;
+; Total nodes checked                                 ; 297          ;
+; Total output ports checked                          ; 341          ;
+; Total output ports with complete 1/0-value coverage ; 45           ;
+; Total output ports with no 1/0-value coverage       ; 294          ;
+; Total output ports with no 1-value coverage         ; 294          ;
+; Total output ports with no 0-value coverage         ; 296          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |dot_ma4|divi_500hz:inst1|Add0~0        ; |dot_ma4|divi_500hz:inst1|Add0~0        ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~0        ; |dot_ma4|divi_500hz:inst1|Add0~1        ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~2        ; |dot_ma4|divi_500hz:inst1|Add0~2        ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~2        ; |dot_ma4|divi_500hz:inst1|Add0~3        ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~4        ; |dot_ma4|divi_500hz:inst1|Add0~4        ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~4        ; |dot_ma4|divi_500hz:inst1|Add0~5        ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~6        ; |dot_ma4|divi_500hz:inst1|Add0~6        ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~6        ; |dot_ma4|divi_500hz:inst1|Add0~7        ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~8        ; |dot_ma4|divi_500hz:inst1|Add0~8        ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~8        ; |dot_ma4|divi_500hz:inst1|Add0~9        ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~10       ; |dot_ma4|divi_500hz:inst1|Add0~10       ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~10       ; |dot_ma4|divi_500hz:inst1|Add0~11       ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~12       ; |dot_ma4|divi_500hz:inst1|Add0~12       ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~1           ; |dot_ma4|divi_1hz:inst|Add0~1           ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~3           ; |dot_ma4|divi_1hz:inst|Add0~3           ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~5           ; |dot_ma4|divi_1hz:inst|Add0~5           ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~6           ; |dot_ma4|divi_1hz:inst|Add0~6           ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~6           ; |dot_ma4|divi_1hz:inst|Add0~7           ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~8           ; |dot_ma4|divi_1hz:inst|Add0~8           ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~8           ; |dot_ma4|divi_1hz:inst|Add0~9           ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~10          ; |dot_ma4|divi_1hz:inst|Add0~10          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~2  ; |dot_ma4|dot_matrix4:inst2|Selector3~2  ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector5~0  ; |dot_ma4|dot_matrix4:inst2|Selector5~0  ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~69       ; |dot_ma4|dot_matrix4:inst2|row~69       ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector8    ; |dot_ma4|dot_matrix4:inst2|Selector8    ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector14~0 ; |dot_ma4|dot_matrix4:inst2|Selector14~0 ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col~12       ; |dot_ma4|dot_matrix4:inst2|col~12       ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[3] ; |dot_ma4|divi_500hz:inst1|count_reg1[3] ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[2] ; |dot_ma4|divi_500hz:inst1|count_reg1[2] ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[1] ; |dot_ma4|divi_500hz:inst1|count_reg1[1] ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[0] ; |dot_ma4|divi_500hz:inst1|count_reg1[0] ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~0      ; |dot_ma4|divi_500hz:inst1|Equal0~0      ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[4] ; |dot_ma4|divi_500hz:inst1|count_reg1[4] ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[4]    ; |dot_ma4|divi_1hz:inst|count_reg1[4]    ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~26 ; |dot_ma4|divi_500hz:inst1|count_reg1~26 ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~28 ; |dot_ma4|divi_500hz:inst1|count_reg1~28 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~28    ; |dot_ma4|divi_1hz:inst|count_reg1~28    ; combout          ;
+; |dot_ma4|row[7]~output                  ; |dot_ma4|row[7]~output                  ; o                ;
+; |dot_ma4|row[7]                         ; |dot_ma4|row[7]                         ; padout           ;
+; |dot_ma4|reset~input                    ; |dot_ma4|reset~input                    ; o                ;
+; |dot_ma4|reset                          ; |dot_ma4|reset                          ; padout           ;
+; |dot_ma4|clk~input                      ; |dot_ma4|clk~input                      ; o                ;
+; |dot_ma4|clk                            ; |dot_ma4|clk                            ; padout           ;
+; |dot_ma4|clk~inputclkctrl               ; |dot_ma4|clk~inputclkctrl               ; outclk           ;
+; |dot_ma4|reset~inputclkctrl             ; |dot_ma4|reset~inputclkctrl             ; outclk           ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |dot_ma4|divi_500hz:inst1|Add0~12               ; |dot_ma4|divi_500hz:inst1|Add0~13               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~14               ; |dot_ma4|divi_500hz:inst1|Add0~14               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~14               ; |dot_ma4|divi_500hz:inst1|Add0~15               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~16               ; |dot_ma4|divi_500hz:inst1|Add0~16               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~16               ; |dot_ma4|divi_500hz:inst1|Add0~17               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~18               ; |dot_ma4|divi_500hz:inst1|Add0~18               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~18               ; |dot_ma4|divi_500hz:inst1|Add0~19               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~20               ; |dot_ma4|divi_500hz:inst1|Add0~20               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~20               ; |dot_ma4|divi_500hz:inst1|Add0~21               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~22               ; |dot_ma4|divi_500hz:inst1|Add0~22               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~22               ; |dot_ma4|divi_500hz:inst1|Add0~23               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~24               ; |dot_ma4|divi_500hz:inst1|Add0~24               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~24               ; |dot_ma4|divi_500hz:inst1|Add0~25               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~26               ; |dot_ma4|divi_500hz:inst1|Add0~26               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~26               ; |dot_ma4|divi_500hz:inst1|Add0~27               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~28               ; |dot_ma4|divi_500hz:inst1|Add0~28               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~28               ; |dot_ma4|divi_500hz:inst1|Add0~29               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~30               ; |dot_ma4|divi_500hz:inst1|Add0~30               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~30               ; |dot_ma4|divi_500hz:inst1|Add0~31               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~32               ; |dot_ma4|divi_500hz:inst1|Add0~32               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~32               ; |dot_ma4|divi_500hz:inst1|Add0~33               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~34               ; |dot_ma4|divi_500hz:inst1|Add0~34               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~34               ; |dot_ma4|divi_500hz:inst1|Add0~35               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~36               ; |dot_ma4|divi_500hz:inst1|Add0~36               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~36               ; |dot_ma4|divi_500hz:inst1|Add0~37               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~38               ; |dot_ma4|divi_500hz:inst1|Add0~38               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~38               ; |dot_ma4|divi_500hz:inst1|Add0~39               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~40               ; |dot_ma4|divi_500hz:inst1|Add0~40               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~40               ; |dot_ma4|divi_500hz:inst1|Add0~41               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~42               ; |dot_ma4|divi_500hz:inst1|Add0~42               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~42               ; |dot_ma4|divi_500hz:inst1|Add0~43               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~44               ; |dot_ma4|divi_500hz:inst1|Add0~44               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~44               ; |dot_ma4|divi_500hz:inst1|Add0~45               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~46               ; |dot_ma4|divi_500hz:inst1|Add0~46               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~46               ; |dot_ma4|divi_500hz:inst1|Add0~47               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~48               ; |dot_ma4|divi_500hz:inst1|Add0~48               ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~10                  ; |dot_ma4|divi_1hz:inst|Add0~11                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~12                  ; |dot_ma4|divi_1hz:inst|Add0~12                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~12                  ; |dot_ma4|divi_1hz:inst|Add0~13                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~14                  ; |dot_ma4|divi_1hz:inst|Add0~14                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~14                  ; |dot_ma4|divi_1hz:inst|Add0~15                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~16                  ; |dot_ma4|divi_1hz:inst|Add0~16                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~16                  ; |dot_ma4|divi_1hz:inst|Add0~17                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~18                  ; |dot_ma4|divi_1hz:inst|Add0~18                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~18                  ; |dot_ma4|divi_1hz:inst|Add0~19                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~20                  ; |dot_ma4|divi_1hz:inst|Add0~20                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~20                  ; |dot_ma4|divi_1hz:inst|Add0~21                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~22                  ; |dot_ma4|divi_1hz:inst|Add0~22                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~22                  ; |dot_ma4|divi_1hz:inst|Add0~23                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~24                  ; |dot_ma4|divi_1hz:inst|Add0~24                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~24                  ; |dot_ma4|divi_1hz:inst|Add0~25                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~26                  ; |dot_ma4|divi_1hz:inst|Add0~26                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~26                  ; |dot_ma4|divi_1hz:inst|Add0~27                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~28                  ; |dot_ma4|divi_1hz:inst|Add0~28                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~28                  ; |dot_ma4|divi_1hz:inst|Add0~29                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~30                  ; |dot_ma4|divi_1hz:inst|Add0~30                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~30                  ; |dot_ma4|divi_1hz:inst|Add0~31                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~32                  ; |dot_ma4|divi_1hz:inst|Add0~32                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~32                  ; |dot_ma4|divi_1hz:inst|Add0~33                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~34                  ; |dot_ma4|divi_1hz:inst|Add0~34                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~34                  ; |dot_ma4|divi_1hz:inst|Add0~35                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~36                  ; |dot_ma4|divi_1hz:inst|Add0~36                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~36                  ; |dot_ma4|divi_1hz:inst|Add0~37                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~38                  ; |dot_ma4|divi_1hz:inst|Add0~38                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~38                  ; |dot_ma4|divi_1hz:inst|Add0~39                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~40                  ; |dot_ma4|divi_1hz:inst|Add0~40                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~40                  ; |dot_ma4|divi_1hz:inst|Add0~41                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~42                  ; |dot_ma4|divi_1hz:inst|Add0~42                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~42                  ; |dot_ma4|divi_1hz:inst|Add0~43                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~44                  ; |dot_ma4|divi_1hz:inst|Add0~44                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~44                  ; |dot_ma4|divi_1hz:inst|Add0~45                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~46                  ; |dot_ma4|divi_1hz:inst|Add0~46                  ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col[3]               ; |dot_ma4|dot_matrix4:inst2|col[3]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col[2]               ; |dot_ma4|dot_matrix4:inst2|col[2]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col[1]               ; |dot_ma4|dot_matrix4:inst2|col[1]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col[0]               ; |dot_ma4|dot_matrix4:inst2|col[0]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|Decoder0~0           ; |dot_ma4|dot_matrix4:inst2|Decoder0~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~55               ; |dot_ma4|dot_matrix4:inst2|row~55               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~56               ; |dot_ma4|dot_matrix4:inst2|row~56               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s1     ; |dot_ma4|dot_matrix4:inst2|current_state.s1     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s3     ; |dot_ma4|dot_matrix4:inst2|current_state.s3     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s2     ; |dot_ma4|dot_matrix4:inst2|current_state.s2     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~0          ; |dot_ma4|dot_matrix4:inst2|Selector1~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Add0~0               ; |dot_ma4|dot_matrix4:inst2|Add0~0               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector0~0          ; |dot_ma4|dot_matrix4:inst2|Selector0~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~57               ; |dot_ma4|dot_matrix4:inst2|row~57               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~1          ; |dot_ma4|dot_matrix4:inst2|Selector1~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~2          ; |dot_ma4|dot_matrix4:inst2|Selector1~2          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector0~1          ; |dot_ma4|dot_matrix4:inst2|Selector0~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector0            ; |dot_ma4|dot_matrix4:inst2|Selector0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr11~0           ; |dot_ma4|dot_matrix4:inst2|WideOr11~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr20~0           ; |dot_ma4|dot_matrix4:inst2|WideOr20~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr20~1           ; |dot_ma4|dot_matrix4:inst2|WideOr20~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~58               ; |dot_ma4|dot_matrix4:inst2|row~58               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~3          ; |dot_ma4|dot_matrix4:inst2|Selector1~3          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1            ; |dot_ma4|dot_matrix4:inst2|Selector1            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~59               ; |dot_ma4|dot_matrix4:inst2|row~59               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr21~0           ; |dot_ma4|dot_matrix4:inst2|WideOr21~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr21~1           ; |dot_ma4|dot_matrix4:inst2|WideOr21~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector2~0          ; |dot_ma4|dot_matrix4:inst2|Selector2~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector2            ; |dot_ma4|dot_matrix4:inst2|Selector2            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~60               ; |dot_ma4|dot_matrix4:inst2|row~60               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr0~0            ; |dot_ma4|dot_matrix4:inst2|WideOr0~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s0     ; |dot_ma4|dot_matrix4:inst2|current_state.s0     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~4         ; |dot_ma4|dot_matrix4:inst2|Selector15~4         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~3          ; |dot_ma4|dot_matrix4:inst2|Selector3~3          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~61               ; |dot_ma4|dot_matrix4:inst2|row~61               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~5         ; |dot_ma4|dot_matrix4:inst2|Selector15~5         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~4          ; |dot_ma4|dot_matrix4:inst2|Selector3~4          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr1~0            ; |dot_ma4|dot_matrix4:inst2|WideOr1~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr12~0           ; |dot_ma4|dot_matrix4:inst2|WideOr12~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~2          ; |dot_ma4|dot_matrix4:inst2|Selector4~2          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~62               ; |dot_ma4|dot_matrix4:inst2|row~62               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~3          ; |dot_ma4|dot_matrix4:inst2|Selector4~3          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~4          ; |dot_ma4|dot_matrix4:inst2|Selector4~4          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr2~0            ; |dot_ma4|dot_matrix4:inst2|WideOr2~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr13~0           ; |dot_ma4|dot_matrix4:inst2|WideOr13~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr13~1           ; |dot_ma4|dot_matrix4:inst2|WideOr13~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~63               ; |dot_ma4|dot_matrix4:inst2|row~63               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~64               ; |dot_ma4|dot_matrix4:inst2|row~64               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr22~0           ; |dot_ma4|dot_matrix4:inst2|WideOr22~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr22~1           ; |dot_ma4|dot_matrix4:inst2|WideOr22~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector5~1          ; |dot_ma4|dot_matrix4:inst2|Selector5~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector5            ; |dot_ma4|dot_matrix4:inst2|Selector5            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr3~0            ; |dot_ma4|dot_matrix4:inst2|WideOr3~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~65               ; |dot_ma4|dot_matrix4:inst2|row~65               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~66               ; |dot_ma4|dot_matrix4:inst2|row~66               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector6~0          ; |dot_ma4|dot_matrix4:inst2|Selector6~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector6~1          ; |dot_ma4|dot_matrix4:inst2|Selector6~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector6            ; |dot_ma4|dot_matrix4:inst2|Selector6            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr14~0           ; |dot_ma4|dot_matrix4:inst2|WideOr14~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr4~0            ; |dot_ma4|dot_matrix4:inst2|WideOr4~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr4~1            ; |dot_ma4|dot_matrix4:inst2|WideOr4~1            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~67               ; |dot_ma4|dot_matrix4:inst2|row~67               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~68               ; |dot_ma4|dot_matrix4:inst2|row~68               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector7~0          ; |dot_ma4|dot_matrix4:inst2|Selector7~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector7            ; |dot_ma4|dot_matrix4:inst2|Selector7            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr5~0            ; |dot_ma4|dot_matrix4:inst2|WideOr5~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector8~0          ; |dot_ma4|dot_matrix4:inst2|Selector8~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr15~0           ; |dot_ma4|dot_matrix4:inst2|WideOr15~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr6~0            ; |dot_ma4|dot_matrix4:inst2|WideOr6~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr6~1            ; |dot_ma4|dot_matrix4:inst2|WideOr6~1            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr23~0           ; |dot_ma4|dot_matrix4:inst2|WideOr23~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr23~1           ; |dot_ma4|dot_matrix4:inst2|WideOr23~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr19~0           ; |dot_ma4|dot_matrix4:inst2|WideOr19~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr19~1           ; |dot_ma4|dot_matrix4:inst2|WideOr19~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector9~0          ; |dot_ma4|dot_matrix4:inst2|Selector9~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector9            ; |dot_ma4|dot_matrix4:inst2|Selector9            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector10~0         ; |dot_ma4|dot_matrix4:inst2|Selector10~0         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr7~0            ; |dot_ma4|dot_matrix4:inst2|WideOr7~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr24~0           ; |dot_ma4|dot_matrix4:inst2|WideOr24~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector10~1         ; |dot_ma4|dot_matrix4:inst2|Selector10~1         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr16~0           ; |dot_ma4|dot_matrix4:inst2|WideOr16~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector10~2         ; |dot_ma4|dot_matrix4:inst2|Selector10~2         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr8~0            ; |dot_ma4|dot_matrix4:inst2|WideOr8~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~70               ; |dot_ma4|dot_matrix4:inst2|row~70               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~71               ; |dot_ma4|dot_matrix4:inst2|row~71               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr25~0           ; |dot_ma4|dot_matrix4:inst2|WideOr25~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~72               ; |dot_ma4|dot_matrix4:inst2|row~72               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector11~0         ; |dot_ma4|dot_matrix4:inst2|Selector11~0         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector11           ; |dot_ma4|dot_matrix4:inst2|Selector11           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr9~0            ; |dot_ma4|dot_matrix4:inst2|WideOr9~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~73               ; |dot_ma4|dot_matrix4:inst2|row~73               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector12           ; |dot_ma4|dot_matrix4:inst2|Selector12           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr17~0           ; |dot_ma4|dot_matrix4:inst2|WideOr17~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector13~0         ; |dot_ma4|dot_matrix4:inst2|Selector13~0         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector13~1         ; |dot_ma4|dot_matrix4:inst2|Selector13~1         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr18~0           ; |dot_ma4|dot_matrix4:inst2|WideOr18~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr10~0           ; |dot_ma4|dot_matrix4:inst2|WideOr10~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr10~1           ; |dot_ma4|dot_matrix4:inst2|WideOr10~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector14~1         ; |dot_ma4|dot_matrix4:inst2|Selector14~1         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector14           ; |dot_ma4|dot_matrix4:inst2|Selector14           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~6         ; |dot_ma4|dot_matrix4:inst2|Selector15~6         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~7         ; |dot_ma4|dot_matrix4:inst2|Selector15~7         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~8         ; |dot_ma4|dot_matrix4:inst2|Selector15~8         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col~10               ; |dot_ma4|dot_matrix4:inst2|col~10               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|divi_500hz            ; |dot_ma4|divi_500hz:inst1|divi_500hz            ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col~11               ; |dot_ma4|dot_matrix4:inst2|col~11               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s1        ; |dot_ma4|dot_matrix4:inst2|next_state.s1        ; q                ;
+; |dot_ma4|divi_1hz:inst|divi_1hz                 ; |dot_ma4|divi_1hz:inst|divi_1hz                 ; q                ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s3        ; |dot_ma4|dot_matrix4:inst2|next_state.s3        ; q                ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s2        ; |dot_ma4|dot_matrix4:inst2|next_state.s2        ; q                ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s0        ; |dot_ma4|dot_matrix4:inst2|next_state.s0        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[8]         ; |dot_ma4|divi_500hz:inst1|count_reg1[8]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[6]         ; |dot_ma4|divi_500hz:inst1|count_reg1[6]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[7]         ; |dot_ma4|divi_500hz:inst1|count_reg1[7]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~1              ; |dot_ma4|divi_500hz:inst1|Equal0~1              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[9]         ; |dot_ma4|divi_500hz:inst1|count_reg1[9]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[10]        ; |dot_ma4|divi_500hz:inst1|count_reg1[10]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[11]        ; |dot_ma4|divi_500hz:inst1|count_reg1[11]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~2              ; |dot_ma4|divi_500hz:inst1|Equal0~2              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[14]        ; |dot_ma4|divi_500hz:inst1|count_reg1[14]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[15]        ; |dot_ma4|divi_500hz:inst1|count_reg1[15]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[12]        ; |dot_ma4|divi_500hz:inst1|count_reg1[12]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[13]        ; |dot_ma4|divi_500hz:inst1|count_reg1[13]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~3              ; |dot_ma4|divi_500hz:inst1|Equal0~3              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Equal0~4              ; |dot_ma4|divi_500hz:inst1|Equal0~4              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[16]        ; |dot_ma4|divi_500hz:inst1|count_reg1[16]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[17]        ; |dot_ma4|divi_500hz:inst1|count_reg1[17]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[18]        ; |dot_ma4|divi_500hz:inst1|count_reg1[18]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[19]        ; |dot_ma4|divi_500hz:inst1|count_reg1[19]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~5              ; |dot_ma4|divi_500hz:inst1|Equal0~5              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[20]        ; |dot_ma4|divi_500hz:inst1|count_reg1[20]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[21]        ; |dot_ma4|divi_500hz:inst1|count_reg1[21]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[22]        ; |dot_ma4|divi_500hz:inst1|count_reg1[22]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[23]        ; |dot_ma4|divi_500hz:inst1|count_reg1[23]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~6              ; |dot_ma4|divi_500hz:inst1|Equal0~6              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[24]        ; |dot_ma4|divi_500hz:inst1|count_reg1[24]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~7              ; |dot_ma4|divi_500hz:inst1|Equal0~7              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|divi_500hz~0          ; |dot_ma4|divi_500hz:inst1|divi_500hz~0          ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[11]           ; |dot_ma4|divi_1hz:inst|count_reg1[11]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[9]            ; |dot_ma4|divi_1hz:inst|count_reg1[9]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[12]           ; |dot_ma4|divi_1hz:inst|count_reg1[12]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[10]           ; |dot_ma4|divi_1hz:inst|count_reg1[10]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~0                 ; |dot_ma4|divi_1hz:inst|Equal0~0                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[8]            ; |dot_ma4|divi_1hz:inst|count_reg1[8]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[7]            ; |dot_ma4|divi_1hz:inst|count_reg1[7]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[6]            ; |dot_ma4|divi_1hz:inst|count_reg1[6]            ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~1                 ; |dot_ma4|divi_1hz:inst|Equal0~1                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[14]           ; |dot_ma4|divi_1hz:inst|count_reg1[14]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[13]           ; |dot_ma4|divi_1hz:inst|count_reg1[13]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[15]           ; |dot_ma4|divi_1hz:inst|count_reg1[15]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~2                 ; |dot_ma4|divi_1hz:inst|Equal0~2                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|Equal0~3                 ; |dot_ma4|divi_1hz:inst|Equal0~3                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[18]           ; |dot_ma4|divi_1hz:inst|count_reg1[18]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[19]           ; |dot_ma4|divi_1hz:inst|count_reg1[19]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[16]           ; |dot_ma4|divi_1hz:inst|count_reg1[16]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[17]           ; |dot_ma4|divi_1hz:inst|count_reg1[17]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~4                 ; |dot_ma4|divi_1hz:inst|Equal0~4                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[22]           ; |dot_ma4|divi_1hz:inst|count_reg1[22]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[20]           ; |dot_ma4|divi_1hz:inst|count_reg1[20]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[21]           ; |dot_ma4|divi_1hz:inst|count_reg1[21]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[23]           ; |dot_ma4|divi_1hz:inst|count_reg1[23]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~5                 ; |dot_ma4|divi_1hz:inst|Equal0~5                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[24]           ; |dot_ma4|divi_1hz:inst|count_reg1[24]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~6                 ; |dot_ma4|divi_1hz:inst|Equal0~6                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|divi_1hz~0               ; |dot_ma4|divi_1hz:inst|divi_1hz~0               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~25         ; |dot_ma4|divi_500hz:inst1|count_reg1~25         ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~27         ; |dot_ma4|divi_500hz:inst1|count_reg1~27         ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~29         ; |dot_ma4|divi_500hz:inst1|count_reg1~29         ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~30         ; |dot_ma4|divi_500hz:inst1|count_reg1~30         ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~25            ; |dot_ma4|divi_1hz:inst|count_reg1~25            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~26            ; |dot_ma4|divi_1hz:inst|count_reg1~26            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~27            ; |dot_ma4|divi_1hz:inst|count_reg1~27            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~29            ; |dot_ma4|divi_1hz:inst|count_reg1~29            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~30            ; |dot_ma4|divi_1hz:inst|count_reg1~30            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~31            ; |dot_ma4|divi_1hz:inst|count_reg1~31            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~32            ; |dot_ma4|divi_1hz:inst|count_reg1~32            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~5          ; |dot_ma4|dot_matrix4:inst2|Selector3~5          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~5          ; |dot_ma4|dot_matrix4:inst2|Selector4~5          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col~13               ; |dot_ma4|dot_matrix4:inst2|col~13               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s1~1      ; |dot_ma4|dot_matrix4:inst2|next_state.s1~1      ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s0~1      ; |dot_ma4|dot_matrix4:inst2|next_state.s0~1      ; combout          ;
+; |dot_ma4|col[3]~output                          ; |dot_ma4|col[3]~output                          ; o                ;
+; |dot_ma4|col[3]                                 ; |dot_ma4|col[3]                                 ; padout           ;
+; |dot_ma4|col[2]~output                          ; |dot_ma4|col[2]~output                          ; o                ;
+; |dot_ma4|col[2]                                 ; |dot_ma4|col[2]                                 ; padout           ;
+; |dot_ma4|col[1]~output                          ; |dot_ma4|col[1]~output                          ; o                ;
+; |dot_ma4|col[1]                                 ; |dot_ma4|col[1]                                 ; padout           ;
+; |dot_ma4|col[0]~output                          ; |dot_ma4|col[0]~output                          ; o                ;
+; |dot_ma4|col[0]                                 ; |dot_ma4|col[0]                                 ; padout           ;
+; |dot_ma4|row[15]~output                         ; |dot_ma4|row[15]~output                         ; o                ;
+; |dot_ma4|row[15]                                ; |dot_ma4|row[15]                                ; padout           ;
+; |dot_ma4|row[14]~output                         ; |dot_ma4|row[14]~output                         ; o                ;
+; |dot_ma4|row[14]                                ; |dot_ma4|row[14]                                ; padout           ;
+; |dot_ma4|row[13]~output                         ; |dot_ma4|row[13]~output                         ; o                ;
+; |dot_ma4|row[13]                                ; |dot_ma4|row[13]                                ; padout           ;
+; |dot_ma4|row[12]~output                         ; |dot_ma4|row[12]~output                         ; o                ;
+; |dot_ma4|row[12]                                ; |dot_ma4|row[12]                                ; padout           ;
+; |dot_ma4|row[11]~output                         ; |dot_ma4|row[11]~output                         ; o                ;
+; |dot_ma4|row[11]                                ; |dot_ma4|row[11]                                ; padout           ;
+; |dot_ma4|row[10]~output                         ; |dot_ma4|row[10]~output                         ; o                ;
+; |dot_ma4|row[10]                                ; |dot_ma4|row[10]                                ; padout           ;
+; |dot_ma4|row[9]~output                          ; |dot_ma4|row[9]~output                          ; o                ;
+; |dot_ma4|row[9]                                 ; |dot_ma4|row[9]                                 ; padout           ;
+; |dot_ma4|row[8]~output                          ; |dot_ma4|row[8]~output                          ; o                ;
+; |dot_ma4|row[8]                                 ; |dot_ma4|row[8]                                 ; padout           ;
+; |dot_ma4|row[6]~output                          ; |dot_ma4|row[6]~output                          ; o                ;
+; |dot_ma4|row[6]                                 ; |dot_ma4|row[6]                                 ; padout           ;
+; |dot_ma4|row[5]~output                          ; |dot_ma4|row[5]~output                          ; o                ;
+; |dot_ma4|row[5]                                 ; |dot_ma4|row[5]                                 ; padout           ;
+; |dot_ma4|row[4]~output                          ; |dot_ma4|row[4]~output                          ; o                ;
+; |dot_ma4|row[4]                                 ; |dot_ma4|row[4]                                 ; padout           ;
+; |dot_ma4|row[3]~output                          ; |dot_ma4|row[3]~output                          ; o                ;
+; |dot_ma4|row[3]                                 ; |dot_ma4|row[3]                                 ; padout           ;
+; |dot_ma4|row[2]~output                          ; |dot_ma4|row[2]~output                          ; o                ;
+; |dot_ma4|row[2]                                 ; |dot_ma4|row[2]                                 ; padout           ;
+; |dot_ma4|row[1]~output                          ; |dot_ma4|row[1]~output                          ; o                ;
+; |dot_ma4|row[1]                                 ; |dot_ma4|row[1]                                 ; padout           ;
+; |dot_ma4|row[0]~output                          ; |dot_ma4|row[0]~output                          ; o                ;
+; |dot_ma4|row[0]                                 ; |dot_ma4|row[0]                                 ; padout           ;
+; |dot_ma4|divi_1hz:inst|divi_1hz~clkctrl         ; |dot_ma4|divi_1hz:inst|divi_1hz~clkctrl         ; outclk           ;
+; |dot_ma4|divi_500hz:inst1|divi_500hz~clkctrl    ; |dot_ma4|divi_500hz:inst1|divi_500hz~clkctrl    ; outclk           ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s2~feeder ; |dot_ma4|dot_matrix4:inst2|next_state.s2~feeder ; combout          ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |dot_ma4|divi_500hz:inst1|Add0~12               ; |dot_ma4|divi_500hz:inst1|Add0~13               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~14               ; |dot_ma4|divi_500hz:inst1|Add0~14               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~14               ; |dot_ma4|divi_500hz:inst1|Add0~15               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~16               ; |dot_ma4|divi_500hz:inst1|Add0~16               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~16               ; |dot_ma4|divi_500hz:inst1|Add0~17               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~18               ; |dot_ma4|divi_500hz:inst1|Add0~18               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~18               ; |dot_ma4|divi_500hz:inst1|Add0~19               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~20               ; |dot_ma4|divi_500hz:inst1|Add0~20               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~20               ; |dot_ma4|divi_500hz:inst1|Add0~21               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~22               ; |dot_ma4|divi_500hz:inst1|Add0~22               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~22               ; |dot_ma4|divi_500hz:inst1|Add0~23               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~24               ; |dot_ma4|divi_500hz:inst1|Add0~24               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~24               ; |dot_ma4|divi_500hz:inst1|Add0~25               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~26               ; |dot_ma4|divi_500hz:inst1|Add0~26               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~26               ; |dot_ma4|divi_500hz:inst1|Add0~27               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~28               ; |dot_ma4|divi_500hz:inst1|Add0~28               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~28               ; |dot_ma4|divi_500hz:inst1|Add0~29               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~30               ; |dot_ma4|divi_500hz:inst1|Add0~30               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~30               ; |dot_ma4|divi_500hz:inst1|Add0~31               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~32               ; |dot_ma4|divi_500hz:inst1|Add0~32               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~32               ; |dot_ma4|divi_500hz:inst1|Add0~33               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~34               ; |dot_ma4|divi_500hz:inst1|Add0~34               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~34               ; |dot_ma4|divi_500hz:inst1|Add0~35               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~36               ; |dot_ma4|divi_500hz:inst1|Add0~36               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~36               ; |dot_ma4|divi_500hz:inst1|Add0~37               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~38               ; |dot_ma4|divi_500hz:inst1|Add0~38               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~38               ; |dot_ma4|divi_500hz:inst1|Add0~39               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~40               ; |dot_ma4|divi_500hz:inst1|Add0~40               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~40               ; |dot_ma4|divi_500hz:inst1|Add0~41               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~42               ; |dot_ma4|divi_500hz:inst1|Add0~42               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~42               ; |dot_ma4|divi_500hz:inst1|Add0~43               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~44               ; |dot_ma4|divi_500hz:inst1|Add0~44               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~44               ; |dot_ma4|divi_500hz:inst1|Add0~45               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~46               ; |dot_ma4|divi_500hz:inst1|Add0~46               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Add0~46               ; |dot_ma4|divi_500hz:inst1|Add0~47               ; cout             ;
+; |dot_ma4|divi_500hz:inst1|Add0~48               ; |dot_ma4|divi_500hz:inst1|Add0~48               ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~10                  ; |dot_ma4|divi_1hz:inst|Add0~11                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~12                  ; |dot_ma4|divi_1hz:inst|Add0~12                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~12                  ; |dot_ma4|divi_1hz:inst|Add0~13                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~14                  ; |dot_ma4|divi_1hz:inst|Add0~14                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~14                  ; |dot_ma4|divi_1hz:inst|Add0~15                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~16                  ; |dot_ma4|divi_1hz:inst|Add0~16                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~16                  ; |dot_ma4|divi_1hz:inst|Add0~17                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~18                  ; |dot_ma4|divi_1hz:inst|Add0~18                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~18                  ; |dot_ma4|divi_1hz:inst|Add0~19                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~20                  ; |dot_ma4|divi_1hz:inst|Add0~20                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~20                  ; |dot_ma4|divi_1hz:inst|Add0~21                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~22                  ; |dot_ma4|divi_1hz:inst|Add0~22                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~22                  ; |dot_ma4|divi_1hz:inst|Add0~23                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~24                  ; |dot_ma4|divi_1hz:inst|Add0~24                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~24                  ; |dot_ma4|divi_1hz:inst|Add0~25                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~26                  ; |dot_ma4|divi_1hz:inst|Add0~26                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~26                  ; |dot_ma4|divi_1hz:inst|Add0~27                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~28                  ; |dot_ma4|divi_1hz:inst|Add0~28                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~28                  ; |dot_ma4|divi_1hz:inst|Add0~29                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~30                  ; |dot_ma4|divi_1hz:inst|Add0~30                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~30                  ; |dot_ma4|divi_1hz:inst|Add0~31                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~32                  ; |dot_ma4|divi_1hz:inst|Add0~32                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~32                  ; |dot_ma4|divi_1hz:inst|Add0~33                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~34                  ; |dot_ma4|divi_1hz:inst|Add0~34                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~34                  ; |dot_ma4|divi_1hz:inst|Add0~35                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~36                  ; |dot_ma4|divi_1hz:inst|Add0~36                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~36                  ; |dot_ma4|divi_1hz:inst|Add0~37                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~38                  ; |dot_ma4|divi_1hz:inst|Add0~38                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~38                  ; |dot_ma4|divi_1hz:inst|Add0~39                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~40                  ; |dot_ma4|divi_1hz:inst|Add0~40                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~40                  ; |dot_ma4|divi_1hz:inst|Add0~41                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~42                  ; |dot_ma4|divi_1hz:inst|Add0~42                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~42                  ; |dot_ma4|divi_1hz:inst|Add0~43                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~44                  ; |dot_ma4|divi_1hz:inst|Add0~44                  ; combout          ;
+; |dot_ma4|divi_1hz:inst|Add0~44                  ; |dot_ma4|divi_1hz:inst|Add0~45                  ; cout             ;
+; |dot_ma4|divi_1hz:inst|Add0~46                  ; |dot_ma4|divi_1hz:inst|Add0~46                  ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col[3]               ; |dot_ma4|dot_matrix4:inst2|col[3]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col[2]               ; |dot_ma4|dot_matrix4:inst2|col[2]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col[1]               ; |dot_ma4|dot_matrix4:inst2|col[1]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col[0]               ; |dot_ma4|dot_matrix4:inst2|col[0]               ; q                ;
+; |dot_ma4|dot_matrix4:inst2|Decoder0~0           ; |dot_ma4|dot_matrix4:inst2|Decoder0~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~55               ; |dot_ma4|dot_matrix4:inst2|row~55               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~56               ; |dot_ma4|dot_matrix4:inst2|row~56               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s1     ; |dot_ma4|dot_matrix4:inst2|current_state.s1     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s3     ; |dot_ma4|dot_matrix4:inst2|current_state.s3     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s2     ; |dot_ma4|dot_matrix4:inst2|current_state.s2     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~0          ; |dot_ma4|dot_matrix4:inst2|Selector1~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Add0~0               ; |dot_ma4|dot_matrix4:inst2|Add0~0               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector0~0          ; |dot_ma4|dot_matrix4:inst2|Selector0~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~57               ; |dot_ma4|dot_matrix4:inst2|row~57               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~1          ; |dot_ma4|dot_matrix4:inst2|Selector1~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~2          ; |dot_ma4|dot_matrix4:inst2|Selector1~2          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector0~1          ; |dot_ma4|dot_matrix4:inst2|Selector0~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector0            ; |dot_ma4|dot_matrix4:inst2|Selector0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr11~0           ; |dot_ma4|dot_matrix4:inst2|WideOr11~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr20~0           ; |dot_ma4|dot_matrix4:inst2|WideOr20~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr20~1           ; |dot_ma4|dot_matrix4:inst2|WideOr20~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~58               ; |dot_ma4|dot_matrix4:inst2|row~58               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1~3          ; |dot_ma4|dot_matrix4:inst2|Selector1~3          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector1            ; |dot_ma4|dot_matrix4:inst2|Selector1            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~59               ; |dot_ma4|dot_matrix4:inst2|row~59               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr21~0           ; |dot_ma4|dot_matrix4:inst2|WideOr21~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr21~1           ; |dot_ma4|dot_matrix4:inst2|WideOr21~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector2~0          ; |dot_ma4|dot_matrix4:inst2|Selector2~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector2            ; |dot_ma4|dot_matrix4:inst2|Selector2            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~60               ; |dot_ma4|dot_matrix4:inst2|row~60               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr0~0            ; |dot_ma4|dot_matrix4:inst2|WideOr0~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|current_state.s0     ; |dot_ma4|dot_matrix4:inst2|current_state.s0     ; q                ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~4         ; |dot_ma4|dot_matrix4:inst2|Selector15~4         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~3          ; |dot_ma4|dot_matrix4:inst2|Selector3~3          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~61               ; |dot_ma4|dot_matrix4:inst2|row~61               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~5         ; |dot_ma4|dot_matrix4:inst2|Selector15~5         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~4          ; |dot_ma4|dot_matrix4:inst2|Selector3~4          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr1~0            ; |dot_ma4|dot_matrix4:inst2|WideOr1~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr12~0           ; |dot_ma4|dot_matrix4:inst2|WideOr12~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~2          ; |dot_ma4|dot_matrix4:inst2|Selector4~2          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~62               ; |dot_ma4|dot_matrix4:inst2|row~62               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~3          ; |dot_ma4|dot_matrix4:inst2|Selector4~3          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~4          ; |dot_ma4|dot_matrix4:inst2|Selector4~4          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr2~0            ; |dot_ma4|dot_matrix4:inst2|WideOr2~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr13~0           ; |dot_ma4|dot_matrix4:inst2|WideOr13~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr13~1           ; |dot_ma4|dot_matrix4:inst2|WideOr13~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~63               ; |dot_ma4|dot_matrix4:inst2|row~63               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~64               ; |dot_ma4|dot_matrix4:inst2|row~64               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr22~0           ; |dot_ma4|dot_matrix4:inst2|WideOr22~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr22~1           ; |dot_ma4|dot_matrix4:inst2|WideOr22~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector5~1          ; |dot_ma4|dot_matrix4:inst2|Selector5~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector5            ; |dot_ma4|dot_matrix4:inst2|Selector5            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr3~0            ; |dot_ma4|dot_matrix4:inst2|WideOr3~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~65               ; |dot_ma4|dot_matrix4:inst2|row~65               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~66               ; |dot_ma4|dot_matrix4:inst2|row~66               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector6~0          ; |dot_ma4|dot_matrix4:inst2|Selector6~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector6~1          ; |dot_ma4|dot_matrix4:inst2|Selector6~1          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector6            ; |dot_ma4|dot_matrix4:inst2|Selector6            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr14~0           ; |dot_ma4|dot_matrix4:inst2|WideOr14~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr4~0            ; |dot_ma4|dot_matrix4:inst2|WideOr4~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr4~1            ; |dot_ma4|dot_matrix4:inst2|WideOr4~1            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~67               ; |dot_ma4|dot_matrix4:inst2|row~67               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~68               ; |dot_ma4|dot_matrix4:inst2|row~68               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector7~0          ; |dot_ma4|dot_matrix4:inst2|Selector7~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector7            ; |dot_ma4|dot_matrix4:inst2|Selector7            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr5~0            ; |dot_ma4|dot_matrix4:inst2|WideOr5~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector8~0          ; |dot_ma4|dot_matrix4:inst2|Selector8~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr15~0           ; |dot_ma4|dot_matrix4:inst2|WideOr15~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr6~0            ; |dot_ma4|dot_matrix4:inst2|WideOr6~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr6~1            ; |dot_ma4|dot_matrix4:inst2|WideOr6~1            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr23~0           ; |dot_ma4|dot_matrix4:inst2|WideOr23~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr23~1           ; |dot_ma4|dot_matrix4:inst2|WideOr23~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr19~0           ; |dot_ma4|dot_matrix4:inst2|WideOr19~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr19~1           ; |dot_ma4|dot_matrix4:inst2|WideOr19~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector9~0          ; |dot_ma4|dot_matrix4:inst2|Selector9~0          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector9            ; |dot_ma4|dot_matrix4:inst2|Selector9            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector10~0         ; |dot_ma4|dot_matrix4:inst2|Selector10~0         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr7~0            ; |dot_ma4|dot_matrix4:inst2|WideOr7~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr24~0           ; |dot_ma4|dot_matrix4:inst2|WideOr24~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector10~1         ; |dot_ma4|dot_matrix4:inst2|Selector10~1         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr16~0           ; |dot_ma4|dot_matrix4:inst2|WideOr16~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector10~2         ; |dot_ma4|dot_matrix4:inst2|Selector10~2         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr8~0            ; |dot_ma4|dot_matrix4:inst2|WideOr8~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~70               ; |dot_ma4|dot_matrix4:inst2|row~70               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~71               ; |dot_ma4|dot_matrix4:inst2|row~71               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr25~0           ; |dot_ma4|dot_matrix4:inst2|WideOr25~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~72               ; |dot_ma4|dot_matrix4:inst2|row~72               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector11~0         ; |dot_ma4|dot_matrix4:inst2|Selector11~0         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector11           ; |dot_ma4|dot_matrix4:inst2|Selector11           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr9~0            ; |dot_ma4|dot_matrix4:inst2|WideOr9~0            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|row~73               ; |dot_ma4|dot_matrix4:inst2|row~73               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector12           ; |dot_ma4|dot_matrix4:inst2|Selector12           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr17~0           ; |dot_ma4|dot_matrix4:inst2|WideOr17~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector13~0         ; |dot_ma4|dot_matrix4:inst2|Selector13~0         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector13~1         ; |dot_ma4|dot_matrix4:inst2|Selector13~1         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr18~0           ; |dot_ma4|dot_matrix4:inst2|WideOr18~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr10~0           ; |dot_ma4|dot_matrix4:inst2|WideOr10~0           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|WideOr10~1           ; |dot_ma4|dot_matrix4:inst2|WideOr10~1           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector14~1         ; |dot_ma4|dot_matrix4:inst2|Selector14~1         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector14           ; |dot_ma4|dot_matrix4:inst2|Selector14           ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~6         ; |dot_ma4|dot_matrix4:inst2|Selector15~6         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~7         ; |dot_ma4|dot_matrix4:inst2|Selector15~7         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector15~8         ; |dot_ma4|dot_matrix4:inst2|Selector15~8         ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col~10               ; |dot_ma4|dot_matrix4:inst2|col~10               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|divi_500hz            ; |dot_ma4|divi_500hz:inst1|divi_500hz            ; q                ;
+; |dot_ma4|dot_matrix4:inst2|col~11               ; |dot_ma4|dot_matrix4:inst2|col~11               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s1        ; |dot_ma4|dot_matrix4:inst2|next_state.s1        ; q                ;
+; |dot_ma4|divi_1hz:inst|divi_1hz                 ; |dot_ma4|divi_1hz:inst|divi_1hz                 ; q                ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s3        ; |dot_ma4|dot_matrix4:inst2|next_state.s3        ; q                ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s2        ; |dot_ma4|dot_matrix4:inst2|next_state.s2        ; q                ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s0        ; |dot_ma4|dot_matrix4:inst2|next_state.s0        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[8]         ; |dot_ma4|divi_500hz:inst1|count_reg1[8]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[6]         ; |dot_ma4|divi_500hz:inst1|count_reg1[6]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[7]         ; |dot_ma4|divi_500hz:inst1|count_reg1[7]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[5]         ; |dot_ma4|divi_500hz:inst1|count_reg1[5]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~1              ; |dot_ma4|divi_500hz:inst1|Equal0~1              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[9]         ; |dot_ma4|divi_500hz:inst1|count_reg1[9]         ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[10]        ; |dot_ma4|divi_500hz:inst1|count_reg1[10]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[11]        ; |dot_ma4|divi_500hz:inst1|count_reg1[11]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~2              ; |dot_ma4|divi_500hz:inst1|Equal0~2              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[14]        ; |dot_ma4|divi_500hz:inst1|count_reg1[14]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[15]        ; |dot_ma4|divi_500hz:inst1|count_reg1[15]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[12]        ; |dot_ma4|divi_500hz:inst1|count_reg1[12]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[13]        ; |dot_ma4|divi_500hz:inst1|count_reg1[13]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~3              ; |dot_ma4|divi_500hz:inst1|Equal0~3              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|Equal0~4              ; |dot_ma4|divi_500hz:inst1|Equal0~4              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[16]        ; |dot_ma4|divi_500hz:inst1|count_reg1[16]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[17]        ; |dot_ma4|divi_500hz:inst1|count_reg1[17]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[18]        ; |dot_ma4|divi_500hz:inst1|count_reg1[18]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[19]        ; |dot_ma4|divi_500hz:inst1|count_reg1[19]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~5              ; |dot_ma4|divi_500hz:inst1|Equal0~5              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[20]        ; |dot_ma4|divi_500hz:inst1|count_reg1[20]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[21]        ; |dot_ma4|divi_500hz:inst1|count_reg1[21]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[22]        ; |dot_ma4|divi_500hz:inst1|count_reg1[22]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[23]        ; |dot_ma4|divi_500hz:inst1|count_reg1[23]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~6              ; |dot_ma4|divi_500hz:inst1|Equal0~6              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1[24]        ; |dot_ma4|divi_500hz:inst1|count_reg1[24]        ; q                ;
+; |dot_ma4|divi_500hz:inst1|Equal0~7              ; |dot_ma4|divi_500hz:inst1|Equal0~7              ; combout          ;
+; |dot_ma4|divi_500hz:inst1|divi_500hz~0          ; |dot_ma4|divi_500hz:inst1|divi_500hz~0          ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[11]           ; |dot_ma4|divi_1hz:inst|count_reg1[11]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[9]            ; |dot_ma4|divi_1hz:inst|count_reg1[9]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[12]           ; |dot_ma4|divi_1hz:inst|count_reg1[12]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[10]           ; |dot_ma4|divi_1hz:inst|count_reg1[10]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~0                 ; |dot_ma4|divi_1hz:inst|Equal0~0                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[8]            ; |dot_ma4|divi_1hz:inst|count_reg1[8]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[5]            ; |dot_ma4|divi_1hz:inst|count_reg1[5]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[7]            ; |dot_ma4|divi_1hz:inst|count_reg1[7]            ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[6]            ; |dot_ma4|divi_1hz:inst|count_reg1[6]            ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~1                 ; |dot_ma4|divi_1hz:inst|Equal0~1                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[14]           ; |dot_ma4|divi_1hz:inst|count_reg1[14]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[13]           ; |dot_ma4|divi_1hz:inst|count_reg1[13]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[15]           ; |dot_ma4|divi_1hz:inst|count_reg1[15]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~2                 ; |dot_ma4|divi_1hz:inst|Equal0~2                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|Equal0~3                 ; |dot_ma4|divi_1hz:inst|Equal0~3                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[18]           ; |dot_ma4|divi_1hz:inst|count_reg1[18]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[19]           ; |dot_ma4|divi_1hz:inst|count_reg1[19]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[16]           ; |dot_ma4|divi_1hz:inst|count_reg1[16]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[17]           ; |dot_ma4|divi_1hz:inst|count_reg1[17]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~4                 ; |dot_ma4|divi_1hz:inst|Equal0~4                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[22]           ; |dot_ma4|divi_1hz:inst|count_reg1[22]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[20]           ; |dot_ma4|divi_1hz:inst|count_reg1[20]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[21]           ; |dot_ma4|divi_1hz:inst|count_reg1[21]           ; q                ;
+; |dot_ma4|divi_1hz:inst|count_reg1[23]           ; |dot_ma4|divi_1hz:inst|count_reg1[23]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~5                 ; |dot_ma4|divi_1hz:inst|Equal0~5                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1[24]           ; |dot_ma4|divi_1hz:inst|count_reg1[24]           ; q                ;
+; |dot_ma4|divi_1hz:inst|Equal0~6                 ; |dot_ma4|divi_1hz:inst|Equal0~6                 ; combout          ;
+; |dot_ma4|divi_1hz:inst|divi_1hz~0               ; |dot_ma4|divi_1hz:inst|divi_1hz~0               ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~25         ; |dot_ma4|divi_500hz:inst1|count_reg1~25         ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~27         ; |dot_ma4|divi_500hz:inst1|count_reg1~27         ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~29         ; |dot_ma4|divi_500hz:inst1|count_reg1~29         ; combout          ;
+; |dot_ma4|divi_500hz:inst1|count_reg1~30         ; |dot_ma4|divi_500hz:inst1|count_reg1~30         ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~25            ; |dot_ma4|divi_1hz:inst|count_reg1~25            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~26            ; |dot_ma4|divi_1hz:inst|count_reg1~26            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~27            ; |dot_ma4|divi_1hz:inst|count_reg1~27            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~29            ; |dot_ma4|divi_1hz:inst|count_reg1~29            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~30            ; |dot_ma4|divi_1hz:inst|count_reg1~30            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~31            ; |dot_ma4|divi_1hz:inst|count_reg1~31            ; combout          ;
+; |dot_ma4|divi_1hz:inst|count_reg1~32            ; |dot_ma4|divi_1hz:inst|count_reg1~32            ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector3~5          ; |dot_ma4|dot_matrix4:inst2|Selector3~5          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|Selector4~5          ; |dot_ma4|dot_matrix4:inst2|Selector4~5          ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|col~13               ; |dot_ma4|dot_matrix4:inst2|col~13               ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s1~1      ; |dot_ma4|dot_matrix4:inst2|next_state.s1~1      ; combout          ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s0~1      ; |dot_ma4|dot_matrix4:inst2|next_state.s0~1      ; combout          ;
+; |dot_ma4|col[3]~output                          ; |dot_ma4|col[3]~output                          ; o                ;
+; |dot_ma4|col[3]                                 ; |dot_ma4|col[3]                                 ; padout           ;
+; |dot_ma4|col[2]~output                          ; |dot_ma4|col[2]~output                          ; o                ;
+; |dot_ma4|col[2]                                 ; |dot_ma4|col[2]                                 ; padout           ;
+; |dot_ma4|col[1]~output                          ; |dot_ma4|col[1]~output                          ; o                ;
+; |dot_ma4|col[1]                                 ; |dot_ma4|col[1]                                 ; padout           ;
+; |dot_ma4|col[0]~output                          ; |dot_ma4|col[0]~output                          ; o                ;
+; |dot_ma4|col[0]                                 ; |dot_ma4|col[0]                                 ; padout           ;
+; |dot_ma4|row[15]~output                         ; |dot_ma4|row[15]~output                         ; o                ;
+; |dot_ma4|row[15]                                ; |dot_ma4|row[15]                                ; padout           ;
+; |dot_ma4|row[14]~output                         ; |dot_ma4|row[14]~output                         ; o                ;
+; |dot_ma4|row[14]                                ; |dot_ma4|row[14]                                ; padout           ;
+; |dot_ma4|row[13]~output                         ; |dot_ma4|row[13]~output                         ; o                ;
+; |dot_ma4|row[13]                                ; |dot_ma4|row[13]                                ; padout           ;
+; |dot_ma4|row[12]~output                         ; |dot_ma4|row[12]~output                         ; o                ;
+; |dot_ma4|row[12]                                ; |dot_ma4|row[12]                                ; padout           ;
+; |dot_ma4|row[11]~output                         ; |dot_ma4|row[11]~output                         ; o                ;
+; |dot_ma4|row[11]                                ; |dot_ma4|row[11]                                ; padout           ;
+; |dot_ma4|row[10]~output                         ; |dot_ma4|row[10]~output                         ; o                ;
+; |dot_ma4|row[10]                                ; |dot_ma4|row[10]                                ; padout           ;
+; |dot_ma4|row[9]~output                          ; |dot_ma4|row[9]~output                          ; o                ;
+; |dot_ma4|row[9]                                 ; |dot_ma4|row[9]                                 ; padout           ;
+; |dot_ma4|row[8]~output                          ; |dot_ma4|row[8]~output                          ; o                ;
+; |dot_ma4|row[8]                                 ; |dot_ma4|row[8]                                 ; padout           ;
+; |dot_ma4|row[6]~output                          ; |dot_ma4|row[6]~output                          ; o                ;
+; |dot_ma4|row[6]                                 ; |dot_ma4|row[6]                                 ; padout           ;
+; |dot_ma4|row[5]~output                          ; |dot_ma4|row[5]~output                          ; o                ;
+; |dot_ma4|row[5]                                 ; |dot_ma4|row[5]                                 ; padout           ;
+; |dot_ma4|row[4]~output                          ; |dot_ma4|row[4]~output                          ; o                ;
+; |dot_ma4|row[4]                                 ; |dot_ma4|row[4]                                 ; padout           ;
+; |dot_ma4|row[3]~output                          ; |dot_ma4|row[3]~output                          ; o                ;
+; |dot_ma4|row[3]                                 ; |dot_ma4|row[3]                                 ; padout           ;
+; |dot_ma4|row[2]~output                          ; |dot_ma4|row[2]~output                          ; o                ;
+; |dot_ma4|row[2]                                 ; |dot_ma4|row[2]                                 ; padout           ;
+; |dot_ma4|row[1]~output                          ; |dot_ma4|row[1]~output                          ; o                ;
+; |dot_ma4|row[1]                                 ; |dot_ma4|row[1]                                 ; padout           ;
+; |dot_ma4|row[0]~output                          ; |dot_ma4|row[0]~output                          ; o                ;
+; |dot_ma4|row[0]                                 ; |dot_ma4|row[0]                                 ; padout           ;
+; |dot_ma4|divi_1hz:inst|divi_1hz~clkctrl         ; |dot_ma4|divi_1hz:inst|divi_1hz~clkctrl         ; outclk           ;
+; |dot_ma4|divi_500hz:inst1|divi_500hz~clkctrl    ; |dot_ma4|divi_500hz:inst1|divi_500hz~clkctrl    ; outclk           ;
+; |dot_ma4|dot_matrix4:inst2|next_state.s2~feeder ; |dot_ma4|dot_matrix4:inst2|next_state.s2~feeder ; combout          ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Thu Dec 10 23:16:34 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off dot_matrix4 -c dot_matrix4
+Info: Using vector source file "E:/EDA/dot_ma41/dot_matrix4.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      13.20 %
+Info: Number of transitions in simulation is 997
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Thu Dec 10 23:16:34 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,64 @@
+                                                                              
+// Verilog Test Bench template for design : Simple_Communication_Sys
+// 
+// Simulation tool : ModelSim (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module Simple_Communication_Sys_vlg_tst();
+// constants                                           
+// general purpose registers
+
+// test vector input registers
+reg clock;
+reg reset;
+localparam clk_period=31250; 
+// wires                                               
+wire Clk_V1;
+wire Clk_V2;
+wire Clk_V3;
+wire [4:0]  M_seq_REG;
+wire V1;
+wire [7:0]  V2;
+wire [7:0]  V3;
+
+
+// assign statements (if any)                          
+Simple_Communication_Sys i1 (
+// port map - connection between master ports and signals/registers   
+	.Clk_V1(Clk_V1),
+	.Clk_V2(Clk_V2),
+	.Clk_V3(Clk_V3),
+	.clock(clock),
+	.M_seq_REG(M_seq_REG),
+	.reset(reset),
+	.V1(V1),
+	.V2(V2),
+	.V3(V3)
+	
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+    reset=1;
+	 #(clk_period);
+	 reset=0;
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+   clock=1;
+  #(clk_period/2);
+  clock=0;
+  #(clk_period/2);                                                   
+                                     
+// --> end                                             
+end                                                    
+endmodule
+

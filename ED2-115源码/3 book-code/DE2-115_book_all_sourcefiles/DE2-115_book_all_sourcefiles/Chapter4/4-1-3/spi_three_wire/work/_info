@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\10.0
+vspi_three_wire
+Z1 !s100 2fKhkdZ3>aEJYSca43]Xb1
+Z2 IZ4]10XRo?Djfkd^V_IT]T1
+Z3 V9S@z4kG9:;Y>9@IJ1@Rm`2
+Z4 dD:\book_ftp\Chapter4\4-1-3\spi_three_wire
+Z5 w1310096765
+Z6 8D:/book_ftp/Chapter4/4-1-3/spi_three_wire/spi_three_wire.v
+Z7 FD:/book_ftp/Chapter4/4-1-3/spi_three_wire/spi_three_wire.v
+L0 23
+Z8 OV;L;6.6c;45
+r1
+31
+Z9 !s102 -nocovercells
+Z10 o-work work -nocovercells -O0
+!s85 0
+!s101 -O0
+vspi_three_wire_test
+Z11 !s100 T;Ob3nS0b5G1`4e4R=UY61
+Z12 I93mE>ASYC[RAFH<foE>7`2
+Z13 VZ:7e4zT=[`TLMl<X5M3zN0
+R4
+R5
+8D:/book_ftp/Chapter4/4-1-3/spi_three_wire/spi_three_wire_test.v
+FD:/book_ftp/Chapter4/4-1-3/spi_three_wire/spi_three_wire_test.v
+L0 4
+R8
+r1
+!s85 0
+31
+!s101 -O0
+R9
+R10

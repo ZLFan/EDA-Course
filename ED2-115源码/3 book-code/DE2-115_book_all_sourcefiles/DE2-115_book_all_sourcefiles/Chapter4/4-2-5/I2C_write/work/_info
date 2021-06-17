@@ -1,0 +1,56 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\10.0
+vI2C_control
+!s100 Hm0_ZVIB;IJ^A35Z8zbo23
+ILjh6E0F=Zn3dag903MbGU0
+VQj>TD[L@N:DP302=G1NRo2
+Z0 dD:\DE2_115\lyp\I2C_write
+w1313657690
+8D:/DE2_115/lyp/I2C_control/I2C_control.v
+FD:/DE2_115/lyp/I2C_control/I2C_control.v
+L0 22
+Z1 OV;L;6.5e;42
+r1
+!s85 0
+31
+!s101 -O0
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -O0
+n@i2@c_control
+vI2C_write
+I^nk1En]=dgeJzeiBzX=fF0
+Va:kS?mQcUSC>j_iDC[EN=3
+Z4 dD:\DE2_115\lyp\I2C_write
+w1313639018
+8D:/DE2_115/lyp/I2C_write/I2C_write.v
+FD:/DE2_115/lyp/I2C_write/I2C_write.v
+L0 2
+R1
+r1
+31
+R2
+R3
+n@i2@c_write
+!s100 N6oX7;3_eD>cK3<9jK^af2
+!s85 0
+!s101 -O0
+vI2C_write_test
+IdEQ@8]c4hR17=;J<>N@NX0
+VGAed^OX^KL478]b:hf:fW3
+R4
+w1313660570
+8D:/DE2_115/lyp/I2C_write/I2C_write_test.v
+FD:/DE2_115/lyp/I2C_write/I2C_write_test.v
+L0 2
+R1
+r1
+31
+R2
+R3
+n@i2@c_write_test
+!s100 Mb1`:oB>I[?bJ]97`0;ll1
+!s85 0
+!s101 -O0

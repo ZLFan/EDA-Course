@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+   }
+   element jtag_bridge_clk
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element jtag_to_avalon_bridge
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element mem_clk
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element pipeline_bridge
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element pipeline_bridge.s0
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="FIFO" />
+ <parameter name="deviceFamily" value="CYCLONEIII" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="true" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="maxAdditionalLatency" value="2" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="1" />
+ <parameter name="timeStamp" value="1290047129002" />
+ <interface
+   name="jtag_bridge_clk"
+   internal="jtag_bridge_clk.clk_in"
+   type="clock"
+   dir="end" />
+ <interface
+   name="jtag_bridge_reset"
+   internal="jtag_bridge_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface name="mem_clk" internal="mem_clk.clk_in" type="clock" dir="end" />
+ <interface
+   name="mem_reset"
+   internal="mem_clk.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface name="master" internal="pipeline_bridge.m0" type="avalon" dir="start" />
+ <interface
+   name="jtag_to_avalon_bridge_master_reset"
+   internal="jtag_to_avalon_bridge.master_reset"
+   type="reset"
+   dir="start" />
+ <module
+   kind="altera_jtag_avalon_master"
+   version="10.1"
+   enabled="1"
+   name="jtag_to_avalon_bridge">
+  <parameter name="USE_PLI" value="0" />
+  <parameter name="PLI_PORT" value="50000" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone III" />
+ </module>
+ <module kind="clock_source" version="10.1" enabled="1" name="jtag_bridge_clk">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module kind="clock_source" version="10.1" enabled="1" name="mem_clk">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   kind="altera_avalon_mm_bridge"
+   version="10.1"
+   enabled="1"
+   name="pipeline_bridge">
+  <parameter name="DATA_WIDTH" value="32" />
+  <parameter name="SYMBOL_WIDTH" value="8" />
+  <parameter name="ADDRESS_WIDTH" value="16" />
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="BURSTCOUNT_WIDTH" value="3" />
+  <parameter name="BURSTCOUNT_UNITS" value="SYMBOLS" />
+  <parameter name="MAX_PENDING_RESPONSES" value="1" />
+  <parameter name="PIPELINE_COMMAND" value="1" />
+  <parameter name="PIPELINE_RESPONSE" value="1" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+ </module>
+ <connection
+   kind="clock"
+   version="10.1"
+   start="jtag_bridge_clk.clk"
+   end="jtag_to_avalon_bridge.clk" />
+ <connection
+   kind="avalon"
+   version="10.1"
+   start="jtag_to_avalon_bridge.master"
+   end="pipeline_bridge.s0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="clock"
+   version="10.1"
+   start="mem_clk.clk"
+   end="pipeline_bridge.clk" />
+</system>

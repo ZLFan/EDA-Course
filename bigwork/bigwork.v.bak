@@ -1,0 +1,36 @@
+module led(
+            clk,  //50M时钟输入
+            reset,    //复位信号，高电平复位
+            led      //led输出
+);
+
+input clk;
+input reset;
+output[17:0] led;//一共18个灯
+
+wire clk,reset;
+
+reg [17:0]led,led_temp; 
+reg [40:0] count;    //分频计数器,系统时钟频率过高，需要计数的方式来产生延时，使led保持状态一段时间
+
+always @ (posedge clk or negedge reset)
+    begin
+     if(!reset)//复位
+       begin
+           led_temp<=17'b1111111111111111;
+           count<=41'h0;
+       end
+      else
+        begin
+          count<=count+1;
+          if(count==41'hff_ff_ff)    //判别counter数值，做输出处理
+            begin
+             led_temp<=led_temp>>1;
+             led<=~led_temp;
+             count<=0;
+             if(led_temp==17'b0000000000000001)
+               led_temp<=17'b1000000000000000;
+            end  
+        end
+    end
+endmodule

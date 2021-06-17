@@ -1,0 +1,7 @@
+|fsm7
+cq[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+cq[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+cq[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+cq[3] <= <GND>
+
+

@@ -1,0 +1,1423 @@
+TimeQuest Timing Analyzer report for dds
+Fri Nov 20 21:25:03 2020
+Quartus II 32-bit Version 12.0 Build 232 07/05/2012 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Minimum Pulse Width: 'clk'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'clk'
+ 26. Fast Model Hold: 'clk'
+ 27. Fast Model Minimum Pulse Width: 'clk'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Progagation Delay
+ 40. Minimum Progagation Delay
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                    ;
++--------------------+-----------------------------------------------------------------+
+; Quartus II Version ; Version 12.0 Build 232 07/05/2012 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; dds                                                             ;
+; Device Family      ; Cyclone II                                                      ;
+; Device Name        ; EP2C35F672C6                                                    ;
+; Timing Models      ; Final                                                           ;
+; Delay Model        ; Combined                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                     ;
++--------------------+-----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                   ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 527.98 MHz ; 420.17 MHz      ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -0.894 ; -13.590       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.540 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -28.380               ;
++-------+--------+-----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                             ;
++--------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node              ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.894 ; phase_acc_r[0]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.930      ;
+; -0.886 ; phase_acc_r[0]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.922      ;
+; -0.823 ; phase_acc_r[0]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.859      ;
+; -0.815 ; phase_acc_r[0]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.851      ;
+; -0.779 ; phase_acc_r[1]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.815      ;
+; -0.773 ; phase_acc_r[1]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.809      ;
+; -0.752 ; phase_acc_r[0]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.788      ;
+; -0.751 ; phase_acc_r[2]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.787      ;
+; -0.745 ; phase_acc_r[2]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.781      ;
+; -0.744 ; phase_acc_r[0]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.780      ;
+; -0.708 ; phase_acc_r[1]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.744      ;
+; -0.702 ; phase_acc_r[1]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.738      ;
+; -0.681 ; phase_acc_r[0]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.717      ;
+; -0.680 ; phase_acc_r[2]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.716      ;
+; -0.674 ; phase_acc_r[2]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.710      ;
+; -0.673 ; phase_acc_r[0]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.709      ;
+; -0.637 ; phase_acc_r[1]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.673      ;
+; -0.636 ; phase_acc_r[3]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.672      ;
+; -0.632 ; phase_acc_r[3]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.668      ;
+; -0.631 ; phase_acc_r[1]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.667      ;
+; -0.615 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.651      ;
+; -0.614 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.650      ;
+; -0.614 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.650      ;
+; -0.610 ; phase_acc_r[0]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.646      ;
+; -0.609 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.645      ;
+; -0.609 ; phase_acc_r[2]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.645      ;
+; -0.608 ; phase_acc_r[4]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.644      ;
+; -0.604 ; phase_acc_r[4]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.640      ;
+; -0.603 ; phase_acc_r[2]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.639      ;
+; -0.602 ; phase_acc_r[0]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.638      ;
+; -0.566 ; phase_acc_r[1]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.602      ;
+; -0.565 ; phase_acc_r[3]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.601      ;
+; -0.561 ; phase_acc_r[3]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.597      ;
+; -0.560 ; phase_acc_r[1]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.596      ;
+; -0.539 ; phase_acc_r[0]         ; mem_addr_r[2]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.575      ;
+; -0.538 ; phase_acc_r[2]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.574      ;
+; -0.537 ; phase_acc_r[4]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.573      ;
+; -0.533 ; phase_acc_r[4]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.569      ;
+; -0.532 ; phase_acc_r[2]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.568      ;
+; -0.531 ; phase_acc_r[0]         ; phase_acc_r[2]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.567      ;
+; -0.501 ; phase_acc_r[5]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.537      ;
+; -0.498 ; phase_acc_r[5]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.534      ;
+; -0.495 ; phase_acc_r[1]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.531      ;
+; -0.494 ; phase_acc_r[3]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.530      ;
+; -0.490 ; phase_acc_r[3]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.526      ;
+; -0.489 ; phase_acc_r[1]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.525      ;
+; -0.468 ; phase_acc_r[0]         ; mem_addr_r[1]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.504      ;
+; -0.467 ; phase_acc_r[2]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.503      ;
+; -0.466 ; phase_acc_r[4]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.502      ;
+; -0.462 ; phase_acc_r[4]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.498      ;
+; -0.461 ; phase_acc_r[2]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.497      ;
+; -0.460 ; phase_acc_r[0]         ; phase_acc_r[1]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.496      ;
+; -0.430 ; phase_acc_r[5]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.466      ;
+; -0.429 ; phase_acc_r[6]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.465      ;
+; -0.427 ; phase_acc_r[6]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.463      ;
+; -0.427 ; phase_acc_r[5]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.463      ;
+; -0.424 ; phase_acc_r[1]         ; mem_addr_r[2]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.460      ;
+; -0.423 ; phase_acc_r[3]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.459      ;
+; -0.419 ; phase_acc_r[3]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.455      ;
+; -0.418 ; phase_acc_r[1]         ; phase_acc_r[2]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.454      ;
+; -0.336 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.372      ;
+; -0.332 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.368      ;
+; -0.329 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.365      ;
+; -0.288 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.324      ;
+; -0.286 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.322      ;
+; -0.286 ; mem_addr_r[6]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.322      ;
+; -0.283 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.319      ;
+; -0.264 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.300      ;
+; -0.255 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.291      ;
+; -0.255 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.291      ;
+; -0.253 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.289      ;
+; -0.245 ; mem_addr_r[7]          ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.281      ;
+; -0.081 ; phase_acc_r[0]         ; mem_addr_r[0]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.117      ;
+; -0.081 ; phase_acc_r[2]         ; mem_addr_r[2]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.117      ;
+; -0.080 ; phase_acc_r[4]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.116      ;
+; -0.076 ; phase_acc_r[4]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.112      ;
+; -0.075 ; phase_acc_r[2]         ; phase_acc_r[2]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.111      ;
+; -0.073 ; phase_acc_r[0]         ; phase_acc_r[0]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.109      ;
+; -0.060 ; mem_addr_r[2]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.096      ;
+; -0.058 ; mem_addr_r[3]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.094      ;
+; -0.057 ; mem_addr_r[0]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.093      ;
+; -0.046 ; phase_acc_r[6]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.082      ;
+; -0.044 ; phase_acc_r[6]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.080      ;
+; -0.043 ; phase_acc_r[5]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.079      ;
+; -0.040 ; phase_acc_r[5]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.076      ;
+; -0.037 ; phase_acc_r[1]         ; mem_addr_r[1]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.073      ;
+; -0.036 ; phase_acc_r[3]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 1.072      ;
+; -0.032 ; phase_acc_r[3]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.068      ;
+; -0.031 ; phase_acc_r[1]         ; phase_acc_r[1]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 1.067      ;
+; 0.019  ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 1.000        ; 0.000      ; 1.017      ;
+; 0.058  ; mem_addr_r[1]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.978      ;
+; 0.059  ; mem_addr_r[4]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.977      ;
+; 0.061  ; mem_addr_r[5]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.975      ;
+; 0.098  ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.938      ;
+; 0.099  ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.937      ;
+; 0.101  ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|en_r[1]                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.935      ;
+; 0.229  ; phase_acc_r[7]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.807      ;
+; 0.230  ; phase_acc_r[7]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.806      ;
++--------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                             ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.540 ; phase_acc_r[7]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.806      ;
+; 0.541 ; phase_acc_r[7]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.807      ;
+; 0.669 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|en_r[1]                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.935      ;
+; 0.671 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.937      ;
+; 0.672 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.938      ;
+; 0.709 ; mem_addr_r[5]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.975      ;
+; 0.711 ; mem_addr_r[4]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.977      ;
+; 0.712 ; mem_addr_r[1]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.978      ;
+; 0.751 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.017      ;
+; 0.801 ; phase_acc_r[1]         ; phase_acc_r[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.067      ;
+; 0.802 ; phase_acc_r[3]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.806 ; phase_acc_r[3]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.072      ;
+; 0.807 ; phase_acc_r[1]         ; mem_addr_r[1]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.073      ;
+; 0.810 ; phase_acc_r[5]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.076      ;
+; 0.813 ; phase_acc_r[5]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.079      ;
+; 0.814 ; phase_acc_r[6]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.080      ;
+; 0.816 ; phase_acc_r[6]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.082      ;
+; 0.827 ; mem_addr_r[0]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.093      ;
+; 0.828 ; mem_addr_r[3]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.094      ;
+; 0.830 ; mem_addr_r[2]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.096      ;
+; 0.843 ; phase_acc_r[0]         ; phase_acc_r[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.109      ;
+; 0.845 ; phase_acc_r[2]         ; phase_acc_r[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.111      ;
+; 0.846 ; phase_acc_r[4]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.112      ;
+; 0.850 ; phase_acc_r[4]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.116      ;
+; 0.851 ; phase_acc_r[0]         ; mem_addr_r[0]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.117      ;
+; 0.851 ; phase_acc_r[2]         ; mem_addr_r[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.117      ;
+; 1.015 ; mem_addr_r[7]          ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.281      ;
+; 1.023 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.289      ;
+; 1.025 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.291      ;
+; 1.025 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.291      ;
+; 1.034 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.300      ;
+; 1.053 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.319      ;
+; 1.056 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.322      ;
+; 1.056 ; mem_addr_r[6]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.322      ;
+; 1.058 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.324      ;
+; 1.099 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.365      ;
+; 1.102 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.368      ;
+; 1.106 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.372      ;
+; 1.188 ; phase_acc_r[1]         ; phase_acc_r[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.454      ;
+; 1.189 ; phase_acc_r[3]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.455      ;
+; 1.193 ; phase_acc_r[3]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.459      ;
+; 1.194 ; phase_acc_r[1]         ; mem_addr_r[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.460      ;
+; 1.197 ; phase_acc_r[6]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.463      ;
+; 1.197 ; phase_acc_r[5]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.463      ;
+; 1.199 ; phase_acc_r[6]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.465      ;
+; 1.200 ; phase_acc_r[5]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.466      ;
+; 1.230 ; phase_acc_r[0]         ; phase_acc_r[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.496      ;
+; 1.231 ; phase_acc_r[2]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.497      ;
+; 1.232 ; phase_acc_r[4]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.498      ;
+; 1.236 ; phase_acc_r[4]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.502      ;
+; 1.237 ; phase_acc_r[2]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.503      ;
+; 1.238 ; phase_acc_r[0]         ; mem_addr_r[1]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.504      ;
+; 1.259 ; phase_acc_r[1]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.525      ;
+; 1.260 ; phase_acc_r[3]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.526      ;
+; 1.264 ; phase_acc_r[3]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.530      ;
+; 1.265 ; phase_acc_r[1]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
+; 1.268 ; phase_acc_r[5]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.534      ;
+; 1.271 ; phase_acc_r[5]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.537      ;
+; 1.301 ; phase_acc_r[0]         ; phase_acc_r[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.567      ;
+; 1.302 ; phase_acc_r[2]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.568      ;
+; 1.303 ; phase_acc_r[4]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.569      ;
+; 1.307 ; phase_acc_r[4]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.573      ;
+; 1.308 ; phase_acc_r[2]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.574      ;
+; 1.309 ; phase_acc_r[0]         ; mem_addr_r[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.575      ;
+; 1.330 ; phase_acc_r[1]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.596      ;
+; 1.331 ; phase_acc_r[3]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.597      ;
+; 1.335 ; phase_acc_r[3]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.601      ;
+; 1.336 ; phase_acc_r[1]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.602      ;
+; 1.372 ; phase_acc_r[0]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.638      ;
+; 1.373 ; phase_acc_r[2]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.639      ;
+; 1.374 ; phase_acc_r[4]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.640      ;
+; 1.378 ; phase_acc_r[4]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.644      ;
+; 1.379 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.645      ;
+; 1.379 ; phase_acc_r[2]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.645      ;
+; 1.380 ; phase_acc_r[0]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.646      ;
+; 1.384 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.384 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.385 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.651      ;
+; 1.401 ; phase_acc_r[1]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.667      ;
+; 1.402 ; phase_acc_r[3]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.668      ;
+; 1.406 ; phase_acc_r[3]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.672      ;
+; 1.407 ; phase_acc_r[1]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.673      ;
+; 1.443 ; phase_acc_r[0]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.709      ;
+; 1.444 ; phase_acc_r[2]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.710      ;
+; 1.450 ; phase_acc_r[2]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.716      ;
+; 1.451 ; phase_acc_r[0]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.717      ;
+; 1.472 ; phase_acc_r[1]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.738      ;
+; 1.478 ; phase_acc_r[1]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.744      ;
+; 1.514 ; phase_acc_r[0]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.780      ;
+; 1.515 ; phase_acc_r[2]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.781      ;
+; 1.521 ; phase_acc_r[2]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.787      ;
+; 1.522 ; phase_acc_r[0]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.788      ;
+; 1.543 ; phase_acc_r[1]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.809      ;
+; 1.549 ; phase_acc_r[1]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.815      ;
+; 1.585 ; phase_acc_r[0]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.851      ;
+; 1.593 ; phase_acc_r[0]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.859      ;
+; 1.656 ; phase_acc_r[0]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.922      ;
+; 1.664 ; phase_acc_r[0]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 1.930      ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                                        ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                      ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|en_r[0]                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|en_r[0]                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|en_r[1]                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|en_r[1]                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[0]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[0]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[1]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[1]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[2]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[2]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[3]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[3]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[4]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[4]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[5]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[5]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[6]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[6]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[7]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[7]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[0]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[0]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[1]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[1]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[2]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[2]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[3]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[3]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[4]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[4]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[5]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[5]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[6]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[6]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[7]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[7]                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[0]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[0]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[1]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[1]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[2]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[2]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[3]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[3]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[4]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[4]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[5]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[5]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[6]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[6]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[7]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[7]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[0]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[0]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[1]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[1]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[2]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[2]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[3]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[3]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[4]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[4]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[5]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[5]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[6]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[6]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[7]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[7]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|en_r[0]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; u_mem_wave|en_r[0]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|en_r[1]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; u_mem_wave|en_r[1]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|u_square_ROM|q[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; u_mem_wave|u_square_ROM|q[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|u_tri_ROM|q[0]|clk               ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; f_word[*]      ; clk        ; 4.584 ; 4.584 ; Rise       ; clk             ;
+;  f_word[0]     ; clk        ; 4.246 ; 4.246 ; Rise       ; clk             ;
+;  f_word[1]     ; clk        ; 4.449 ; 4.449 ; Rise       ; clk             ;
+;  f_word[2]     ; clk        ; 4.584 ; 4.584 ; Rise       ; clk             ;
+;  f_word[3]     ; clk        ; 4.052 ; 4.052 ; Rise       ; clk             ;
+;  f_word[4]     ; clk        ; 4.193 ; 4.193 ; Rise       ; clk             ;
+;  f_word[5]     ; clk        ; 4.159 ; 4.159 ; Rise       ; clk             ;
+;  f_word[6]     ; clk        ; 4.312 ; 4.312 ; Rise       ; clk             ;
+;  f_word[7]     ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+; phase_init[*]  ; clk        ; 4.683 ; 4.683 ; Rise       ; clk             ;
+;  phase_init[0] ; clk        ; 4.682 ; 4.682 ; Rise       ; clk             ;
+;  phase_init[1] ; clk        ; 4.683 ; 4.683 ; Rise       ; clk             ;
+;  phase_init[2] ; clk        ; 4.023 ; 4.023 ; Rise       ; clk             ;
+;  phase_init[3] ; clk        ; 4.523 ; 4.523 ; Rise       ; clk             ;
+;  phase_init[4] ; clk        ; 4.443 ; 4.443 ; Rise       ; clk             ;
+;  phase_init[5] ; clk        ; 3.897 ; 3.897 ; Rise       ; clk             ;
+;  phase_init[6] ; clk        ; 4.287 ; 4.287 ; Rise       ; clk             ;
+;  phase_init[7] ; clk        ; 3.898 ; 3.898 ; Rise       ; clk             ;
+; wave_en        ; clk        ; 3.405 ; 3.405 ; Rise       ; clk             ;
+; wave_sel[*]    ; clk        ; 4.076 ; 4.076 ; Rise       ; clk             ;
+;  wave_sel[0]   ; clk        ; 4.076 ; 4.076 ; Rise       ; clk             ;
+;  wave_sel[1]   ; clk        ; 3.880 ; 3.880 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; f_word[*]      ; clk        ; -3.207 ; -3.207 ; Rise       ; clk             ;
+;  f_word[0]     ; clk        ; -3.207 ; -3.207 ; Rise       ; clk             ;
+;  f_word[1]     ; clk        ; -3.478 ; -3.478 ; Rise       ; clk             ;
+;  f_word[2]     ; clk        ; -3.687 ; -3.687 ; Rise       ; clk             ;
+;  f_word[3]     ; clk        ; -3.223 ; -3.223 ; Rise       ; clk             ;
+;  f_word[4]     ; clk        ; -3.438 ; -3.438 ; Rise       ; clk             ;
+;  f_word[5]     ; clk        ; -3.472 ; -3.472 ; Rise       ; clk             ;
+;  f_word[6]     ; clk        ; -3.696 ; -3.696 ; Rise       ; clk             ;
+;  f_word[7]     ; clk        ; -3.433 ; -3.433 ; Rise       ; clk             ;
+; phase_init[*]  ; clk        ; -3.126 ; -3.126 ; Rise       ; clk             ;
+;  phase_init[0] ; clk        ; -3.643 ; -3.643 ; Rise       ; clk             ;
+;  phase_init[1] ; clk        ; -3.712 ; -3.712 ; Rise       ; clk             ;
+;  phase_init[2] ; clk        ; -3.126 ; -3.126 ; Rise       ; clk             ;
+;  phase_init[3] ; clk        ; -3.694 ; -3.694 ; Rise       ; clk             ;
+;  phase_init[4] ; clk        ; -3.688 ; -3.688 ; Rise       ; clk             ;
+;  phase_init[5] ; clk        ; -3.210 ; -3.210 ; Rise       ; clk             ;
+;  phase_init[6] ; clk        ; -3.671 ; -3.671 ; Rise       ; clk             ;
+;  phase_init[7] ; clk        ; -3.668 ; -3.668 ; Rise       ; clk             ;
+; wave_en        ; clk        ; -2.922 ; -2.922 ; Rise       ; clk             ;
+; wave_sel[*]    ; clk        ; -2.937 ; -2.937 ; Rise       ; clk             ;
+;  wave_sel[0]   ; clk        ; -3.132 ; -3.132 ; Rise       ; clk             ;
+;  wave_sel[1]   ; clk        ; -2.937 ; -2.937 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dout[*]   ; clk        ; 9.340 ; 9.340 ; Rise       ; clk             ;
+;  dout[0]  ; clk        ; 8.038 ; 8.038 ; Rise       ; clk             ;
+;  dout[1]  ; clk        ; 8.360 ; 8.360 ; Rise       ; clk             ;
+;  dout[2]  ; clk        ; 9.340 ; 9.340 ; Rise       ; clk             ;
+;  dout[3]  ; clk        ; 8.690 ; 8.690 ; Rise       ; clk             ;
+;  dout[4]  ; clk        ; 8.423 ; 8.423 ; Rise       ; clk             ;
+;  dout[5]  ; clk        ; 8.687 ; 8.687 ; Rise       ; clk             ;
+;  dout[6]  ; clk        ; 8.886 ; 8.886 ; Rise       ; clk             ;
+;  dout[7]  ; clk        ; 8.428 ; 8.428 ; Rise       ; clk             ;
+;  dout[8]  ; clk        ; 8.268 ; 8.268 ; Rise       ; clk             ;
+;  dout[9]  ; clk        ; 8.259 ; 8.259 ; Rise       ; clk             ;
+; dout_en   ; clk        ; 6.748 ; 6.748 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dout[*]   ; clk        ; 7.083 ; 7.083 ; Rise       ; clk             ;
+;  dout[0]  ; clk        ; 7.209 ; 7.209 ; Rise       ; clk             ;
+;  dout[1]  ; clk        ; 7.150 ; 7.150 ; Rise       ; clk             ;
+;  dout[2]  ; clk        ; 7.753 ; 7.753 ; Rise       ; clk             ;
+;  dout[3]  ; clk        ; 8.003 ; 8.003 ; Rise       ; clk             ;
+;  dout[4]  ; clk        ; 7.761 ; 7.761 ; Rise       ; clk             ;
+;  dout[5]  ; clk        ; 7.999 ; 7.999 ; Rise       ; clk             ;
+;  dout[6]  ; clk        ; 8.015 ; 8.015 ; Rise       ; clk             ;
+;  dout[7]  ; clk        ; 8.068 ; 8.068 ; Rise       ; clk             ;
+;  dout[8]  ; clk        ; 7.719 ; 7.719 ; Rise       ; clk             ;
+;  dout[9]  ; clk        ; 7.083 ; 7.083 ; Rise       ; clk             ;
+; dout_en   ; clk        ; 6.748 ; 6.748 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; wave_amp[0] ; dout[0]     ; 6.195 ; 6.157 ; 6.157 ; 6.195 ;
+; wave_amp[0] ; dout[1]     ; 6.364 ; 6.364 ; 6.364 ; 6.364 ;
+; wave_amp[0] ; dout[2]     ; 6.363 ; 6.363 ; 6.363 ; 6.363 ;
+; wave_amp[0] ; dout[3]     ; 6.566 ; 6.566 ; 6.566 ; 6.566 ;
+; wave_amp[0] ; dout[4]     ; 6.367 ; 6.367 ; 6.367 ; 6.367 ;
+; wave_amp[0] ; dout[5]     ; 6.582 ; 6.582 ; 6.582 ; 6.582 ;
+; wave_amp[0] ; dout[6]     ; 6.867 ; 6.867 ; 6.867 ; 6.867 ;
+; wave_amp[0] ; dout[7]     ; 6.258 ; 6.386 ; 6.386 ; 6.258 ;
+; wave_amp[0] ; dout[8]     ; 6.249 ; 6.249 ; 6.249 ; 6.249 ;
+; wave_amp[0] ; dout[9]     ;       ; 5.248 ; 5.248 ;       ;
+; wave_amp[1] ; dout[0]     ; 6.437 ; 6.428 ; 6.428 ; 6.437 ;
+; wave_amp[1] ; dout[1]     ; 5.471 ; 6.131 ; 6.131 ; 5.471 ;
+; wave_amp[1] ; dout[2]     ; 5.796 ; 7.378 ; 7.378 ; 5.796 ;
+; wave_amp[1] ; dout[3]     ; 6.733 ; 6.041 ; 6.041 ; 6.733 ;
+; wave_amp[1] ; dout[4]     ; 6.466 ; 5.799 ; 5.799 ; 6.466 ;
+; wave_amp[1] ; dout[5]     ; 6.042 ; 6.725 ; 6.725 ; 6.042 ;
+; wave_amp[1] ; dout[6]     ; 6.058 ; 6.736 ; 6.736 ; 6.058 ;
+; wave_amp[1] ; dout[7]     ; 6.427 ; 6.657 ; 6.657 ; 6.427 ;
+; wave_amp[1] ; dout[8]     ;       ; 5.703 ; 5.703 ;       ;
+; wave_amp[1] ; dout[9]     ;       ; 6.297 ; 6.297 ;       ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; wave_amp[0] ; dout[0]     ; 6.195 ; 6.157 ; 6.157 ; 6.195 ;
+; wave_amp[0] ; dout[1]     ; 6.364 ; 6.364 ; 6.364 ; 6.364 ;
+; wave_amp[0] ; dout[2]     ; 6.322 ; 6.322 ; 6.322 ; 6.322 ;
+; wave_amp[0] ; dout[3]     ; 6.445 ; 6.445 ; 6.445 ; 6.445 ;
+; wave_amp[0] ; dout[4]     ; 6.325 ; 6.325 ; 6.325 ; 6.325 ;
+; wave_amp[0] ; dout[5]     ; 6.435 ; 6.435 ; 6.435 ; 6.435 ;
+; wave_amp[0] ; dout[6]     ; 6.589 ; 6.589 ; 6.589 ; 6.589 ;
+; wave_amp[0] ; dout[7]     ; 6.258 ; 6.258 ; 6.258 ; 6.258 ;
+; wave_amp[0] ; dout[8]     ; 6.249 ; 6.249 ; 6.249 ; 6.249 ;
+; wave_amp[0] ; dout[9]     ;       ; 5.248 ; 5.248 ;       ;
+; wave_amp[1] ; dout[0]     ; 6.437 ; 6.428 ; 6.428 ; 6.437 ;
+; wave_amp[1] ; dout[1]     ; 5.471 ; 6.131 ; 6.131 ; 5.471 ;
+; wave_amp[1] ; dout[2]     ; 5.796 ; 7.378 ; 7.378 ; 5.796 ;
+; wave_amp[1] ; dout[3]     ; 6.733 ; 6.041 ; 6.041 ; 6.733 ;
+; wave_amp[1] ; dout[4]     ; 6.466 ; 5.799 ; 5.799 ; 6.466 ;
+; wave_amp[1] ; dout[5]     ; 6.042 ; 6.725 ; 6.725 ; 6.042 ;
+; wave_amp[1] ; dout[6]     ; 6.058 ; 6.736 ; 6.736 ; 6.058 ;
+; wave_amp[1] ; dout[7]     ; 6.427 ; 5.717 ; 5.717 ; 6.427 ;
+; wave_amp[1] ; dout[8]     ;       ; 5.703 ; 5.703 ;       ;
+; wave_amp[1] ; dout[9]     ;       ; 6.297 ; 6.297 ;       ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------+
+; Fast Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.145 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.250 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -28.380               ;
++-------+--------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                            ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.145 ; phase_acc_r[0]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.887      ;
+; 0.154 ; phase_acc_r[0]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.878      ;
+; 0.180 ; phase_acc_r[0]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.852      ;
+; 0.189 ; phase_acc_r[0]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.843      ;
+; 0.199 ; phase_acc_r[1]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.833      ;
+; 0.205 ; phase_acc_r[1]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.827      ;
+; 0.215 ; phase_acc_r[0]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.817      ;
+; 0.216 ; phase_acc_r[2]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.816      ;
+; 0.223 ; phase_acc_r[2]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.809      ;
+; 0.224 ; phase_acc_r[0]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.808      ;
+; 0.234 ; phase_acc_r[1]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.798      ;
+; 0.240 ; phase_acc_r[1]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.792      ;
+; 0.241 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.791      ;
+; 0.241 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.791      ;
+; 0.242 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.790      ;
+; 0.246 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.786      ;
+; 0.250 ; phase_acc_r[0]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.782      ;
+; 0.251 ; phase_acc_r[2]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.781      ;
+; 0.258 ; phase_acc_r[2]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.774      ;
+; 0.259 ; phase_acc_r[0]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.773      ;
+; 0.269 ; phase_acc_r[1]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.763      ;
+; 0.271 ; phase_acc_r[3]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.761      ;
+; 0.275 ; phase_acc_r[3]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.757      ;
+; 0.275 ; phase_acc_r[1]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.757      ;
+; 0.285 ; phase_acc_r[0]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.747      ;
+; 0.286 ; phase_acc_r[2]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.746      ;
+; 0.288 ; phase_acc_r[4]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.744      ;
+; 0.292 ; phase_acc_r[4]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.740      ;
+; 0.293 ; phase_acc_r[2]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.739      ;
+; 0.294 ; phase_acc_r[0]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.738      ;
+; 0.304 ; phase_acc_r[1]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.728      ;
+; 0.306 ; phase_acc_r[3]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.726      ;
+; 0.310 ; phase_acc_r[3]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.722      ;
+; 0.310 ; phase_acc_r[1]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.722      ;
+; 0.320 ; phase_acc_r[0]         ; mem_addr_r[2]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.712      ;
+; 0.321 ; phase_acc_r[2]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.711      ;
+; 0.323 ; phase_acc_r[4]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.709      ;
+; 0.327 ; phase_acc_r[4]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.705      ;
+; 0.328 ; phase_acc_r[2]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.704      ;
+; 0.329 ; phase_acc_r[0]         ; phase_acc_r[2]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.703      ;
+; 0.337 ; phase_acc_r[5]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.695      ;
+; 0.339 ; phase_acc_r[1]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.693      ;
+; 0.340 ; phase_acc_r[5]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.692      ;
+; 0.341 ; phase_acc_r[3]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.691      ;
+; 0.345 ; phase_acc_r[3]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.687      ;
+; 0.345 ; phase_acc_r[1]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.687      ;
+; 0.355 ; phase_acc_r[0]         ; mem_addr_r[1]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.677      ;
+; 0.356 ; phase_acc_r[2]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.676      ;
+; 0.358 ; phase_acc_r[4]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.674      ;
+; 0.362 ; phase_acc_r[4]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.670      ;
+; 0.363 ; phase_acc_r[2]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.669      ;
+; 0.364 ; phase_acc_r[0]         ; phase_acc_r[1]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.668      ;
+; 0.367 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.665      ;
+; 0.371 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.661      ;
+; 0.372 ; phase_acc_r[6]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.660      ;
+; 0.372 ; phase_acc_r[5]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.660      ;
+; 0.373 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.659      ;
+; 0.374 ; phase_acc_r[1]         ; mem_addr_r[2]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.658      ;
+; 0.375 ; phase_acc_r[6]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.375 ; phase_acc_r[5]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.657      ;
+; 0.376 ; phase_acc_r[3]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.656      ;
+; 0.380 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.652      ;
+; 0.380 ; phase_acc_r[3]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.652      ;
+; 0.380 ; phase_acc_r[1]         ; phase_acc_r[2]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.652      ;
+; 0.384 ; mem_addr_r[7]          ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.648      ;
+; 0.387 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.645      ;
+; 0.389 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.643      ;
+; 0.391 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.641      ;
+; 0.392 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.640      ;
+; 0.392 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.640      ;
+; 0.393 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.639      ;
+; 0.401 ; mem_addr_r[6]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.631      ;
+; 0.495 ; phase_acc_r[0]         ; mem_addr_r[0]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.537      ;
+; 0.496 ; phase_acc_r[2]         ; mem_addr_r[2]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.536      ;
+; 0.498 ; phase_acc_r[4]         ; mem_addr_r[4]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.534      ;
+; 0.502 ; phase_acc_r[4]         ; phase_acc_r[4]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.530      ;
+; 0.503 ; phase_acc_r[2]         ; phase_acc_r[2]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.529      ;
+; 0.504 ; phase_acc_r[0]         ; phase_acc_r[0]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.528      ;
+; 0.510 ; phase_acc_r[6]         ; mem_addr_r[6]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.522      ;
+; 0.510 ; phase_acc_r[5]         ; mem_addr_r[5]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.522      ;
+; 0.512 ; phase_acc_r[1]         ; mem_addr_r[1]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.520      ;
+; 0.512 ; mem_addr_r[2]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.520      ;
+; 0.513 ; phase_acc_r[6]         ; phase_acc_r[6]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.519      ;
+; 0.513 ; phase_acc_r[5]         ; phase_acc_r[5]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.519      ;
+; 0.513 ; mem_addr_r[3]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.519      ;
+; 0.514 ; phase_acc_r[3]         ; mem_addr_r[3]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.518      ;
+; 0.516 ; mem_addr_r[0]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.516      ;
+; 0.517 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.515      ;
+; 0.518 ; phase_acc_r[3]         ; phase_acc_r[3]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.514      ;
+; 0.518 ; phase_acc_r[1]         ; phase_acc_r[1]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.514      ;
+; 0.553 ; mem_addr_r[4]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.479      ;
+; 0.554 ; mem_addr_r[1]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.478      ;
+; 0.554 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.478      ;
+; 0.554 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 0.478      ;
+; 0.555 ; mem_addr_r[5]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 1.000        ; 0.000      ; 0.477      ;
+; 0.567 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|en_r[1]                      ; clk          ; clk         ; 1.000        ; 0.000      ; 0.465      ;
+; 0.629 ; phase_acc_r[7]         ; mem_addr_r[7]                               ; clk          ; clk         ; 1.000        ; 0.000      ; 0.403      ;
+; 0.630 ; phase_acc_r[7]         ; phase_acc_r[7]                              ; clk          ; clk         ; 1.000        ; 0.000      ; 0.402      ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                             ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.250 ; phase_acc_r[7]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.402      ;
+; 0.251 ; phase_acc_r[7]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.403      ;
+; 0.313 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|en_r[1]                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.465      ;
+; 0.325 ; mem_addr_r[5]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.477      ;
+; 0.326 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.478      ;
+; 0.326 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.478      ;
+; 0.326 ; mem_addr_r[1]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.478      ;
+; 0.327 ; mem_addr_r[4]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.479      ;
+; 0.362 ; phase_acc_r[1]         ; phase_acc_r[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.362 ; phase_acc_r[3]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.363 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; mem_addr_r[0]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.366 ; phase_acc_r[3]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.367 ; phase_acc_r[5]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; phase_acc_r[6]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367 ; mem_addr_r[3]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.519      ;
+; 0.368 ; phase_acc_r[1]         ; mem_addr_r[1]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.520      ;
+; 0.368 ; mem_addr_r[2]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.520      ;
+; 0.370 ; phase_acc_r[5]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.522      ;
+; 0.370 ; phase_acc_r[6]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.522      ;
+; 0.376 ; phase_acc_r[0]         ; phase_acc_r[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.528      ;
+; 0.377 ; phase_acc_r[2]         ; phase_acc_r[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
+; 0.378 ; phase_acc_r[4]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.382 ; phase_acc_r[4]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.534      ;
+; 0.384 ; phase_acc_r[2]         ; mem_addr_r[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.536      ;
+; 0.385 ; phase_acc_r[0]         ; mem_addr_r[0]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.537      ;
+; 0.479 ; mem_addr_r[6]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.631      ;
+; 0.487 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.639      ;
+; 0.488 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.640      ;
+; 0.488 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.640      ;
+; 0.489 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.641      ;
+; 0.491 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.643      ;
+; 0.493 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.645      ;
+; 0.496 ; mem_addr_r[7]          ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.500 ; mem_addr_r[7]          ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
+; 0.500 ; phase_acc_r[1]         ; phase_acc_r[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
+; 0.500 ; phase_acc_r[3]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.652      ;
+; 0.504 ; phase_acc_r[3]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.505 ; phase_acc_r[6]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.505 ; phase_acc_r[5]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.506 ; phase_acc_r[1]         ; mem_addr_r[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.658      ;
+; 0.507 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.659      ;
+; 0.508 ; phase_acc_r[6]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.660      ;
+; 0.508 ; phase_acc_r[5]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.660      ;
+; 0.509 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.661      ;
+; 0.513 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.665      ;
+; 0.516 ; phase_acc_r[0]         ; phase_acc_r[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.668      ;
+; 0.517 ; phase_acc_r[2]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.669      ;
+; 0.518 ; phase_acc_r[4]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.522 ; phase_acc_r[4]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.674      ;
+; 0.524 ; phase_acc_r[2]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.676      ;
+; 0.525 ; phase_acc_r[0]         ; mem_addr_r[1]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.677      ;
+; 0.535 ; phase_acc_r[1]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.687      ;
+; 0.535 ; phase_acc_r[3]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.687      ;
+; 0.539 ; phase_acc_r[3]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.691      ;
+; 0.540 ; phase_acc_r[5]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.692      ;
+; 0.541 ; phase_acc_r[1]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.693      ;
+; 0.543 ; phase_acc_r[5]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.695      ;
+; 0.551 ; phase_acc_r[0]         ; phase_acc_r[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.703      ;
+; 0.552 ; phase_acc_r[2]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.704      ;
+; 0.553 ; phase_acc_r[4]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.705      ;
+; 0.557 ; phase_acc_r[4]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.709      ;
+; 0.559 ; phase_acc_r[2]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.711      ;
+; 0.560 ; phase_acc_r[0]         ; mem_addr_r[2]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.712      ;
+; 0.570 ; phase_acc_r[1]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.722      ;
+; 0.570 ; phase_acc_r[3]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.722      ;
+; 0.574 ; phase_acc_r[3]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.726      ;
+; 0.576 ; phase_acc_r[1]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.728      ;
+; 0.586 ; phase_acc_r[0]         ; phase_acc_r[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.738      ;
+; 0.587 ; phase_acc_r[2]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.739      ;
+; 0.588 ; phase_acc_r[4]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.740      ;
+; 0.592 ; phase_acc_r[4]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.744      ;
+; 0.594 ; phase_acc_r[2]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.746      ;
+; 0.595 ; phase_acc_r[0]         ; mem_addr_r[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.747      ;
+; 0.605 ; phase_acc_r[1]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.757      ;
+; 0.605 ; phase_acc_r[3]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.757      ;
+; 0.609 ; phase_acc_r[3]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.761      ;
+; 0.611 ; phase_acc_r[1]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.763      ;
+; 0.621 ; phase_acc_r[0]         ; phase_acc_r[4]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.773      ;
+; 0.622 ; phase_acc_r[2]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.774      ;
+; 0.629 ; phase_acc_r[2]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.781      ;
+; 0.630 ; phase_acc_r[0]         ; mem_addr_r[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.782      ;
+; 0.634 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.786      ;
+; 0.638 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.790      ;
+; 0.639 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.791      ;
+; 0.639 ; mem:u_mem_wave|en_r[0] ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.791      ;
+; 0.640 ; phase_acc_r[1]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.792      ;
+; 0.646 ; phase_acc_r[1]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.798      ;
+; 0.656 ; phase_acc_r[0]         ; phase_acc_r[5]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.808      ;
+; 0.657 ; phase_acc_r[2]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.809      ;
+; 0.664 ; phase_acc_r[2]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.816      ;
+; 0.665 ; phase_acc_r[0]         ; mem_addr_r[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.817      ;
+; 0.675 ; phase_acc_r[1]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.827      ;
+; 0.681 ; phase_acc_r[1]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.833      ;
+; 0.691 ; phase_acc_r[0]         ; phase_acc_r[6]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.843      ;
+; 0.700 ; phase_acc_r[0]         ; mem_addr_r[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.852      ;
+; 0.726 ; phase_acc_r[0]         ; phase_acc_r[7]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.878      ;
+; 0.735 ; phase_acc_r[0]         ; mem_addr_r[7]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.887      ;
++-------+------------------------+---------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                                        ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                      ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|en_r[0]                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|en_r[0]                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|en_r[1]                      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|en_r[1]                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|square_ROM:u_square_ROM|q[0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[0]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[3]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[4]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[5]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[6]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[7]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[8]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem:u_mem_wave|tri_ROM:u_tri_ROM|q[9]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[0]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[0]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[1]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[1]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[2]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[2]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[3]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[3]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[4]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[4]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[5]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[5]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[6]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[6]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[7]                               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[7]                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[0]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[0]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[1]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[1]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[2]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[2]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[3]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[3]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[4]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[4]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[5]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[5]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[6]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[6]                              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[7]                              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[7]                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                                 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[0]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[0]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[1]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[1]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[2]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[2]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[3]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[3]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[4]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[4]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[5]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[5]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[6]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[6]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; mem_addr_r[7]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; mem_addr_r[7]|clk                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[0]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[0]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[1]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[1]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[2]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[2]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[3]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[3]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[4]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[4]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[5]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[5]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[6]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[6]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; phase_acc_r[7]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; phase_acc_r[7]|clk                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|en_r[0]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; u_mem_wave|en_r[0]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|en_r[1]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; u_mem_wave|en_r[1]|clk                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|u_square_ROM|q[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; u_mem_wave|u_square_ROM|q[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; u_mem_wave|u_tri_ROM|q[0]|clk               ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; f_word[*]      ; clk        ; 2.324 ; 2.324 ; Rise       ; clk             ;
+;  f_word[0]     ; clk        ; 2.182 ; 2.182 ; Rise       ; clk             ;
+;  f_word[1]     ; clk        ; 2.275 ; 2.275 ; Rise       ; clk             ;
+;  f_word[2]     ; clk        ; 2.324 ; 2.324 ; Rise       ; clk             ;
+;  f_word[3]     ; clk        ; 2.097 ; 2.097 ; Rise       ; clk             ;
+;  f_word[4]     ; clk        ; 2.134 ; 2.134 ; Rise       ; clk             ;
+;  f_word[5]     ; clk        ; 2.110 ; 2.110 ; Rise       ; clk             ;
+;  f_word[6]     ; clk        ; 2.184 ; 2.184 ; Rise       ; clk             ;
+;  f_word[7]     ; clk        ; 1.925 ; 1.925 ; Rise       ; clk             ;
+; phase_init[*]  ; clk        ; 2.368 ; 2.368 ; Rise       ; clk             ;
+;  phase_init[0] ; clk        ; 2.359 ; 2.359 ; Rise       ; clk             ;
+;  phase_init[1] ; clk        ; 2.368 ; 2.368 ; Rise       ; clk             ;
+;  phase_init[2] ; clk        ; 2.053 ; 2.053 ; Rise       ; clk             ;
+;  phase_init[3] ; clk        ; 2.284 ; 2.284 ; Rise       ; clk             ;
+;  phase_init[4] ; clk        ; 2.254 ; 2.254 ; Rise       ; clk             ;
+;  phase_init[5] ; clk        ; 1.984 ; 1.984 ; Rise       ; clk             ;
+;  phase_init[6] ; clk        ; 2.153 ; 2.153 ; Rise       ; clk             ;
+;  phase_init[7] ; clk        ; 2.038 ; 2.038 ; Rise       ; clk             ;
+; wave_en        ; clk        ; 1.877 ; 1.877 ; Rise       ; clk             ;
+; wave_sel[*]    ; clk        ; 2.138 ; 2.138 ; Rise       ; clk             ;
+;  wave_sel[0]   ; clk        ; 2.138 ; 2.138 ; Rise       ; clk             ;
+;  wave_sel[1]   ; clk        ; 2.022 ; 2.022 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; f_word[*]      ; clk        ; -1.717 ; -1.717 ; Rise       ; clk             ;
+;  f_word[0]     ; clk        ; -1.717 ; -1.717 ; Rise       ; clk             ;
+;  f_word[1]     ; clk        ; -1.840 ; -1.840 ; Rise       ; clk             ;
+;  f_word[2]     ; clk        ; -1.926 ; -1.926 ; Rise       ; clk             ;
+;  f_word[3]     ; clk        ; -1.732 ; -1.732 ; Rise       ; clk             ;
+;  f_word[4]     ; clk        ; -1.806 ; -1.806 ; Rise       ; clk             ;
+;  f_word[5]     ; clk        ; -1.815 ; -1.815 ; Rise       ; clk             ;
+;  f_word[6]     ; clk        ; -1.924 ; -1.924 ; Rise       ; clk             ;
+;  f_word[7]     ; clk        ; -1.805 ; -1.805 ; Rise       ; clk             ;
+; phase_init[*]  ; clk        ; -1.655 ; -1.655 ; Rise       ; clk             ;
+;  phase_init[0] ; clk        ; -1.894 ; -1.894 ; Rise       ; clk             ;
+;  phase_init[1] ; clk        ; -1.933 ; -1.933 ; Rise       ; clk             ;
+;  phase_init[2] ; clk        ; -1.655 ; -1.655 ; Rise       ; clk             ;
+;  phase_init[3] ; clk        ; -1.919 ; -1.919 ; Rise       ; clk             ;
+;  phase_init[4] ; clk        ; -1.926 ; -1.926 ; Rise       ; clk             ;
+;  phase_init[5] ; clk        ; -1.689 ; -1.689 ; Rise       ; clk             ;
+;  phase_init[6] ; clk        ; -1.893 ; -1.893 ; Rise       ; clk             ;
+;  phase_init[7] ; clk        ; -1.918 ; -1.918 ; Rise       ; clk             ;
+; wave_en        ; clk        ; -1.579 ; -1.579 ; Rise       ; clk             ;
+; wave_sel[*]    ; clk        ; -1.592 ; -1.592 ; Rise       ; clk             ;
+;  wave_sel[0]   ; clk        ; -1.706 ; -1.706 ; Rise       ; clk             ;
+;  wave_sel[1]   ; clk        ; -1.592 ; -1.592 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dout[*]   ; clk        ; 4.952 ; 4.952 ; Rise       ; clk             ;
+;  dout[0]  ; clk        ; 4.409 ; 4.409 ; Rise       ; clk             ;
+;  dout[1]  ; clk        ; 4.507 ; 4.507 ; Rise       ; clk             ;
+;  dout[2]  ; clk        ; 4.952 ; 4.952 ; Rise       ; clk             ;
+;  dout[3]  ; clk        ; 4.676 ; 4.676 ; Rise       ; clk             ;
+;  dout[4]  ; clk        ; 4.549 ; 4.549 ; Rise       ; clk             ;
+;  dout[5]  ; clk        ; 4.680 ; 4.680 ; Rise       ; clk             ;
+;  dout[6]  ; clk        ; 4.751 ; 4.751 ; Rise       ; clk             ;
+;  dout[7]  ; clk        ; 4.549 ; 4.549 ; Rise       ; clk             ;
+;  dout[8]  ; clk        ; 4.468 ; 4.468 ; Rise       ; clk             ;
+;  dout[9]  ; clk        ; 4.491 ; 4.491 ; Rise       ; clk             ;
+; dout_en   ; clk        ; 3.849 ; 3.849 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dout[*]   ; clk        ; 3.967 ; 3.967 ; Rise       ; clk             ;
+;  dout[0]  ; clk        ; 4.022 ; 4.022 ; Rise       ; clk             ;
+;  dout[1]  ; clk        ; 3.978 ; 3.978 ; Rise       ; clk             ;
+;  dout[2]  ; clk        ; 4.268 ; 4.268 ; Rise       ; clk             ;
+;  dout[3]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  dout[4]  ; clk        ; 4.270 ; 4.270 ; Rise       ; clk             ;
+;  dout[5]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  dout[6]  ; clk        ; 4.400 ; 4.400 ; Rise       ; clk             ;
+;  dout[7]  ; clk        ; 4.378 ; 4.378 ; Rise       ; clk             ;
+;  dout[8]  ; clk        ; 4.262 ; 4.262 ; Rise       ; clk             ;
+;  dout[9]  ; clk        ; 3.967 ; 3.967 ; Rise       ; clk             ;
+; dout_en   ; clk        ; 3.849 ; 3.849 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; wave_amp[0] ; dout[0]     ; 3.178 ; 3.162 ; 3.162 ; 3.178 ;
+; wave_amp[0] ; dout[1]     ; 3.241 ; 3.241 ; 3.241 ; 3.241 ;
+; wave_amp[0] ; dout[2]     ; 3.240 ; 3.240 ; 3.240 ; 3.240 ;
+; wave_amp[0] ; dout[3]     ; 3.342 ; 3.342 ; 3.342 ; 3.342 ;
+; wave_amp[0] ; dout[4]     ; 3.244 ; 3.244 ; 3.244 ; 3.244 ;
+; wave_amp[0] ; dout[5]     ; 3.353 ; 3.353 ; 3.353 ; 3.353 ;
+; wave_amp[0] ; dout[6]     ; 3.481 ; 3.481 ; 3.481 ; 3.481 ;
+; wave_amp[0] ; dout[7]     ; 3.198 ; 3.264 ; 3.264 ; 3.198 ;
+; wave_amp[0] ; dout[8]     ; 3.198 ; 3.198 ; 3.198 ; 3.198 ;
+; wave_amp[0] ; dout[9]     ;       ; 2.765 ; 2.765 ;       ;
+; wave_amp[1] ; dout[0]     ; 3.295 ; 3.276 ; 3.276 ; 3.295 ;
+; wave_amp[1] ; dout[1]     ; 2.859 ; 3.139 ; 3.139 ; 2.859 ;
+; wave_amp[1] ; dout[2]     ; 2.981 ; 3.663 ; 3.663 ; 2.981 ;
+; wave_amp[1] ; dout[3]     ; 3.389 ; 3.099 ; 3.099 ; 3.389 ;
+; wave_amp[1] ; dout[4]     ; 3.262 ; 2.981 ; 2.981 ; 3.262 ;
+; wave_amp[1] ; dout[5]     ; 3.101 ; 3.391 ; 3.391 ; 3.101 ;
+; wave_amp[1] ; dout[6]     ; 3.113 ; 3.398 ; 3.398 ; 3.113 ;
+; wave_amp[1] ; dout[7]     ; 3.283 ; 3.378 ; 3.378 ; 3.283 ;
+; wave_amp[1] ; dout[8]     ;       ; 2.971 ; 2.971 ;       ;
+; wave_amp[1] ; dout[9]     ;       ; 3.202 ; 3.202 ;       ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; wave_amp[0] ; dout[0]     ; 3.178 ; 3.162 ; 3.162 ; 3.178 ;
+; wave_amp[0] ; dout[1]     ; 3.241 ; 3.241 ; 3.241 ; 3.241 ;
+; wave_amp[0] ; dout[2]     ; 3.219 ; 3.219 ; 3.219 ; 3.219 ;
+; wave_amp[0] ; dout[3]     ; 3.262 ; 3.262 ; 3.262 ; 3.262 ;
+; wave_amp[0] ; dout[4]     ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; wave_amp[0] ; dout[5]     ; 3.265 ; 3.265 ; 3.265 ; 3.265 ;
+; wave_amp[0] ; dout[6]     ; 3.347 ; 3.347 ; 3.347 ; 3.347 ;
+; wave_amp[0] ; dout[7]     ; 3.198 ; 3.198 ; 3.198 ; 3.198 ;
+; wave_amp[0] ; dout[8]     ; 3.198 ; 3.198 ; 3.198 ; 3.198 ;
+; wave_amp[0] ; dout[9]     ;       ; 2.765 ; 2.765 ;       ;
+; wave_amp[1] ; dout[0]     ; 3.295 ; 3.276 ; 3.276 ; 3.295 ;
+; wave_amp[1] ; dout[1]     ; 2.859 ; 3.139 ; 3.139 ; 2.859 ;
+; wave_amp[1] ; dout[2]     ; 2.981 ; 3.663 ; 3.663 ; 2.981 ;
+; wave_amp[1] ; dout[3]     ; 3.389 ; 3.099 ; 3.099 ; 3.389 ;
+; wave_amp[1] ; dout[4]     ; 3.262 ; 2.981 ; 2.981 ; 3.262 ;
+; wave_amp[1] ; dout[5]     ; 3.101 ; 3.391 ; 3.391 ; 3.101 ;
+; wave_amp[1] ; dout[6]     ; 3.113 ; 3.398 ; 3.398 ; 3.113 ;
+; wave_amp[1] ; dout[7]     ; 3.283 ; 2.974 ; 2.974 ; 3.283 ;
+; wave_amp[1] ; dout[8]     ;       ; 2.971 ; 2.971 ;       ;
+; wave_amp[1] ; dout[9]     ;       ; 3.202 ; 3.202 ;       ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -0.894  ; 0.250 ; N/A      ; N/A     ; -1.380              ;
+;  clk             ; -0.894  ; 0.250 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -13.59  ; 0.0   ; 0.0      ; 0.0     ; -28.38              ;
+;  clk             ; -13.590 ; 0.000 ; N/A      ; N/A     ; -28.380             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; Setup Times                                                                ;
++----------------+------------+-------+-------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++----------------+------------+-------+-------+------------+-----------------+
+; f_word[*]      ; clk        ; 4.584 ; 4.584 ; Rise       ; clk             ;
+;  f_word[0]     ; clk        ; 4.246 ; 4.246 ; Rise       ; clk             ;
+;  f_word[1]     ; clk        ; 4.449 ; 4.449 ; Rise       ; clk             ;
+;  f_word[2]     ; clk        ; 4.584 ; 4.584 ; Rise       ; clk             ;
+;  f_word[3]     ; clk        ; 4.052 ; 4.052 ; Rise       ; clk             ;
+;  f_word[4]     ; clk        ; 4.193 ; 4.193 ; Rise       ; clk             ;
+;  f_word[5]     ; clk        ; 4.159 ; 4.159 ; Rise       ; clk             ;
+;  f_word[6]     ; clk        ; 4.312 ; 4.312 ; Rise       ; clk             ;
+;  f_word[7]     ; clk        ; 3.663 ; 3.663 ; Rise       ; clk             ;
+; phase_init[*]  ; clk        ; 4.683 ; 4.683 ; Rise       ; clk             ;
+;  phase_init[0] ; clk        ; 4.682 ; 4.682 ; Rise       ; clk             ;
+;  phase_init[1] ; clk        ; 4.683 ; 4.683 ; Rise       ; clk             ;
+;  phase_init[2] ; clk        ; 4.023 ; 4.023 ; Rise       ; clk             ;
+;  phase_init[3] ; clk        ; 4.523 ; 4.523 ; Rise       ; clk             ;
+;  phase_init[4] ; clk        ; 4.443 ; 4.443 ; Rise       ; clk             ;
+;  phase_init[5] ; clk        ; 3.897 ; 3.897 ; Rise       ; clk             ;
+;  phase_init[6] ; clk        ; 4.287 ; 4.287 ; Rise       ; clk             ;
+;  phase_init[7] ; clk        ; 3.898 ; 3.898 ; Rise       ; clk             ;
+; wave_en        ; clk        ; 3.405 ; 3.405 ; Rise       ; clk             ;
+; wave_sel[*]    ; clk        ; 4.076 ; 4.076 ; Rise       ; clk             ;
+;  wave_sel[0]   ; clk        ; 4.076 ; 4.076 ; Rise       ; clk             ;
+;  wave_sel[1]   ; clk        ; 3.880 ; 3.880 ; Rise       ; clk             ;
++----------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------+
+; Hold Times                                                                   ;
++----------------+------------+--------+--------+------------+-----------------+
+; Data Port      ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++----------------+------------+--------+--------+------------+-----------------+
+; f_word[*]      ; clk        ; -1.717 ; -1.717 ; Rise       ; clk             ;
+;  f_word[0]     ; clk        ; -1.717 ; -1.717 ; Rise       ; clk             ;
+;  f_word[1]     ; clk        ; -1.840 ; -1.840 ; Rise       ; clk             ;
+;  f_word[2]     ; clk        ; -1.926 ; -1.926 ; Rise       ; clk             ;
+;  f_word[3]     ; clk        ; -1.732 ; -1.732 ; Rise       ; clk             ;
+;  f_word[4]     ; clk        ; -1.806 ; -1.806 ; Rise       ; clk             ;
+;  f_word[5]     ; clk        ; -1.815 ; -1.815 ; Rise       ; clk             ;
+;  f_word[6]     ; clk        ; -1.924 ; -1.924 ; Rise       ; clk             ;
+;  f_word[7]     ; clk        ; -1.805 ; -1.805 ; Rise       ; clk             ;
+; phase_init[*]  ; clk        ; -1.655 ; -1.655 ; Rise       ; clk             ;
+;  phase_init[0] ; clk        ; -1.894 ; -1.894 ; Rise       ; clk             ;
+;  phase_init[1] ; clk        ; -1.933 ; -1.933 ; Rise       ; clk             ;
+;  phase_init[2] ; clk        ; -1.655 ; -1.655 ; Rise       ; clk             ;
+;  phase_init[3] ; clk        ; -1.919 ; -1.919 ; Rise       ; clk             ;
+;  phase_init[4] ; clk        ; -1.926 ; -1.926 ; Rise       ; clk             ;
+;  phase_init[5] ; clk        ; -1.689 ; -1.689 ; Rise       ; clk             ;
+;  phase_init[6] ; clk        ; -1.893 ; -1.893 ; Rise       ; clk             ;
+;  phase_init[7] ; clk        ; -1.918 ; -1.918 ; Rise       ; clk             ;
+; wave_en        ; clk        ; -1.579 ; -1.579 ; Rise       ; clk             ;
+; wave_sel[*]    ; clk        ; -1.592 ; -1.592 ; Rise       ; clk             ;
+;  wave_sel[0]   ; clk        ; -1.706 ; -1.706 ; Rise       ; clk             ;
+;  wave_sel[1]   ; clk        ; -1.592 ; -1.592 ; Rise       ; clk             ;
++----------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dout[*]   ; clk        ; 9.340 ; 9.340 ; Rise       ; clk             ;
+;  dout[0]  ; clk        ; 8.038 ; 8.038 ; Rise       ; clk             ;
+;  dout[1]  ; clk        ; 8.360 ; 8.360 ; Rise       ; clk             ;
+;  dout[2]  ; clk        ; 9.340 ; 9.340 ; Rise       ; clk             ;
+;  dout[3]  ; clk        ; 8.690 ; 8.690 ; Rise       ; clk             ;
+;  dout[4]  ; clk        ; 8.423 ; 8.423 ; Rise       ; clk             ;
+;  dout[5]  ; clk        ; 8.687 ; 8.687 ; Rise       ; clk             ;
+;  dout[6]  ; clk        ; 8.886 ; 8.886 ; Rise       ; clk             ;
+;  dout[7]  ; clk        ; 8.428 ; 8.428 ; Rise       ; clk             ;
+;  dout[8]  ; clk        ; 8.268 ; 8.268 ; Rise       ; clk             ;
+;  dout[9]  ; clk        ; 8.259 ; 8.259 ; Rise       ; clk             ;
+; dout_en   ; clk        ; 6.748 ; 6.748 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; dout[*]   ; clk        ; 3.967 ; 3.967 ; Rise       ; clk             ;
+;  dout[0]  ; clk        ; 4.022 ; 4.022 ; Rise       ; clk             ;
+;  dout[1]  ; clk        ; 3.978 ; 3.978 ; Rise       ; clk             ;
+;  dout[2]  ; clk        ; 4.268 ; 4.268 ; Rise       ; clk             ;
+;  dout[3]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  dout[4]  ; clk        ; 4.270 ; 4.270 ; Rise       ; clk             ;
+;  dout[5]  ; clk        ; 4.388 ; 4.388 ; Rise       ; clk             ;
+;  dout[6]  ; clk        ; 4.400 ; 4.400 ; Rise       ; clk             ;
+;  dout[7]  ; clk        ; 4.378 ; 4.378 ; Rise       ; clk             ;
+;  dout[8]  ; clk        ; 4.262 ; 4.262 ; Rise       ; clk             ;
+;  dout[9]  ; clk        ; 3.967 ; 3.967 ; Rise       ; clk             ;
+; dout_en   ; clk        ; 3.849 ; 3.849 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Progagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; wave_amp[0] ; dout[0]     ; 6.195 ; 6.157 ; 6.157 ; 6.195 ;
+; wave_amp[0] ; dout[1]     ; 6.364 ; 6.364 ; 6.364 ; 6.364 ;
+; wave_amp[0] ; dout[2]     ; 6.363 ; 6.363 ; 6.363 ; 6.363 ;
+; wave_amp[0] ; dout[3]     ; 6.566 ; 6.566 ; 6.566 ; 6.566 ;
+; wave_amp[0] ; dout[4]     ; 6.367 ; 6.367 ; 6.367 ; 6.367 ;
+; wave_amp[0] ; dout[5]     ; 6.582 ; 6.582 ; 6.582 ; 6.582 ;
+; wave_amp[0] ; dout[6]     ; 6.867 ; 6.867 ; 6.867 ; 6.867 ;
+; wave_amp[0] ; dout[7]     ; 6.258 ; 6.386 ; 6.386 ; 6.258 ;
+; wave_amp[0] ; dout[8]     ; 6.249 ; 6.249 ; 6.249 ; 6.249 ;
+; wave_amp[0] ; dout[9]     ;       ; 5.248 ; 5.248 ;       ;
+; wave_amp[1] ; dout[0]     ; 6.437 ; 6.428 ; 6.428 ; 6.437 ;
+; wave_amp[1] ; dout[1]     ; 5.471 ; 6.131 ; 6.131 ; 5.471 ;
+; wave_amp[1] ; dout[2]     ; 5.796 ; 7.378 ; 7.378 ; 5.796 ;
+; wave_amp[1] ; dout[3]     ; 6.733 ; 6.041 ; 6.041 ; 6.733 ;
+; wave_amp[1] ; dout[4]     ; 6.466 ; 5.799 ; 5.799 ; 6.466 ;
+; wave_amp[1] ; dout[5]     ; 6.042 ; 6.725 ; 6.725 ; 6.042 ;
+; wave_amp[1] ; dout[6]     ; 6.058 ; 6.736 ; 6.736 ; 6.058 ;
+; wave_amp[1] ; dout[7]     ; 6.427 ; 6.657 ; 6.657 ; 6.427 ;
+; wave_amp[1] ; dout[8]     ;       ; 5.703 ; 5.703 ;       ;
+; wave_amp[1] ; dout[9]     ;       ; 6.297 ; 6.297 ;       ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; wave_amp[0] ; dout[0]     ; 3.178 ; 3.162 ; 3.162 ; 3.178 ;
+; wave_amp[0] ; dout[1]     ; 3.241 ; 3.241 ; 3.241 ; 3.241 ;
+; wave_amp[0] ; dout[2]     ; 3.219 ; 3.219 ; 3.219 ; 3.219 ;
+; wave_amp[0] ; dout[3]     ; 3.262 ; 3.262 ; 3.262 ; 3.262 ;
+; wave_amp[0] ; dout[4]     ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; wave_amp[0] ; dout[5]     ; 3.265 ; 3.265 ; 3.265 ; 3.265 ;
+; wave_amp[0] ; dout[6]     ; 3.347 ; 3.347 ; 3.347 ; 3.347 ;
+; wave_amp[0] ; dout[7]     ; 3.198 ; 3.198 ; 3.198 ; 3.198 ;
+; wave_amp[0] ; dout[8]     ; 3.198 ; 3.198 ; 3.198 ; 3.198 ;
+; wave_amp[0] ; dout[9]     ;       ; 2.765 ; 2.765 ;       ;
+; wave_amp[1] ; dout[0]     ; 3.295 ; 3.276 ; 3.276 ; 3.295 ;
+; wave_amp[1] ; dout[1]     ; 2.859 ; 3.139 ; 3.139 ; 2.859 ;
+; wave_amp[1] ; dout[2]     ; 2.981 ; 3.663 ; 3.663 ; 2.981 ;
+; wave_amp[1] ; dout[3]     ; 3.389 ; 3.099 ; 3.099 ; 3.389 ;
+; wave_amp[1] ; dout[4]     ; 3.262 ; 2.981 ; 2.981 ; 3.262 ;
+; wave_amp[1] ; dout[5]     ; 3.101 ; 3.391 ; 3.391 ; 3.101 ;
+; wave_amp[1] ; dout[6]     ; 3.113 ; 3.398 ; 3.398 ; 3.113 ;
+; wave_amp[1] ; dout[7]     ; 3.283 ; 2.974 ; 2.974 ; 3.283 ;
+; wave_amp[1] ; dout[8]     ;       ; 2.971 ; 2.971 ;       ;
+; wave_amp[1] ; dout[9]     ;       ; 3.202 ; 3.202 ;       ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 98       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 98       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 22    ; 22   ;
+; Unconstrained Input Port Paths  ; 145   ; 145  ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 72    ; 72   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 12.0 Build 232 07/05/2012 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Nov 20 21:25:01 2020
+Info: Command: quartus_sta dds -c dds
+Info: qsta_default_script.tcl version: #2
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'dds.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.894
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.894       -13.590 clk 
+Info (332146): Worst-case hold slack is 0.540
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.540         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -28.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.145
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.145         0.000 clk 
+Info (332146): Worst-case hold slack is 0.250
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.250         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -28.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 336 megabytes
+    Info: Processing ended: Fri Nov 20 21:25:03 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

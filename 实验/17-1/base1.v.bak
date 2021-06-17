@@ -1,0 +1,12 @@
+module  base1(en,clk,addr,data);
+input en;
+input clk;
+output reg [3:0]addr;
+output reg [3:0]data;
+assign addr=0;
+always@(posedge clk, negedge en)
+begin
+  addr=addr+1;
+  data=data+1;
+end
+endmodule

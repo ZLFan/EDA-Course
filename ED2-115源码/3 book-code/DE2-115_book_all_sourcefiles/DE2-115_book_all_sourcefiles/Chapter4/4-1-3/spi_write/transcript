@@ -1,0 +1,30 @@
+# Reading C:/altera/10.1/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile D:/DE2_115/lyp/spi_write/vsim.wlf 
+add wave vsim:/spi_write_test/*
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+run
+# No Design Loaded!
+# Loading project spi_write_test
+# Compile of spi_write_test.v failed with 1 errors.
+# Compile of spi_three_wire.v was successful.
+# Compile of spi_write.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of spi_write_test.v failed with 1 errors.
+# Compile of spi_three_wire.v was successful.
+# Compile of spi_write.v was successful.
+# 3 compiles, 1 failed with 1 error. 

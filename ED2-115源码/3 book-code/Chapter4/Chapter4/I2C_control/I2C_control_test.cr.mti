@@ -1,0 +1,15 @@
+D:/DE2_115/lyp/I2C_control/I2C_control.v {1 {vlog -work work -nocovercells D:/DE2_115/lyp/I2C_control/I2C_control.v
+Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
+-- Compiling module I2C_control
+
+Top level modules:
+	I2C_control
+
+} {} {}} D:/DE2_115/lyp/I2C_control/I2C_control_test.v {1 {vlog -work work -nocovercells D:/DE2_115/lyp/I2C_control/I2C_control_test.v
+Model Technology ModelSim ALTERA vlog 6.6c Compiler 2010.08 Aug 24 2010
+-- Compiling module I2C_control_test
+
+Top level modules:
+	I2C_control_test
+
+} {} {}}

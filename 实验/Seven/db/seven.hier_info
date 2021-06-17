@@ -1,0 +1,25 @@
+|seven
+en[0] => sel~0.DATAB
+en[1] => sel~1.DATAB
+en[2] => sel~2.DATAB
+en[3] => sel~3.DATAB
+en[4] => sel~4.DATAB
+en[5] => sel~5.DATAB
+en[6] => sel~6.DATAB
+en[7] => ~NO_FANOUT~
+a <= data~2.DB_MAX_OUTPUT_PORT_TYPE
+b <= data~1.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+g <= data~0.DB_MAX_OUTPUT_PORT_TYPE
+dp <= <GND>
+sel[1] <= sel~6.DB_MAX_OUTPUT_PORT_TYPE
+sel[2] <= sel~5.DB_MAX_OUTPUT_PORT_TYPE
+sel[3] <= sel~4.DB_MAX_OUTPUT_PORT_TYPE
+sel[4] <= sel~3.DB_MAX_OUTPUT_PORT_TYPE
+sel[5] <= sel~2.DB_MAX_OUTPUT_PORT_TYPE
+sel[6] <= sel~1.DB_MAX_OUTPUT_PORT_TYPE
+sel[7] <= sel~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

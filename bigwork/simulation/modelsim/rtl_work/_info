@@ -1,0 +1,200 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\EDA\bigwork\simulation\modelsim
+vcost
+Ie28zT_Da5MQIfNQ<cEXl?3
+V=7QH?f@^:<c>SQP>_n?b60
+Z1 dE:\EDA\bigwork\simulation\modelsim
+w1608711951
+8E:/EDA/bigwork/cost.v
+FE:/EDA/bigwork/cost.v
+L0 6
+Z2 OV;L;10.0d;49
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/EDA/bigwork -O0
+!s100 8kCi2z9g=bRleJGN>2][83
+!s85 0
+!s108 1608825092.986000
+!s107 E:/EDA/bigwork/cost.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/cost.v|
+!s101 -O0
+vdisplayCost
+Iam^B>gelOULog@HHMTbZF1
+V3Sj<F5faDKijOeTai1_Ok3
+R1
+w1608636067
+8E:/EDA/bigwork/displayCost.v
+FE:/EDA/bigwork/displayCost.v
+L0 2
+R2
+r1
+31
+R3
+R4
+ndisplay@cost
+!s100 MGDMjC:FYL02gGj^P?zjo3
+!s85 0
+!s108 1608825093.031000
+!s107 E:/EDA/bigwork/displayCost.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/displayCost.v|
+!s101 -O0
+vdisplayMail
+IPX>0M6H75[zn_i_;[214h1
+VEK?2ID4ZC=z1b8iaj_UmK0
+R1
+w1608636509
+8E:/EDA/bigwork/displayMail.v
+FE:/EDA/bigwork/displayMail.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ndisplay@mail
+!s100 h@Hd:>Ne888?3K`jAgPVM1
+!s85 0
+!s108 1608825093.331000
+!s107 E:/EDA/bigwork/displayMail.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/displayMail.v|
+!s101 -O0
+vdisplaySpeed
+I@FFFdoS]gSGZ[_iLa6D=M3
+V^PV1Ia<S5MLQ5o<:VF_Cn0
+R1
+w1608636327
+8E:/EDA/bigwork/displaySpeed.v
+FE:/EDA/bigwork/displaySpeed.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ndisplay@speed
+!s100 nIdj`bz^ndJkni;R;TgF<2
+!s85 0
+!s108 1608825093.248000
+!s107 E:/EDA/bigwork/displaySpeed.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/displaySpeed.v|
+!s101 -O0
+vdivclk
+IHgTQNGj?HeEBO^3aHa^hV2
+VDC@_ASY0YoJl>b=UW6A=h0
+R1
+w1608710159
+8E:/EDA/bigwork/divclk.v
+FE:/EDA/bigwork/divclk.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 az]Z95lnTn11h@g=cVU:G2
+!s85 0
+!s108 1608825093.157000
+!s107 E:/EDA/bigwork/divclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/divclk.v|
+!s101 -O0
+vlantern
+Im=S;Ch8blW2c3lgaVSX4l0
+VjWH9XXbAzkj2<1_gM3LOD0
+R1
+w1608642686
+8E:/EDA/bigwork/lantern.v
+FE:/EDA/bigwork/lantern.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 Aagj5mQ6QSz6YHcZF[fJa2
+!s85 0
+!s108 1608825093.116000
+!s107 E:/EDA/bigwork/lantern.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/lantern.v|
+!s101 -O0
+vsimulateCar
+IRJPoMZ<33cik[`SB9W13=1
+VVO7`8]mUacF3k;T[<:2b]2
+R1
+w1608625382
+8E:/EDA/bigwork/simlateCar.v
+FE:/EDA/bigwork/simlateCar.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nsimulate@car
+!s100 zF`A@iNQX42QlN7<eOMG02
+!s85 0
+!s108 1608825093.200000
+!s107 E:/EDA/bigwork/simlateCar.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/simlateCar.v|
+!s101 -O0
+vtop
+I6_^?P<eWYmk[kdSc1a>PE2
+VILkE<^FPDdoQHdK>7kj7J0
+R1
+w1608638814
+8E:/EDA/bigwork/top.v
+FE:/EDA/bigwork/top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 JkPD>8ef>]`1=ESCD@O]A3
+!s85 0
+!s108 1608825093.072000
+!s107 E:/EDA/bigwork/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/top.v|
+!s101 -O0
+vtop_vlg_tst
+!s100 Cbj]A@00@8eVJSE79=^9O1
+IhMg;K<N;>][1gf7zQE7=h2
+VWH`X8iAJ@;Z6_Z>8HHbjI2
+R1
+w1608824953
+8E:/EDA/bigwork/simulation/modelsim/top.vt
+FE:/EDA/bigwork/simulation/modelsim/top.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1608825093.376000
+!s107 E:/EDA/bigwork/simulation/modelsim/top.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork/simulation/modelsim|E:/EDA/bigwork/simulation/modelsim/top.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/EDA/bigwork/simulation/modelsim -O0
+vtopCost
+IGTLfAHlHEAD2S;0dAe6bW2
+Vo3Ee=KLglAN3ML32<o5<=0
+R1
+w1608626315
+8E:/EDA/bigwork/topCost.v
+FE:/EDA/bigwork/topCost.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ntop@cost
+!s100 zY;1>d:_0]=4Sn^k<S2A]0
+!s85 0
+!s108 1608825093.291000
+!s107 E:/EDA/bigwork/topCost.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/topCost.v|
+!s101 -O0

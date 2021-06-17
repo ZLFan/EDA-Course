@@ -1,0 +1,40 @@
+# Reading D:/altera/12.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do testprj_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying d:\altera\12.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied d:\altera\12.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/EDA/bigwork {E:/EDA/bigwork/divclk.v}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module divclk
+# 
+# Top level modules:
+# 	divclk
+# 
+# vlog -vlog01compat -work work +incdir+E:/EDA/testprj/simulation/modelsim {E:/EDA/testprj/simulation/modelsim/divclk.vt}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module divclk_vlg_tst
+# 
+# Top level modules:
+# 	divclk_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  divclk_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps divclk_vlg_tst 
+# Loading work.divclk_vlg_tst
+# Loading work.divclk
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# Break key hit 
+# Simulation stop requested.

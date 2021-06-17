@@ -1,0 +1,5 @@
+#Wed Aug 03 20:01:00 CST 2011
+newSoftwareExampleWizardPage.defaultLocation=D\:\\FPGA\\DE2_115\\myfirst_niosii\\software\\hello_world
+newSoftwareExampleWizardPage.sopcinfoFile=D\:\\FPGA\\DE2_115\\myfirst_niosii\\DE2_115_SOPC.sopcinfo
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage2.newBspLocation=D\:\\FPGA\\DE2_115\\myfirst_niosii\\software\\hello_world_bsp

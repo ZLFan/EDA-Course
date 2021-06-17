@@ -1,0 +1,121 @@
+|rc2
+clk => clk~0.IN1
+en[0] => en[0]~7.IN1
+en[1] => en[1]~6.IN1
+en[2] => en[2]~5.IN1
+en[3] => en[3]~4.IN1
+en[4] => en[4]~3.IN1
+en[5] => en[5]~2.IN1
+en[6] => en[6]~1.IN1
+en[7] => en[7]~0.IN1
+A <= seg:u3.a
+B <= seg:u3.b
+C <= seg:u3.c
+D <= seg:u3.d
+E <= seg:u3.e
+F <= seg:u3.f
+G <= seg:u3.g
+DP <= seg:u3.dp
+DS[0] <= seg:u3.ds
+DS[1] <= seg:u3.ds
+DS[2] <= seg:u3.ds
+DS[3] <= seg:u3.ds
+DS[4] <= seg:u3.ds
+DS[5] <= seg:u3.ds
+DS[6] <= seg:u3.ds
+DS[7] <= seg:u3.ds
+
+
+|rc2|divi_1hz:u1
+clk => clk_1hz~reg0.CLK
+clk => count[39].CLK
+clk => count[38].CLK
+clk => count[37].CLK
+clk => count[36].CLK
+clk => count[35].CLK
+clk => count[34].CLK
+clk => count[33].CLK
+clk => count[32].CLK
+clk => count[31].CLK
+clk => count[30].CLK
+clk => count[29].CLK
+clk => count[28].CLK
+clk => count[27].CLK
+clk => count[26].CLK
+clk => count[25].CLK
+clk => count[24].CLK
+clk => count[23].CLK
+clk => count[22].CLK
+clk => count[21].CLK
+clk => count[20].CLK
+clk => count[19].CLK
+clk => count[18].CLK
+clk => count[17].CLK
+clk => count[16].CLK
+clk => count[15].CLK
+clk => count[14].CLK
+clk => count[13].CLK
+clk => count[12].CLK
+clk => count[11].CLK
+clk => count[10].CLK
+clk => count[9].CLK
+clk => count[8].CLK
+clk => count[7].CLK
+clk => count[6].CLK
+clk => count[5].CLK
+clk => count[4].CLK
+clk => count[3].CLK
+clk => count[2].CLK
+clk => count[1].CLK
+clk => count[0].CLK
+clk_1hz <= clk_1hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rc2|fsm7:u2
+cq[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+cq[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+cq[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|rc2|seg:u3
+clk => ds[7]~reg0.CLK
+clk => ds[6]~reg0.CLK
+clk => ds[5]~reg0.CLK
+clk => ds[4]~reg0.CLK
+clk => ds[3]~reg0.CLK
+clk => ds[2]~reg0.CLK
+clk => ds[1]~reg0.CLK
+clk => ds[0]~reg0.CLK
+clk => count[2].CLK
+clk => count[1].CLK
+clk => count[0].CLK
+d_in[0] => Decoder1.IN3
+d_in[1] => Decoder1.IN2
+d_in[2] => Decoder1.IN1
+d_in[3] => Decoder1.IN0
+en[0] => ds~0.DATAB
+en[1] => ds~1.DATAB
+en[2] => ds~2.DATAB
+en[3] => ds~3.DATAB
+en[4] => ds~4.DATAB
+en[5] => ds~5.DATAB
+en[6] => ds~6.DATAB
+en[7] => ds~7.DATAB
+a <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+dp <= <GND>
+ds[0] <= ds[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[1] <= ds[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[2] <= ds[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[3] <= ds[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[4] <= ds[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[5] <= ds[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[6] <= ds[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ds[7] <= ds[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

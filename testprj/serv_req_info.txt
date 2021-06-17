@@ -1,0 +1,15 @@
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x0cb2d9b7: atm_amerge + 0x3d9b7 (amerge_mini_merge + 0x3a5d7)
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Fri Dec 25 00:05:25 2020</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+

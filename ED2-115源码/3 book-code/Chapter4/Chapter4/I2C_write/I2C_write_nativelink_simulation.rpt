@@ -1,0 +1,73 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  stratixii
+Quartus root          :  c:/altera/91sp1/quartus/bin/
+Quartus sim root      :  c:/altera/91sp1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  I2C_write.vo
+Sim SDF file          :  I2C_write__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/91sp1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File I2C_write_run_msim_gate_verilog.do already exists - backing up current file as I2C_write_run_msim_gate_verilog.do.bak8
+Probing transcript
+ModelSim-Altera Info: # Reading C:/altera/90/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # do I2C_write_run_msim_gate_verilog.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Modifying C:\altera\90\modelsim_ase\win32aloem/../modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {I2C_write.vo}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+ModelSim-Altera Info: # -- Compiling module I2C_write
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	I2C_write
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+D:/DE2_115/lyp/I2C_write {D:/DE2_115/lyp/I2C_write/I2C_write_test.v}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 6.4a Compiler 2008.08 Oct 22 2008
+ModelSim-Altera Info: # -- Compiling module I2C_write_test
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	I2C_write_test
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L stratixii_ver -L gate_work -L work -voptargs="+acc" I2C_write_test
+ModelSim-Altera Info: # vsim +transport_int_delays +transport_path_delays -L stratixii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps I2C_write_test 
+ModelSim-Altera Info: # Loading work.I2C_write_test
+ModelSim-Altera Info: # Loading work.I2C_write
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_lcell_comb
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_io
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_io_register
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_io_latch
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_and1
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_mux21
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_asynch_io
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_clkctrl
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_mux41
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_ena_reg
+ModelSim-Altera Info: # Loading stratixii_ver.stratixii_lcell_ff
+ModelSim-Altera Info: # SDF 6.4a Compiler 2008.08 Oct 22 2008
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Loading instances from I2C_write_v.sdo
+ModelSim-Altera Info: # Loading timing data from I2C_write_v.sdo
+ModelSim-Altera Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Region: /I2C_write_test  File: D:/DE2_115/lyp/I2C_write/I2C_write_test.v
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.workspace.interior.cs.nb.canvas.notebook.cs.page2.cs
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.signals.interior.cs
+ModelSim-Altera Info: # run 3 us
+Info: NativeLink simulation flow was successful

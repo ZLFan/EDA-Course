@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+dD:\DE2_115\lyp\spi_three_wire
+vspi_three_wire
+!s100 2fKhkdZ3>aEJYSca43]Xb1
+IZ4]10XRo?Djfkd^V_IT]T1
+V9S@z4kG9:;Y>9@IJ1@Rm`2
+Z0 dD:\DE2_115\lyp\spi_write
+w1310096765
+8D:/DE2_115/lyp/spi_write/spi_three_wire.v
+FD:/DE2_115/lyp/spi_write/spi_three_wire.v
+L0 23
+Z1 OV;L;6.5e;42
+r1
+!s85 0
+31
+!s101 -O0
+Z2 !s102 -nocovercells
+Z3 o-work work -nocovercells -O0
+vspi_write
+IG<l`b]1nkImEAD4`2iGAY3
+V1d^LDVSm7C@=>9JA>MAkk0
+Z4 dD:\DE2_115\lyp\spi_write
+w1313475234
+8D:/DE2_115/lyp/spi_write/spi_write.v
+FD:/DE2_115/lyp/spi_write/spi_write.v
+L0 2
+R1
+r1
+31
+R2
+R3
+!s100 CM7dT=J7`z14coG=SA4D63
+!s85 0
+!s101 -O0
+vspi_write_test
+Inh]D;mKJJH=6IM6949I`]1
+VTiofTQNB:YJRk67zbFkU31
+R4
+w1313680753
+8D:/DE2_115/lyp/spi_write/spi_write_test.v
+FD:/DE2_115/lyp/spi_write/spi_write_test.v
+L0 2
+R1
+r1
+31
+R2
+R3
+!s100 hlAjPgXDFCCd5c0JEj1G;3
+!s85 0
+!s101 -O0

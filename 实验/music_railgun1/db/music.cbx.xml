@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="music">
+		<CBX_INST_ENTRY INSTANCE_NAME="|music|player:inst4|altsyncram:WideOr2_rtl_0" CBX_FILE_NAME="altsyncram_fo21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|music|player:inst4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_gjm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|music|railgun:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ekf1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

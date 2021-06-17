@@ -1,0 +1,39 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\DE2_115\lyp\spi_write
+vI2C_control
+!s100 Hm0_ZVIB;IJ^A35Z8zbo23
+ILjh6E0F=Zn3dag903MbGU0
+VQj>TD[L@N:DP302=G1NRo2
+Z1 dD:\DE2_115\lyp\I2C_control
+w1313657690
+Z2 8D:/DE2_115/lyp/I2C_control/I2C_control.v
+Z3 FD:/DE2_115/lyp/I2C_control/I2C_control.v
+L0 22
+Z4 OV;L;6.6c;45
+r1
+!s85 0
+31
+!s101 -O0
+Z5 !s102 -nocovercells
+Z6 o-work work -nocovercells -O0
+Z7 n@i2@c_control
+vI2C_control_test
+Z8 IZRSoG9FKJ5YTZQnD0?;;M3
+Z9 VHjNQ<k=4jHlh2a46b;FFN2
+R1
+Z10 w1313602403
+Z11 8D:/DE2_115/lyp/I2C_control/I2C_control_test.v
+Z12 FD:/DE2_115/lyp/I2C_control/I2C_control_test.v
+L0 5
+R4
+r1
+31
+R6
+Z13 n@i2@c_control_test
+Z14 !s100 nOPPgjPc=98faf0kaj;AH0
+!s85 0
+!s101 -O0
+R5

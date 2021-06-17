@@ -1,0 +1,55 @@
+# Reading D:/altera/12.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do dds_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\12.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\12.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/EDA/dds {E:/EDA/dds/mem.v}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module mem
+# -- Compiling module square_ROM
+# -- Compiling module tri_ROM
+# 
+# Top level modules:
+# 	mem
+# vlog -vlog01compat -work work +incdir+E:/EDA/dds {E:/EDA/dds/dds.v}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module dds
+# 
+# Top level modules:
+# 	dds
+# 
+# vlog -vlog01compat -work work +incdir+E:/EDA/dds/simulation/modelsim {E:/EDA/dds/simulation/modelsim/dds.vt}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test 
+# Loading work.test
+# Loading work.dds
+# Loading work.mem
+# Loading work.square_ROM
+# Loading work.tri_ROM
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : E:/EDA/dds/simulation/modelsim/dds.vt(66)
+#    Time: 100 us  Iteration: 0  Instance: /test
+# 1
+# Break in Module test at E:/EDA/dds/simulation/modelsim/dds.vt line 66
+# Simulation Breakpoint: 1
+# Break in Module test at E:/EDA/dds/simulation/modelsim/dds.vt line 66
+# MACRO ./dds_run_msim_rtl_verilog.do PAUSED at line 18

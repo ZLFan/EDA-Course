@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="distence[15]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[14]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[13]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[12]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[11]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[10]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[9]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[8]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[7]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[6]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[5]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[4]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[3]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[2]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[1]" source="Pin Planner" >
+		</pin>
+		<pin name="distence[0]" source="Pin Planner" >
+		</pin>
+		<pin name="reset" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

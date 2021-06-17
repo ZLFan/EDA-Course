@@ -1,0 +1,68 @@
+`timescale 1ns/1ns
+
+module test ;
+    reg          clk ;
+    reg          rstn ;
+    reg          wave_en ;
+    reg [1:0]    wave_sel ;
+    reg [1:0]    wave_amp ;
+    reg [7:0]    phase_init ;
+    reg [7:0]    f_word ;
+    wire [9:0]   dout ;
+    wire         dout_en ;
+
+    //(1)clk, reset and other constant regs
+    initial begin
+        clk           = 1'b0 ;
+        rstn          = 1'b0 ;
+        #100 ;
+        rstn          = 1'b1 ;
+        #10 ;
+        forever begin
+            #5 ;      clk = ~clk ;   //system clock, 100MHz
+        end
+    end
+
+    //(2)signal setup ;
+    parameter    clk_freq    = 100000000 ; //100MHz
+    integer      freq_dst    = 2000000 ;   //2MHz
+    integer      phase_coe   = 2;          //1/4 cycle, that is pi/2
+
+    initial begin
+        wave_en           = 1'b0 ;
+        //(a)cos wave, pi/2 phase
+        wave_amp          = 2'd1 ;
+        wave_sel          = 2'd0 ;
+        phase_init        = 256/phase_coe ;   //pi/8 initialing-phase
+        f_word            = (1<<8) * freq_dst / clk_freq; //get the frequency control word
+        #500 ;
+        @ (negedge clk) ;
+        wave_en           = 1'b1 ;        //start generating waves
+        # 2000 ;
+        //(b)triangle wave, pi/4 initialing-phase
+        wave_en           = 1'b0 ;
+        wave_sel          = 2'd2 ;
+        phase_init        = 256/4 ;
+        wave_amp          = 2'd2 ;
+        # 50 ;
+        wave_en           = 1'b1 ;
+    end
+
+    //(3) module instantiaion
+    dds u_dds(
+        .clk            (clk),
+        .rstn           (rstn),
+        .wave_en        (wave_en),
+        .wave_sel       (wave_sel[1:0]),
+        .wave_amp       (wave_amp[1:0]),
+        .phase_init     (phase_init[7:0]),
+        .f_word         (f_word[7:0]),
+        .dout           (dout[9:0]),
+        .dout_en        (dout_en));
+
+    //(4) finish the simulation
+    always begin
+        #100;
+        if ($time >= 100000) $finish ;
+    end
+endmodule

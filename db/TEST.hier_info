@@ -1,0 +1,5 @@
+|ceshi
+sw17 => ledr17.DATAIN
+ledr17 <= sw17.DB_MAX_OUTPUT_PORT_TYPE
+
+

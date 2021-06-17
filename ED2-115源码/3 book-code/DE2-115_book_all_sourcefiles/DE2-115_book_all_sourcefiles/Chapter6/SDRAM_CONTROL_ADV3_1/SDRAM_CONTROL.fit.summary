@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Oct 11 16:11:59 2011
+Quartus II Version : 10.0 Build 218 06/27/2010 SJ Full Version
+Revision Name : SDRAM_CONTROL
+Top-level Entity Name : SDRAM_CONTROL
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 816 / 114,480 ( < 1 % )
+    Total combinational functions : 584 / 114,480 ( < 1 % )
+    Dedicated logic registers : 625 / 114,480 ( < 1 % )
+Total registers : 625
+Total pins : 90 / 529 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 36,864 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 2 / 4 ( 50 % )

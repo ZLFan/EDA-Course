@@ -1,0 +1,35 @@
+# Reading C:/altera/10.1/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile D:/DE2_115/lyp/I2C_control/I2C_control_test.mpf 
+# Loading project I2C_control_test
+# Compile of I2C_control_test.v was successful.
+# Compile of I2C_control.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.I2C_control_test
+# vsim -voptargs=+acc work.I2C_control_test 
+# Loading work.I2C_control_test
+# Loading work.I2C_control
+add wave sim:/I2C_control_test/*
+run
+# Reach undefined state
+# Closing project D:/DE2_115/lyp/I2C_control/I2C_control_test.mpf
+# reading C:\altera\10.1\modelsim_ase\win32aloem/../modelsim.ini
+# Loading project I2C_write_test
+vsim -voptargs=+acc work.I2C_write_test
+# vsim -voptargs=+acc work.I2C_write_test 
+# Loading work.I2C_write_test
+# ** Fatal: (vsim-3381) Obsolete library format for design unit. Design unit 'D:\DE2_115\lyp\I2C_write\work.I2C_write_test'
+#    Time: 0 ns  Iteration: 0  Instance: / File: NOFILE
+# FATAL ERROR while loading design
+# Error loading design
+# Compile of I2C_write_test.v was successful.
+# Compile of I2C_write.v was successful.
+# Compile of I2C_control.v was successful.
+# 3 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.I2C_write_test
+# vsim -voptargs=+acc work.I2C_write_test 
+# Loading work.I2C_write_test
+# Loading work.I2C_write
+# Loading work.I2C_control
+add wave sim:/I2C_write_test/*
+run
+# Reach undefined state

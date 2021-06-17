@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk50HZ'
+Slack : -7.283
+TNS   : -105.329
+
+Type  : Slow 1200mV 85C Model Setup 'clk20mhz'
+Slack : -6.082
+TNS   : -492.380
+
+Type  : Slow 1200mV 85C Model Setup 'FDIV:inst1|M1'
+Slack : -1.576
+TNS   : -19.681
+
+Type  : Slow 1200mV 85C Model Setup 'deceder:inst|clk1khz'
+Slack : -0.202
+TNS   : -0.202
+
+Type  : Slow 1200mV 85C Model Hold 'clk20mhz'
+Slack : -0.247
+TNS   : -0.247
+
+Type  : Slow 1200mV 85C Model Hold 'clk50HZ'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FDIV:inst1|M1'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'deceder:inst|clk1khz'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk20mhz'
+Slack : -3.000
+TNS   : -148.205
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk50HZ'
+Slack : -3.000
+TNS   : -37.695
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FDIV:inst1|M1'
+Slack : -1.285
+TNS   : -21.845
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'deceder:inst|clk1khz'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'clk50HZ'
+Slack : -6.467
+TNS   : -91.882
+
+Type  : Slow 1200mV 0C Model Setup 'clk20mhz'
+Slack : -5.439
+TNS   : -436.638
+
+Type  : Slow 1200mV 0C Model Setup 'FDIV:inst1|M1'
+Slack : -1.326
+TNS   : -16.306
+
+Type  : Slow 1200mV 0C Model Setup 'deceder:inst|clk1khz'
+Slack : -0.083
+TNS   : -0.083
+
+Type  : Slow 1200mV 0C Model Hold 'clk20mhz'
+Slack : -0.224
+TNS   : -0.224
+
+Type  : Slow 1200mV 0C Model Hold 'clk50HZ'
+Slack : 0.121
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FDIV:inst1|M1'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'deceder:inst|clk1khz'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk20mhz'
+Slack : -3.000
+TNS   : -148.205
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk50HZ'
+Slack : -3.000
+TNS   : -37.695
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FDIV:inst1|M1'
+Slack : -1.285
+TNS   : -21.845
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'deceder:inst|clk1khz'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'clk50HZ'
+Slack : -3.009
+TNS   : -37.862
+
+Type  : Fast 1200mV 0C Model Setup 'clk20mhz'
+Slack : -2.468
+TNS   : -183.876
+
+Type  : Fast 1200mV 0C Model Setup 'FDIV:inst1|M1'
+Slack : -0.234
+TNS   : -1.520
+
+Type  : Fast 1200mV 0C Model Setup 'deceder:inst|clk1khz'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk20mhz'
+Slack : -0.336
+TNS   : -0.336
+
+Type  : Fast 1200mV 0C Model Hold 'clk50HZ'
+Slack : -0.172
+TNS   : -0.172
+
+Type  : Fast 1200mV 0C Model Hold 'FDIV:inst1|M1'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'deceder:inst|clk1khz'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk20mhz'
+Slack : -3.000
+TNS   : -124.497
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50HZ'
+Slack : -3.000
+TNS   : -31.794
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FDIV:inst1|M1'
+Slack : -1.000
+TNS   : -17.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'deceder:inst|clk1khz'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

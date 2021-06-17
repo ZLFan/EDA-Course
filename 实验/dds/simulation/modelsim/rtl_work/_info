@@ -1,0 +1,102 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\EDA\dds\simulation\modelsim
+vdds
+I4:`kn0;M`4>AZGFWZJeK20
+VBa9]9_?gzK1bA4h6mJ@GW3
+Z1 dE:\EDA\dds\simulation\modelsim
+w1605838624
+8E:/EDA/dds/dds.v
+FE:/EDA/dds/dds.v
+L0 1
+Z2 OV;L;10.0d;49
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/EDA/dds -O0
+!s100 `F;YbNb9S1m03JH7WUGJP3
+!s85 0
+!s108 1605878714.347000
+!s107 E:/EDA/dds/dds.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/dds|E:/EDA/dds/dds.v|
+!s101 -O0
+vmem
+IfRQMKWo6jWJI5ccdnU=GV3
+VMfkUX6OE3>D;V]G:8_U<>3
+R1
+Z5 w1605838760
+Z6 8E:/EDA/dds/mem.v
+Z7 FE:/EDA/dds/mem.v
+L0 1
+R2
+r1
+31
+Z8 !s108 1605878714.193000
+Z9 !s107 E:/EDA/dds/mem.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/dds|E:/EDA/dds/mem.v|
+R3
+R4
+!s100 nZQRN9=DRC>4G=:gX?hFH2
+!s85 0
+!s101 -O0
+vsquare_ROM
+IgLTlohSM=fac<;0laN[Sz0
+VTeVd0LD@K4=;1HEZa[9I91
+R1
+R5
+R6
+R7
+L0 45
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+nsquare_@r@o@m
+!s100 o@H7_7dRKA1B^m?Qjl3Xn3
+!s85 0
+!s101 -O0
+vtest
+!s100 YAW7jIQP_bNl3BJ;Olk651
+I]f4@VRVU5hNz;G5^]kW0<2
+V6zGISQEooXBTV58LSDf2j0
+R1
+w1605878623
+8E:/EDA/dds/simulation/modelsim/dds.vt
+FE:/EDA/dds/simulation/modelsim/dds.vt
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1605878714.440000
+!s107 E:/EDA/dds/simulation/modelsim/dds.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/dds/simulation/modelsim|E:/EDA/dds/simulation/modelsim/dds.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/EDA/dds/simulation/modelsim -O0
+vtri_ROM
+I;^RzZ8JZ5]CNYI>^VPiGg2
+VRK2n_`h=DF;=3XBnbfnh80
+R1
+R5
+R6
+R7
+L0 63
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+ntri_@r@o@m
+!s100 `[63]TO2ZQ?dLe6gc5Dfb2
+!s85 0
+!s101 -O0

@@ -1,0 +1,14 @@
+[ProjectWorkspace]
+ptn_Child1=Frames
+[ProjectWorkspace.Frames]
+ptn_Child1=ChildFrames
+[ProjectWorkspace.Frames.ChildFrames]
+ptn_Child1=Document-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0]
+ptn_Child1=ViewFrame-0
+[ProjectWorkspace.Frames.ChildFrames.Document-0.ViewFrame-0]
+DocPathName=I2C_control.smf
+DocumentCLSID={e4f1994b-1a36-4c8a-9c03-cda4b3877d78}
+IsChildFrameDetached=False
+IsActiveChildFrame=True
+ptn_Child1=StateMap

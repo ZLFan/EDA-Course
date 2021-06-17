@@ -1,0 +1,64 @@
+//以十进制输出cost
+module displayCost(
+input clk,
+input rst,
+input [15:0]cost,
+output [6:0]seg0,
+output [6:0]seg1,
+output [6:0]seg2
+);
+reg[6:0]bit;
+reg[6:0]ten;
+reg[6:0]hundrad;
+always@(posedge clk)
+begin
+	if(!rst)
+	begin
+		bit=cost%10;
+		ten=(cost/10)%10;
+		hundrad=(cost/100)%10;
+		case(bit)
+		0:seg0=7'b0000001;
+		1:seg0=7'b1001111;
+		2:seg0=7'b0010010;
+		3:seg0=7'b0000110;
+		4:seg0=7'b1001100;
+		5:seg0=7'b0100100;
+		6:seg0=7'b1100000;
+		7:seg0=7'b0001111;
+		8:seg0=7'b0000000;
+		9:seg0=7'b0000100;
+		endcase
+		case(ten)
+		0:seg1=7'b0000001;
+		1:seg1=7'b1001111;
+		2:seg1=7'b0010010;
+		3:seg1=7'b0000110;
+		4:seg1=7'b1001100;
+		5:seg1=7'b0100100;
+		6:seg1=7'b1100000;
+		7:seg1=7'b0001111;
+		8:seg1=7'b0000000;
+		9:seg1=7'b0000100;
+		endcase
+		case(hundrad)
+		0:seg2=7'b0000001;
+		1:seg2=7'b1001111;
+		2:seg2=7'b0010010;
+		3:seg2=7'b0000110;
+		4:seg2=7'b1001100;
+		5:seg2=7'b0100100;
+		6:seg2=7'b1100000;
+		7:seg2=7'b0001111;
+		8:seg2=7'b0000000;
+		9:seg2=7'b0000100;
+		endcase
+	end
+	else 
+	begin
+		seg0=7'b1111111;
+		seg1=7'b1111111;
+		seg2=7'b1111111;
+	end
+end
+endmodule

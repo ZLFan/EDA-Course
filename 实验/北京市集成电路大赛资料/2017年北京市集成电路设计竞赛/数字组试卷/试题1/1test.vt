@@ -1,0 +1,42 @@
+`timescale 1 ns/ 100 ps
+module test_vlg_tst();
+// constants                                           
+// general purpose registers
+//reg eachvec;
+// test vector input registers
+reg clk;
+reg reset;
+// wires                                               
+wire [3:0]  address;
+wire [3:0]  data;
+
+// assign statements (if any)                          
+test i1 (
+// port map - connection between master ports and signals/registers   
+	.address(address),
+	.clk(clk),
+	.data(data),
+	.reset(reset)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+#0		clk=0;
+#0		reset=0;
+#50		reset=1;
+#40		reset=0;                                                       
+// --> end                                             
+//$display("Running testbench");                       
+end                                                    
+always    #20                                             
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+clk=~clk;                                                       
+//@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule

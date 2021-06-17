@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 13 13:44:09 2020
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : RandomCount
+Top-level Entity Name : fsm7
+Family : Cyclone III
+Total logic elements : 10
+    Total combinational functions : 4
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

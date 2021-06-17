@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\EDA\17-1\simulation\modelsim
+vbase1
+I>7^K@dB8zFaK`<0_<JGgn2
+VXJ]Rho`zi3RWz;m^IojTP2
+Z1 dE:\EDA\17-1\simulation\modelsim
+w1605882883
+8E:/EDA/17-1/base1.v
+FE:/EDA/17-1/base1.v
+L0 1
+Z2 OV;L;10.0d;49
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!s100 fzJgI25=ade;5b<G9=3e10
+!s85 0
+!s108 1605883172.652000
+!s107 E:/EDA/17-1/base1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/17-1|E:/EDA/17-1/base1.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/EDA/17-1 -O0
+vbase1_vlg_tst
+!s100 KG2;Of774J0LQOmG:2F_;0
+IVembQGfBVbXKFPCoBPlm_1
+V7OFM>9NX>VDDQUFbSW9jj2
+R1
+w1605883164
+8E:/EDA/17-1/simulation/modelsim/base1.vt
+FE:/EDA/17-1/simulation/modelsim/base1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1605883172.692000
+!s107 E:/EDA/17-1/simulation/modelsim/base1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/17-1/simulation/modelsim|E:/EDA/17-1/simulation/modelsim/base1.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/EDA/17-1/simulation/modelsim -O0

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU architecture type not set. ",1312373387437
+error,log,,,"CPU master group not set.",1312373387437
+started,bundle,com.altera.debug.cdi.gdb.plugin,10.1.0.153,"com.altera.debug.cdi.gdb.plugin",1312373387453
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1312373387546
+error,log,,,"Target is broken and needs to be reset",1312373388765
+error,log,,,"SOPC design not set.",1312373388828
+error,log,,,"CPU module not set.",1312373388828
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1312373388828
+error,log,,,"CPU architecture type not set. ",1312373388828
+error,log,,,"CPU master group not set.",1312373388828
+error,log,,,"Connected system ID hash not found on target at expected base address.",1312373388828
+error,log,,,"Connected system timestamp not found on target at expected base address.",1312373388828
+error,log,,,"Connected system ID hash not found on target at expected base address.",1312373388828
+error,log,,,"Connected system timestamp not found on target at expected base address.",1312373388828
+error,log,,,"Connected system ID hash not found on target at expected base address.",1312373388875
+error,log,,,"Connected system timestamp not found on target at expected base address.",1312373388875
+error,log,,,"Connected system ID hash not found on target at expected base address.",1312373396250
+error,log,,,"Connected system timestamp not found on target at expected base address.",1312373396250
+error,log,,,"Connected system ID hash not found on target at expected base address.",1312373412343
+error,log,,,"Connected system timestamp not found on target at expected base address.",1312373412343
+error,log,,,"Connected system ID hash not found on target at expected base address.",1312373413484
+error,log,,,"Connected system timestamp not found on target at expected base address.",1312373413484
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1312373422546
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1312373422562
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1312373425328

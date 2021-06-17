@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Nov 27 15:00:30 2020
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : dot_matrix4
+Top-level Entity Name : dot_ma4
+Family : Cyclone III
+Total logic elements : 194
+    Total combinational functions : 188
+    Dedicated logic registers : 60
+Total registers : 60
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

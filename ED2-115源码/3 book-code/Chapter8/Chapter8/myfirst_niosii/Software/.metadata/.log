@@ -1,0 +1,1634 @@
+!SESSION 2011-08-03 19:58:49.015 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 19:59:30.421
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 19:59:31.000
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-08-03 20:01:05.562
+!MESSAGE Indexed 'hello_world_bsp' (78 sources, 55 headers) in 0.88 sec: 933 declarations; 2,263 references; 111 unresolved inclusions; 5 syntax errors; 195 unresolved names (5.75%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-08-03 20:01:07.843
+!MESSAGE Indexed 'hello_world' (1 sources, 11 headers) in 0.00 sec: 1 declarations; 1 references; 12 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.734
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.750
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.765
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.781
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.796
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE Select one of the available target connection paths.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.812
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.828
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.828
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.828
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:40.828
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.250
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.250
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.250
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.250
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.250
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.250
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.265
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.281
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.468
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.468
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.468
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.484
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.484
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.484
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.484
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.484
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.484
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.500
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.531
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.531
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.531
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.531
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:41.531
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.531
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.609
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.718
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.828
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:41.937
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.046
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.156
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.265
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.375
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.484
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.593
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.703
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:42.812
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.843
+!MESSAGE Target is broken and needs to be reset
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.906
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.921
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:42.921
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.031
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.031
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.140
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.140
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.250
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.250
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.359
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.359
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.468
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.468
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.578
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.578
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.687
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.687
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.687
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:43.687
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:44.187
+!MESSAGE sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.218
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.234
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:45.250
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.375
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.375
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.375
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.390
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:47.406
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.406
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:47.421
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.421
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.421
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.421
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.421
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.421
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:47.421
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.437
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.437
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.437
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.437
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:47.437
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:47.437
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:47.500
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:47.515
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.109
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.125
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.125
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.156
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.156
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.187
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.187
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.203
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.218
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:09:48.234
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.765
+!MESSAGE Target is broken and needs to be reset
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.828
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.875
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:48.875
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:56.250
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:09:56.250
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:10:12.343
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:10:12.343
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:10:13.484
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:10:13.484
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY org.eclipse.ui 4 4 2011-08-03 20:11:41.390
+!MESSAGE The proxied handler for 'com.altera.sbtgui.project.commands.SystemConsoleHandler' could not be loaded
+
+!ENTRY org.eclipse.ui 4 0 2011-08-03 20:11:41.390
+!MESSAGE The proxied handler for 'com.altera.sbtgui.project.commands.SystemConsoleHandler' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "com.altera.sbtgui.project" was unable to instantiate class "com.altera.sbtgui.project.commands.SystemConsoleHandler".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:172)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:874)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:351)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.isEnabled(HandlerProxy.java:320)
+	at org.eclipse.core.commands.Command.isEnabled(Command.java:833)
+	at org.eclipse.core.commands.Command.setHandler(Command.java:965)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.updateCommand(HandlerAuthority.java:457)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.deactivateHandler(HandlerAuthority.java:312)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandler(HandlerService.java:148)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandlers(HandlerService.java:157)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.clearActivations(HandlerPersistence.java:104)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.dispose(HandlerPersistence.java:125)
+	at org.eclipse.ui.internal.handlers.HandlerService.dispose(HandlerService.java:163)
+	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:142)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:939)
+	at org.eclipse.ui.internal.Workbench.access$15(Workbench.java:856)
+	at org.eclipse.ui.internal.Workbench$23.run(Workbench.java:1100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1098)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2077)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.restart(OpenWorkspaceAction.java:237)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.run(OpenWorkspaceAction.java:219)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction$OpenDialogAction.run(OpenWorkspaceAction.java:61)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1003)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1027)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1012)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:770)
+	at org.eclipse.jface.action.ActionContributionItem$9.handleEvent(ActionContributionItem.java:1284)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1003)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3880)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3473)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1287)
+Caused by: java.lang.NullPointerException
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.getShell(SystemConsoleHandler.java:100)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:62)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:170)
+	... 60 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2011-08-03 20:11:41.390
+!MESSAGE Plug-in "com.altera.sbtgui.project" was unable to instantiate class "com.altera.sbtgui.project.commands.SystemConsoleHandler".
+!STACK 0
+java.lang.NullPointerException
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.getShell(SystemConsoleHandler.java:100)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:62)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:170)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:874)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:351)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.isEnabled(HandlerProxy.java:320)
+	at org.eclipse.core.commands.Command.isEnabled(Command.java:833)
+	at org.eclipse.core.commands.Command.setHandler(Command.java:965)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.updateCommand(HandlerAuthority.java:457)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.deactivateHandler(HandlerAuthority.java:312)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandler(HandlerService.java:148)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandlers(HandlerService.java:157)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.clearActivations(HandlerPersistence.java:104)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.dispose(HandlerPersistence.java:125)
+	at org.eclipse.ui.internal.handlers.HandlerService.dispose(HandlerService.java:163)
+	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:142)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:939)
+	at org.eclipse.ui.internal.Workbench.access$15(Workbench.java:856)
+	at org.eclipse.ui.internal.Workbench$23.run(Workbench.java:1100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1098)
+	at org.eclipse.ui.internal.Workbench.restart(Workbench.java:2077)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.restart(OpenWorkspaceAction.java:237)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction.run(OpenWorkspaceAction.java:219)
+	at org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction$OpenDialogAction.run(OpenWorkspaceAction.java:61)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1003)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1027)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1012)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:770)
+	at org.eclipse.jface.action.ActionContributionItem$9.handleEvent(ActionContributionItem.java:1284)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1003)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3880)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3473)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1287)
+!SESSION 2011-08-03 20:12:42.359 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\FPGA\DE2_115\myfirst_niosii\Software -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:12:47.265
+!MESSAGE Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:12:47.843
+!MESSAGE Done Initializing System Console Model
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.593
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.609
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.640
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.640
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.640
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.640
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.640
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.656
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.671
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.687
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.859
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.859
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.859
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.859
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.859
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.859
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:41.859
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:41.875
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.906
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.906
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.906
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.906
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:41.906
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:41.906
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:41.984
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:42.093
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:42.203
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:42.312
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:42.359
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:42.359
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:42.359
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:42.359
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:42.359
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:44.593
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:44.593
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:44.593
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:44.593
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:44.593
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:44.593
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:16:45.000
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:45.046
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:45.046
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:45.046
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:45.046
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:45.046
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:16:47.562
+!MESSAGE sun.awt.X11.XlibWrapper
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:16:47.593
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/10.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81018 --id=0x0 --timestamp=0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:16:50.234
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/10.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81018 --id=0x0 --timestamp=0 /cygdrive/d/FPGA/DE2_115/myfirst_niosii/Software/hello_world/hello_world.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:33:18.843
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.312
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.312
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.312
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.312
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.312
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:33:19.312
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:33:19.406
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.453
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.453
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.453
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.453
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:33:19.453
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:33:21.437
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/10.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x81018 --id=0x0 --timestamp=0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-03 20:33:24.062
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/10.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x81018 --id=0x0 --timestamp=0 /cygdrive/d/FPGA/DE2_115/myfirst_niosii/Software/hello_world/hello_world.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.328
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.343
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:18.359
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE Expected base address of system ID component is undefined.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.828
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE Connected system ID hash not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE Connected system timestamp not found on target at expected base address.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:34:20.843
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.843
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:34:20.859
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.859
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:34:20.859
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.890
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.890
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.890
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.890
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:20.890
+!MESSAGE CPU master group not set.
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:34:20.890
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:34:20.953
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 2 0 2011-08-03 20:34:20.968
+!MESSAGE Obtaining system ID information for selected processor
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:21.015
+!MESSAGE SOPC design not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:21.031
+!MESSAGE CPU module not set.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:21.031
+!MESSAGE The SOPC design does not contain a CPU of a supported architecture.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:21.031
+!MESSAGE CPU architecture type not set. 
+
+!ENTRY com.altera.sbtgui.launch 4 0 2011-08-03 20:34:21.031
+!MESSAGE CPU master group not set.
+
+!ENTRY org.eclipse.ui 4 4 2011-08-03 20:41:23.703
+!MESSAGE The proxied handler for 'com.altera.sbtgui.project.commands.SystemConsoleHandler' could not be loaded
+
+!ENTRY org.eclipse.ui 4 0 2011-08-03 20:41:23.703
+!MESSAGE The proxied handler for 'com.altera.sbtgui.project.commands.SystemConsoleHandler' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "com.altera.sbtgui.project" was unable to instantiate class "com.altera.sbtgui.project.commands.SystemConsoleHandler".
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:172)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:874)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:351)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.isEnabled(HandlerProxy.java:320)
+	at org.eclipse.core.commands.Command.isEnabled(Command.java:833)
+	at org.eclipse.core.commands.Command.setHandler(Command.java:965)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.updateCommand(HandlerAuthority.java:457)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.deactivateHandler(HandlerAuthority.java:312)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandler(HandlerService.java:148)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandlers(HandlerService.java:157)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.clearActivations(HandlerPersistence.java:104)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.dispose(HandlerPersistence.java:125)
+	at org.eclipse.ui.internal.handlers.HandlerService.dispose(HandlerService.java:163)
+	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:142)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:939)
+	at org.eclipse.ui.internal.Workbench.access$15(Workbench.java:856)
+	at org.eclipse.ui.internal.Workbench$23.run(Workbench.java:1100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1098)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1070)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:721)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(WorkbenchWindow.java:700)
+	at org.eclipse.ui.internal.WorkbenchWindow$5.run(WorkbenchWindow.java:816)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:814)
+	at org.eclipse.jface.window.Window.handleShellCloseEvent(Window.java:741)
+	at org.eclipse.jface.window.Window$3.shellClosed(Window.java:687)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1003)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1027)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1012)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1645)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3948)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1578)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2010)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4589)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2405)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:492)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4036)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1578)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2010)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4589)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2405)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:492)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4036)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1578)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2010)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4589)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3471)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1287)
+Caused by: java.lang.NullPointerException
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.getShell(SystemConsoleHandler.java:100)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:62)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:170)
+	... 81 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2011-08-03 20:41:23.703
+!MESSAGE Plug-in "com.altera.sbtgui.project" was unable to instantiate class "com.altera.sbtgui.project.commands.SystemConsoleHandler".
+!STACK 0
+java.lang.NullPointerException
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.getShell(SystemConsoleHandler.java:100)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:62)
+	at com.altera.sbtgui.project.commands.SystemConsoleHandler.<init>(SystemConsoleHandler.java:48)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:170)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:874)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:351)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.isEnabled(HandlerProxy.java:320)
+	at org.eclipse.core.commands.Command.isEnabled(Command.java:833)
+	at org.eclipse.core.commands.Command.setHandler(Command.java:965)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.updateCommand(HandlerAuthority.java:457)
+	at org.eclipse.ui.internal.handlers.HandlerAuthority.deactivateHandler(HandlerAuthority.java:312)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandler(HandlerService.java:148)
+	at org.eclipse.ui.internal.handlers.HandlerService.deactivateHandlers(HandlerService.java:157)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.clearActivations(HandlerPersistence.java:104)
+	at org.eclipse.ui.internal.handlers.HandlerPersistence.dispose(HandlerPersistence.java:125)
+	at org.eclipse.ui.internal.handlers.HandlerService.dispose(HandlerService.java:163)
+	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:142)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2755)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:939)
+	at org.eclipse.ui.internal.Workbench.access$15(Workbench.java:856)
+	at org.eclipse.ui.internal.Workbench$23.run(Workbench.java:1100)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1098)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1070)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:721)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(WorkbenchWindow.java:700)
+	at org.eclipse.ui.internal.WorkbenchWindow$5.run(WorkbenchWindow.java:816)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:814)
+	at org.eclipse.jface.window.Window.handleShellCloseEvent(Window.java:741)
+	at org.eclipse.jface.window.Window$3.shellClosed(Window.java:687)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:92)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1003)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1027)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1012)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1645)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3948)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1578)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2010)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4589)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2405)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:492)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4036)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1578)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2010)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4589)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2405)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:492)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4036)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:342)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1578)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2010)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4589)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2410)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3471)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1287)

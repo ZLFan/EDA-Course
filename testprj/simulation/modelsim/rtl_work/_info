@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\EDA\testprj\simulation\modelsim
+vdivclk
+IHgTQNGj?HeEBO^3aHa^hV2
+VDC@_ASY0YoJl>b=UW6A=h0
+Z1 dE:\EDA\testprj\simulation\modelsim
+w1608710159
+8E:/EDA/bigwork/divclk.v
+FE:/EDA/bigwork/divclk.v
+L0 1
+Z2 OV;L;10.0d;49
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!s100 az]Z95lnTn11h@g=cVU:G2
+!s85 0
+!s108 1608825686.392000
+!s107 E:/EDA/bigwork/divclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/bigwork|E:/EDA/bigwork/divclk.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/EDA/bigwork -O0
+vdivclk_vlg_tst
+!s100 _hFD=WNZbKofH>LWXm78f3
+I?BnG2m[;m2dN5fF]7@Glc2
+V3=me2G7HDnDg<zQ42`DN>1
+R1
+w1608825560
+8E:/EDA/testprj/simulation/modelsim/divclk.vt
+FE:/EDA/testprj/simulation/modelsim/divclk.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1608825686.512000
+!s107 E:/EDA/testprj/simulation/modelsim/divclk.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/EDA/testprj/simulation/modelsim|E:/EDA/testprj/simulation/modelsim/divclk.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/EDA/testprj/simulation/modelsim -O0

@@ -1,0 +1,38 @@
+//1.计费功能
+////起步费为10.00元，
+////车行3公里后再按2元/公里
+////当计费器计费达到或超过一定收费(如20元)时，每公里加收50%的车费
+//车停止不计费。
+module cost(
+input clk;//时钟信号
+input rst;//车停止信号
+input [15:0]distence;//
+output reg[15:0]cost;//车费
+);
+reg[15:0]temp;
+reg[15:0]per;
+always@(posedge clk)
+begin
+	if(!rst)
+	begin
+		if(distence=3)
+			cost=10;
+		else if(cost=20)
+		begin
+			cost=cost+(distence-3)*2;
+			temp=distence;
+			per=2;
+		end
+		else 
+		begin
+			per=per/2*3;
+			cost=cost+(distence-temp)*per;
+			temp=distence;
+		end
+	end
+	else 
+	begin
+		cost=0;
+	end
+end
+endmodule

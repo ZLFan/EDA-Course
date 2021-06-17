@@ -1,0 +1,374 @@
+Analysis & Synthesis report for chuzuche
+Mon Dec 21 16:47:56 2020
+Quartus II 32-bit Version 12.0 Build 232 07/05/2012 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: FDIV:inst1
+ 11. Parameter Settings for User Entity Instance: Fare:inst4
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++------------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 21 16:47:56 2020         ;
+; Quartus II 32-bit Version          ; 12.0 Build 232 07/05/2012 SP 1 SJ Web Edition ;
+; Revision Name                      ; chuzuche                                      ;
+; Top-level Entity Name              ; chuzuche                                      ;
+; Family                             ; Cyclone IV E                                  ;
+; Total logic elements               ; 423                                           ;
+;     Total combinational functions  ; 391                                           ;
+;     Dedicated logic registers      ; 160                                           ;
+; Total registers                    ; 160                                           ;
+; Total pins                         ; 19                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 0                                             ;
++------------------------------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; chuzuche           ; chuzuche           ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; Off                ; Off                ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-8 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------+---------+
+; FDIV.v                           ; yes             ; User Verilog HDL File              ; E:/EDA/chuzuche/FDIV.v       ;         ;
+; Mileage.v                        ; yes             ; User Verilog HDL File              ; E:/EDA/chuzuche/Mileage.v    ;         ;
+; quzheng.v                        ; yes             ; User Verilog HDL File              ; E:/EDA/chuzuche/quzheng.v    ;         ;
+; Fare.v                           ; yes             ; User Verilog HDL File              ; E:/EDA/chuzuche/Fare.v       ;         ;
+; deceder.v                        ; yes             ; User Verilog HDL File              ; E:/EDA/chuzuche/deceder.v    ;         ;
+; chuzuche.bdf                     ; yes             ; User Block Diagram/Schematic File  ; E:/EDA/chuzuche/chuzuche.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 423            ;
+;                                             ;                ;
+; Total combinational functions               ; 391            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 114            ;
+;     -- 3 input functions                    ; 131            ;
+;     -- <=2 input functions                  ; 146            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 218            ;
+;     -- arithmetic mode                      ; 173            ;
+;                                             ;                ;
+; Total registers                             ; 160            ;
+;     -- Dedicated logic registers            ; 160            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 19             ;
+; Maximum fan-out node                        ; clk20mhz~input ;
+; Maximum fan-out                             ; 113            ;
+; Total fan-out                               ; 1617           ;
+; Average fan-out                             ; 2.75           ;
++---------------------------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                             ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
+; |chuzuche                  ; 391 (0)           ; 160 (0)      ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |chuzuche               ;              ;
+;    |FDIV:inst1|            ; 23 (23)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chuzuche|FDIV:inst1    ;              ;
+;    |Fare:inst4|            ; 70 (70)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chuzuche|Fare:inst4    ;              ;
+;    |Mileage:inst2|         ; 18 (18)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chuzuche|Mileage:inst2 ;              ;
+;    |deceder:inst|          ; 266 (266)         ; 116 (116)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chuzuche|deceder:inst  ;              ;
+;    |quzheng:inst3|         ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |chuzuche|quzheng:inst3 ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 160   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 30    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 102   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+-----------------------------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                        ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+-----------------------------------+----------------------------+
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; |chuzuche|Fare:inst4|Q1[6]        ;                            ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; |chuzuche|deceder:inst|comb1[9]   ;                            ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; |chuzuche|deceder:inst|comb2[7]   ;                            ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; |chuzuche|deceder:inst|comb1_d[0] ;                            ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; |chuzuche|deceder:inst|comb2_d[1] ;                            ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; |chuzuche|deceder:inst|comb1_c[0] ;                            ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; |chuzuche|deceder:inst|comb2_c[0] ;                            ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; |chuzuche|deceder:inst|comb1_b[0] ;                            ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; |chuzuche|deceder:inst|comb1_a[0] ;                            ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; |chuzuche|deceder:inst|comb2_b[3] ;                            ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; |chuzuche|deceder:inst|comb2_a[0] ;                            ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; |chuzuche|deceder:inst|Mux2       ;                            ;
++--------------------+-----------+---------------+----------------------+------------------------+-----------------------------------+----------------------------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FDIV:inst1 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; ratio          ; 50    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Fare:inst4 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; S_price        ; 10    ; Signed Integer                 ;
+; Fuel           ; 1     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 12.0 Build 232 07/05/2012 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Dec 21 16:47:54 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off chuzuche -c chuzuche
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file fdiv.v
+    Info (12023): Found entity 1: FDIV
+Info (12021): Found 1 design units, including 1 entities, in source file mileage.v
+    Info (12023): Found entity 1: Mileage
+Info (12021): Found 1 design units, including 1 entities, in source file quzheng.v
+    Info (12023): Found entity 1: quzheng
+Info (12021): Found 1 design units, including 1 entities, in source file fare.v
+    Info (12023): Found entity 1: Fare
+Warning (10229): Verilog HDL Expression warning at deceder.v(24): truncated literal to match 1 bits
+Info (12021): Found 1 design units, including 1 entities, in source file deceder.v
+    Info (12023): Found entity 1: deceder
+Info (12021): Found 1 design units, including 1 entities, in source file chuzuche.bdf
+    Info (12023): Found entity 1: chuzuche
+Info (12127): Elaborating entity "chuzuche" for the top level hierarchy
+Info (12128): Elaborating entity "deceder" for hierarchy "deceder:inst"
+Warning (10230): Verilog HDL assignment warning at deceder.v(27): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(36): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(37): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(43): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(44): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(49): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(50): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(54): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(55): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(82): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(83): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(89): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(90): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(95): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(96): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(100): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(101): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at deceder.v(123): truncated value with size 32 to match size of target (3)
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(129): variable "m_one" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(130): variable "m_ten" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(131): variable "m_hun" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(132): variable "m_tho" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(133): variable "d_one" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(134): variable "d_ten" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(135): variable "d_hun" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at deceder.v(136): variable "d_tho" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10230): Verilog HDL assignment warning at deceder.v(137): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at deceder.v(137): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at deceder.v(137): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "quzheng" for hierarchy "quzheng:inst3"
+Warning (10230): Verilog HDL assignment warning at quzheng.v(8): truncated value with size 32 to match size of target (13)
+Info (12128): Elaborating entity "Mileage" for hierarchy "Mileage:inst2"
+Warning (10230): Verilog HDL assignment warning at Mileage.v(11): truncated value with size 32 to match size of target (13)
+Warning (10230): Verilog HDL assignment warning at Mileage.v(12): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "FDIV" for hierarchy "FDIV:inst1"
+Warning (10230): Verilog HDL assignment warning at FDIV.v(9): truncated value with size 32 to match size of target (13)
+Info (12128): Elaborating entity "Fare" for hierarchy "Fare:inst4"
+Warning (10230): Verilog HDL assignment warning at Fare.v(10): truncated value with size 32 to match size of target (13)
+Warning (10230): Verilog HDL assignment warning at Fare.v(11): truncated value with size 32 to match size of target (13)
+Warning (10230): Verilog HDL assignment warning at Fare.v(12): truncated value with size 32 to match size of target (13)
+Info (144001): Generated suppressed messages file E:/EDA/chuzuche/chuzuche.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 442 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 423 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 328 megabytes
+    Info: Processing ended: Mon Dec 21 16:47:56 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in E:/EDA/chuzuche/chuzuche.map.smsg.
+
+

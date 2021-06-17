@@ -1,0 +1,112 @@
+// Copyright (C) 1991-2012 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/24/2020 23:08:24"
+                                                                                
+// Verilog Test Bench template for design : top
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module top_vlg_tst();
+// constants                                           
+// general purpose registers
+//reg eachvec;
+// test vector input registers
+reg add;
+reg [2:0] addmail;
+reg clk;
+reg dec;
+reg [2:0] initcost;
+reg [2:0] percost;
+reg rst;
+reg set;
+reg stop;
+// wires                                               
+wire [17:0]  led;
+wire [6:0]  seg0;
+wire [6:0]  seg1;
+wire [6:0]  seg2;
+wire [6:0]  seg3;
+wire [6:0]  seg4;
+wire [6:0]  seg5;
+wire [6:0]  seg6;
+wire [6:0]  seg7;
+
+// assign statements (if any)                          
+top i1 (
+// port map - connection between master ports and signals/registers   
+	.add(add),
+	.addmail(addmail),
+	.clk(clk),
+	.dec(dec),
+	.initcost(initcost),
+	.led(led),
+	.percost(percost),
+	.rst(rst),
+	.seg0(seg0),
+	.seg1(seg1),
+	.seg2(seg2),
+	.seg3(seg3),
+	.seg4(seg4),
+	.seg5(seg5),
+	.seg6(seg6),
+	.seg7(seg7),
+	.set(set),
+	.stop(stop)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+  #0 rst=1'b1;set=0;clk=0;addmail=4;initcost=4;percost=4;dec=0;stop=0;
+#10000000 rst=1'b0;      
+#20000000 add=1;
+#50000000 add=0; dec=1;
+#60000000 dec=0; 
+#70000000 stop=1;
+#80 stop=0; add=1;
+#90000000 add=0;
+#100000000 rst=1;      
+#110000000 rst=0;
+#120000000 set=1;
+#130000000 add=1;
+#150000000 add=0; dec=1;
+#160000000 dec=0; 
+#170000000 stop=1;
+#180000000 stop=0; add=1;
+#190000000 add=0;
+                                         
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+  #10
+clk=~clk;                                                     
+//@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="bigwork">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|lantern:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_tgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|cost:a1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_7dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|displayCost:displayCost|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|displaySpeed:u2|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|cost:a1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_7dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|displayCost:displayCost|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|displayMail:uu|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|displaySpeed:u2|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|lantern:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_qgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|cost:a1|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_6dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|displayCost:displayCost|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|displayMail:uu|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|displaySpeed:u2|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|lantern:u5|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_qgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|cost:a1|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_8dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|displayCost:displayCost|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|displayMail:uu|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|topCost:u3|displayCost:displayCost|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_5jm.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

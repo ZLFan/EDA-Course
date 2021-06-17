@@ -1,0 +1,88 @@
+|state7
+a <= seg7:inst1.a
+clk => divi_50hz:inst.clk
+en[0] => seg7:inst1.en[0]
+en[1] => seg7:inst1.en[1]
+en[2] => seg7:inst1.en[2]
+en[3] => seg7:inst1.en[3]
+en[4] => seg7:inst1.en[4]
+en[5] => seg7:inst1.en[5]
+en[6] => seg7:inst1.en[6]
+en[7] => seg7:inst1.en[7]
+b <= seg7:inst1.b
+c <= seg7:inst1.c
+d <= seg7:inst1.d
+e <= seg7:inst1.e
+f <= seg7:inst1.f
+g <= seg7:inst1.g
+dp <= seg7:inst1.dp
+ds[0] <= seg7:inst1.ds[0]
+ds[1] <= seg7:inst1.ds[1]
+ds[2] <= seg7:inst1.ds[2]
+ds[3] <= seg7:inst1.ds[3]
+ds[4] <= seg7:inst1.ds[4]
+ds[5] <= seg7:inst1.ds[5]
+ds[6] <= seg7:inst1.ds[6]
+ds[7] <= seg7:inst1.ds[7]
+
+
+|state7|seg7:inst1
+clk => choice[2].CLK
+clk => choice[1].CLK
+clk => choice[0].CLK
+en[0] => ds~0.DATAB
+en[1] => ds~1.DATAB
+en[2] => ds~2.DATAB
+en[3] => ds~3.DATAB
+en[4] => ds~4.DATAB
+en[5] => ds~5.DATAB
+en[6] => ds~6.DATAB
+en[7] => ds~7.DATAB
+a <= seg~1.DB_MAX_OUTPUT_PORT_TYPE
+b <= seg~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+dp <= <GND>
+ds[0] <= ds~7.DB_MAX_OUTPUT_PORT_TYPE
+ds[1] <= ds~6.DB_MAX_OUTPUT_PORT_TYPE
+ds[2] <= ds~5.DB_MAX_OUTPUT_PORT_TYPE
+ds[3] <= ds~4.DB_MAX_OUTPUT_PORT_TYPE
+ds[4] <= ds~3.DB_MAX_OUTPUT_PORT_TYPE
+ds[5] <= ds~2.DB_MAX_OUTPUT_PORT_TYPE
+ds[6] <= ds~1.DB_MAX_OUTPUT_PORT_TYPE
+ds[7] <= ds~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|state7|divi_50hz:inst
+clk => divi_50hz~reg0.CLK
+clk => count_reg1[24].CLK
+clk => count_reg1[23].CLK
+clk => count_reg1[22].CLK
+clk => count_reg1[21].CLK
+clk => count_reg1[20].CLK
+clk => count_reg1[19].CLK
+clk => count_reg1[18].CLK
+clk => count_reg1[17].CLK
+clk => count_reg1[16].CLK
+clk => count_reg1[15].CLK
+clk => count_reg1[14].CLK
+clk => count_reg1[13].CLK
+clk => count_reg1[12].CLK
+clk => count_reg1[11].CLK
+clk => count_reg1[10].CLK
+clk => count_reg1[9].CLK
+clk => count_reg1[8].CLK
+clk => count_reg1[7].CLK
+clk => count_reg1[6].CLK
+clk => count_reg1[5].CLK
+clk => count_reg1[4].CLK
+clk => count_reg1[3].CLK
+clk => count_reg1[2].CLK
+clk => count_reg1[1].CLK
+clk => count_reg1[0].CLK
+divi_50hz <= divi_50hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+D:/DE2_115/lyp/spi_write/spi_write.v {1 {vlog -work work -nocovercells D:/DE2_115/lyp/spi_write/spi_write.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module spi_write
+
+Top level modules:
+	spi_write
+
+} {} {}} D:/DE2_115/lyp/spi_write/spi_three_wire.v {1 {vlog -work work -nocovercells D:/DE2_115/lyp/spi_write/spi_three_wire.v
+Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+-- Compiling module spi_three_wire
+
+Top level modules:
+	spi_three_wire
+
+} {} {}}

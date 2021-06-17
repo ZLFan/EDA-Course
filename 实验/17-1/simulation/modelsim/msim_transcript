@@ -1,0 +1,45 @@
+# Reading D:/altera/12.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do 17_1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\12.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\12.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/EDA/17-1 {E:/EDA/17-1/base1.v}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module base1
+# 
+# Top level modules:
+# 	base1
+# 
+# vlog -vlog01compat -work work +incdir+E:/EDA/17-1/simulation/modelsim {E:/EDA/17-1/simulation/modelsim/base1.vt}
+# Model Technology ModelSim ALTERA vlog 10.0d Compiler 2012.01 Jan 18 2012
+# -- Compiling module base1_vlg_tst
+# 
+# Top level modules:
+# 	base1_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  base1_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps base1_vlg_tst 
+# Loading work.base1_vlg_tst
+# Loading work.base1
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlft30tsms".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft30tsms
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# Break key hit 
+# Simulation stop requested.

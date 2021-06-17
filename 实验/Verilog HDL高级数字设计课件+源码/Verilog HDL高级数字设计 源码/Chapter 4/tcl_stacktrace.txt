@@ -1,0 +1,24 @@
+Sun Mar 21 10:59:37 中国标准时间 2010
+Trace back: can't read "Project(EchoCompileOutput)": no such element in array
+    while executing
+"lappend ProjectWriteArgs	$Project(EchoCompileOutput)"
+    (procedure "SaveProjectSpecificSettings" line 26)
+    invoked from within
+"SaveProjectSpecificSettings"
+    (procedure "CreateProject" line 126)
+    invoked from within
+"CreateProject $Project(dlg_proj_location) $Project(CurProj_NewName) $Project(dlg_proj_libname)"
+    (procedure "ApplyCreateProj" line 3)
+    invoked from within
+"ApplyCreateProj .pcd"
+    invoked from within
+".pcd.bb.button0 invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tk::ButtonUp" line 24)
+    invoked from within
+"tk::ButtonUp .pcd.bb.button0"
+    (command bound to event)
+  2: ::tkerror {can't read "Project(EchoCompileOutput)": no such element in array}
+  1: ::bgerror {can't read "Project(EchoCompileOutput)": no such element in array}

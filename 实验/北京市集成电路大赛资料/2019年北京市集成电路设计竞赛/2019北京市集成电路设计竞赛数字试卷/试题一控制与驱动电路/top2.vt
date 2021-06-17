@@ -1,0 +1,143 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "04/15/2019 10:15:11"
+                                                                                
+// Verilog Test Bench template for design : top2
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module top2_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+wire flag_cs;
+wire we_en;
+reg rst;
+// wires                                               
+wire clk_cs;
+wire cs_o;
+wire da_cs;
+wire rst_cs;
+wire [2:0] state_o;
+
+// assign statements (if any)                          
+top2 i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.clk_cs(clk_cs),
+	.cs_o(cs_o),
+	.da_cs(da_cs),
+	.flag_cs(flag_cs),
+	.we_en(we_en),
+	.rst(rst),
+	.rst_cs(rst_cs),
+	.state_o(state_o)
+);
+initial                                                
+begin                                                  
+#100 clk = 0;
+	rst = 1;
+#1000 rst = 0;	
+//	flag_cs = 1;
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+# 100 clk = ~clk;                                           
+end         
+
+confg confg_i (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.rst(rst),
+	.flag_cs(flag_cs),
+	.we_en(we_en),
+	.state_o(state_o)
+);
+
+                               
+endmodule
+
+module confg(clk,rst,state_o,flag_cs,we_en);
+input clk;
+input rst;
+input [2:0] state_o;
+output reg flag_cs;
+output reg we_en;
+
+reg [3:0]cnt1 = 4'd0;
+reg [3:0] cnt2 = 4'd0;
+reg [3:0] cnt3 = 4'd0;
+reg state_f = 1'd0;
+reg state_f1 = 1'd0;
+reg state_f2 = 1'd0;
+reg state_ff = 1'd0;
+reg state_ff1 = 1'd0;
+reg state_ff2 = 1'd0;
+always @(posedge clk)
+	begin
+		if(rst)
+			begin
+				flag_cs <= 1'd0;
+				we_en <= 1'd0;
+			end
+		else
+			begin
+				if(state_o == 3'd2)
+					state_f <= 1'd1;
+				else
+					state_f <= 1'd0;			
+				state_f1 <= state_f;
+				state_f2 <= (state_f1 ^ state_f) && state_f;
+				
+				if(state_o == 3'd4)
+					state_ff <= 1'd1;
+				else
+					state_ff <= 1'd0;			
+				state_ff1 <= state_ff;
+				state_ff2 <= (state_ff1 ^ state_ff) && state_ff;
+				if(state_f2)
+					begin
+						if(cnt2 == 4'd1)
+							we_en <= 1'd0;
+						else
+							begin
+								cnt2 <= cnt2 + 1'd1;
+								we_en <= 1'd1;
+							end
+					end
+				if(state_ff2)
+					begin
+						if(cnt3 == 4'd1)
+							flag_cs <= 1'd1;
+						else
+							begin
+								cnt3 <= cnt3 + 1'd1;
+								flag_cs <= 1'd0;
+							end
+					end
+			end 
+	end             
+endmodule

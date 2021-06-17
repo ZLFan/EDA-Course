@@ -1,0 +1,33 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\DE2_115\lyp\I2C_write\simulation\modelsim
+vI2C_write
+ImTd:L>FJd3489BFIA9KMV2
+Va:kS?mQcUSC>j_iDC[EN=3
+w1303281293
+8I2C_write.vo
+FI2C_write.vo
+L0 31
+Z1 OV;L;6.4a;39
+r1
+31
+o-vlog01compat -work work +incdir+. -O0
+n@i2@c_write
+!s100 Y:=0e7haWIC]17flEZnJU1
+!s85 0
+vI2C_write_test
+!s100 b:ob2ilDMSHzETYi7CRJ>2
+I<0^30MhOeOJ6[ET8HQMQz3
+VGAed^OX^KL478]b:hf:fW3
+w1283661832
+8D:/DE2_115/lyp/I2C_write/I2C_write_test.v
+FD:/DE2_115/lyp/I2C_write/I2C_write_test.v
+L0 2
+R1
+r1
+!s85 0
+31
+o-vlog01compat -work work +incdir+D:/DE2_115/lyp/I2C_write -O0
+n@i2@c_write_test
